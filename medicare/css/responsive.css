@@ -37,6 +37,36 @@
 	.footer-widget.quick-links {
 		padding-left: 0;
 	}
+
+
+
+
+
+
+	/*about-us page*/
+	.about-us-page-wrap .video-area {
+	    margin-bottom: 60px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*article details*/
+	.article-details {
+		margin-bottom: 80px;
+	}
+
 }
  
 /* small mobile :320px. */
@@ -99,6 +129,46 @@
 	.footer-widget.quick-links {
 		padding-left: 0;
 	}
+
+
+
+
+
+
+
+	.breadcumb-title h2 {
+		font-size: 32px;
+	}
+
+	/*about-us page*/
+	.about-us-page-wrap .video-area {
+	    margin-bottom: 60px;
+	}
+	.faq-accordion .card-body p {
+		padding: 10px 15px;
+	}
+	.faq-accordion .card-header button {
+		padding: 15px 30px 30px 40px;
+		text-align: left;
+	}
+	.faq-accordion .card-header button::before {
+		top: 20px;
+	}
+
+	/*article details*/
+	.article-details {
+		margin-bottom: 80px;
+	}
+
+	/*contact page*/
+	.contact-form-wrap {
+		margin: 0 15px;
+		margin-top: -15px;
+	}
+
+
+
+	
 }
  
 /* Large Mobile :480px. */
