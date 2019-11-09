@@ -1,48 +1,12 @@
-
-
-/*somenotes start*/
-/*.color1 .logo-icon .green { color: #0caa87 } 
-37C5A6
-.color2 .title .blue { color: #0f3365 } 
-.color3 .body .link .gray { color: #858585 } 
-.color4 .title .black .bold { color: #656565 } 
-.color5 .black .semi-title { color: #336666 } 
-.color6 .blue .background { color: #99cccc }
-small shadow
-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-big shadow
-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-*/
-/*somenotes end*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
-  Theme Name: MediCare HTML5 Bootstrap Template
-  Author: Maruf Sakhawat
-  Support: admin@msthemes.com
-  Description: Medical HTML5 Template
-  Version: 1.0.0
+	Theme Name: MediCare HTML5 Bootstrap Template
+	Author: Maruf Sakhawat
+	Author Mail: admin@msthemes.com
+	Description: Medical & Doctor HTML5 Template
+	Version: 1.0.0
+	Website: www.msthemes.com;
 */
-
-/* CSS Index
+/* css index
 -----------------------------------
 1.	base
 2.	header
@@ -51,19 +15,14 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 */
 /*base css start*/
 @import url('https://fonts.googleapis.com/css?family=Hind:400,700|Rajdhani:400,700&display=swap');
-	/* for help; remove when finished
-		https://fonts.google.com/?query=raj&selection.family=Hind:400,700|Rajdhani:400,700
-		font-family: 'Hind', sans-serif;
-		font-family: 'Rajdhani', sans-serif;
-	*/
 body {
 	font-family: 'Hind', sans-serif;
 	font-weight: 400;
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 1.75;
-	color: #777;
+	color: #666;
 }
-a, button {
+a {
 	color: #555;
 	outline: medium none;
 	-webkit-transition: all 0.3s ease-out 0s;
@@ -76,12 +35,29 @@ a:hover {
 	text-decoration: none;
 	color: inherit;
 }
-a:focus, button:focus {
+a:focus {
+	text-decoration: none;
+	outline: 0;
+	color: inherit;
+}
+button {
+	color: #555;
+	outline: medium none;
+	border: 0;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+button:focus {
 	text-decoration: none;
 	outline: none;
 	color: #555;
+	outline: 0;
 }
-button:focus, input:focus, input:focus, textarea, textarea:focus{
+input:focus, textarea, textarea:focus{
 	outline: 0
 }
 h1, h2, h3, h4, h5, h6 {
@@ -128,15 +104,35 @@ img {
 	transition: 0.3s;
 }
 .content-title {
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 .content-title h5 {
+	font-size: 18px;
     position: relative;
     color: #0caa87;
     display: inline-block;
     padding-bottom: 5px;
+    padding-left: 20px;
+    margin-bottom: 10px;
 }
-.content-title h5:after {content: "";position: absolute;left: 0;bottom: 0;width: 75%;height: 3px;background-color: #E12454;}
+.content-title h5:before {
+	content: "\f0f1";
+	font-family: fontawesome;
+	font-size: 18px;
+	color: #0f3365;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.content-title h5:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #E12454;
+}
 .content-title h2 {
     font-size: 40px;
     text-transform: inherit;
@@ -152,11 +148,10 @@ img {
 	display: inline-block;
     background-color: #E12454;
     color: #fff;
-    font-size: 14px;
     letter-spacing: 1px;
-    padding: 11px 35px;
+    padding: 10px 25px;
     font-weight: 700;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     position: relative;
     transition: 0.3s;
     border-radius: 3px;
@@ -164,6 +159,7 @@ img {
 }
 .site-btn:hover {
 	color: #f1f1f1;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .site-btn:after {
 	content: "";
@@ -180,50 +176,66 @@ img {
 .site-btn:hover:after {
 	width: 100%;
 }
+.site-btn.blue-bg {
+	background-color: #0f3365;
+}
+.site-btn.green-bg {
+	background-color: #0caa87;
+}
+.load-more-btn {
+	margin-top: 35px;
+}
 .has-overlay-white-75 {
 	position: relative;
 	z-index: 1;
 }
 .has-overlay-white-75::before {
-	background-color: #f1f1f1;
 	content: "";
-	height: 100%;
-	left: 0;
-	opacity: 0.75;
 	position: absolute;
+	left: 0;
 	top: 0;
 	width: 100%;
+	height: 100%;
+	opacity: 0.75;
 	z-index: -1;
+	background: #fff;	
 }
 .has-overlay-black-75 {
 	position: relative;
 	z-index: 1;
 }
 .has-overlay-black-75::before {
-	background-color: #000;
 	content: "";
-	height: 100%;
-	left: 0;
-	opacity: 0.75;
 	position: absolute;
+	left: 0;
 	top: 0;
 	width: 100%;
+	height: 100%;
+	opacity: 0.75;
 	z-index: -1;
+	background: #000;
 }
-.pd-tb-120-bdb {
-	padding: 120px 0;
-	border-bottom: 1px solid #e5e5e5;
+.has-overlay-theme-75 {
+	position: relative;
+	z-index: 1;
 }
-.pd-b-120-bdb {
-	padding-bottom: 120px;
-	border-bottom: 1px solid #e5e5e5;
-}
-.pd-tb-100-bdb {
-	padding: 100px 0;
-	border-bottom: 1px solid #e5e5e5;
-}
-.pd-tb-120 {
-	padding: 120px 0;
+.has-overlay-theme-75::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.75;
+	z-index: -1;
+
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0caa87+0,0f3365+100 */
+	background: #0caa87; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #0caa87 0%, #0f3365 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #0caa87 0%,#0f3365 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #0caa87 0%,#0f3365 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0caa87', endColorstr='#0f3365',GradientType=1 ); /* 
+	IE6-9 fallback on horizontal gradient */
 }
 .pd-t-120 {
 	padding-top: 120px;
@@ -231,42 +243,78 @@ img {
 .pd-tb-80 {
 	padding: 80px 0;
 }
+.pd-tb-120 {
+	padding: 120px 0;
+}
+.pd-tb-100-bdb {
+	padding: 100px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+.pd-tb-120-bdb {
+	padding: 120px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
 .pd-b-120 {
 	padding-bottom: 120px;
 }
+.pd-b-120-bdb {
+	padding-bottom: 120px;
+	border-bottom: 1px solid #e5e5e5;
+}
 .bg-img {
-	background-color: #adadad;
+	background-color: #999;
 	background-position: center;
 	background-size: cover;
 }
 /*for selection start*/
 *::-moz-selection {
-	background: #d6b161;
+	background: #000;
 	color: #fff;
 	text-shadow: none;
 }
 ::-moz-selection {
-	background: #444;
+	background: #000;
 	color: #fff;
 	text-shadow: none;
 }
 ::selection {
-	background: #444;
+	background: #000;
 	color: #fff;
 	text-shadow: none;
 }
 *::-moz-placeholder {
-	color: #555555;
-	font-size: 14px;
+	color: #666;
 	opacity: 1;
 }
 *::placeholder {
-	color: #555555;
-	font-size: 14px;
+	color: #666;
 	opacity: 1;
 }
 /*for selection end*/
 /*base css end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*body-preloader start*/
 .body-preloader {
@@ -434,39 +482,39 @@ img {
 .header-top {
     background-color: #0f3365;
     padding: 15px 0;
-    border-bottom: 1px solid #e5e5e5;
-    font-size: 15px;
 }
 .ht-contact a {
     display: inline-block;
     margin-right: 15px;
+    font-size: 15px;
     color: #fff;
-}
-.ht-contact a:hover {
-	opacity: .75;
 }
 .ht-contact a:last-child {
     margin-right: 0;
 }
+.ht-contact a:hover {
+	opacity: .80;
+}
 .ht-contact a i.fa {
 	color: #fff;
 	margin-right: 10px;
-	height: 32px;
-	width: 32px;
-	line-height: 32px;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
 	text-align: center;
 	background-color: #0caa87;
-	font-size: 14px;
+	font-size: 13px;
 	border-radius: 50%;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-a.ht-call {
+.ht-contact a.ht-call {
     font-size: 18px;
     font-weight: 700;
     pointer-events: none;
 }
-a.ht-call span {
+.ht-contact a.ht-call strong {
 	color: #E12454;
+	margin-right: 5px;
 }
 /*header-top end*/
 
@@ -474,6 +522,17 @@ a.ht-call span {
 .header-bottom {
     position: relative;
     padding: 25px 0;
+}
+.header-sticky {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	padding: 10px 0;
+	z-index: 3;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .main-menu {
     margin-right: 65px;
@@ -485,7 +544,7 @@ a.ht-call span {
 .main-menu > ul > li > a {
     padding: 13px 17px;
     display: block;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     color: #555;
 }
@@ -520,10 +579,10 @@ a.ht-call span {
 }
 .submenu > li > a {
   padding: 7px 17px;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #e5e5e5;
   display: block;
   font-weight: 700;
-  color: #515151;
+  color: #555;
 }
 .submenu > li > a:hover {
 	color: #E12454;
@@ -574,7 +633,7 @@ a.ht-call span {
     background-color: #000;
     color: #fff;
 }
-.menu-overlay {
+.responsive-menu-overlay {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -586,18 +645,18 @@ a.ht-call span {
 	visibility: hidden;
 	transition: 0.3s;
 }
-.menu-overlay.active {
+.responsive-menu-overlay.active {
 	opacity: .75;
 	visibility: visible;
 }
 /*meanmenu end*/
-.site-search {
+.search {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 15px;
 }
-.site-search a {
+.search a {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -608,47 +667,37 @@ a.ht-call span {
     font-size: 15px;
     transition: 0.3s;
 }
-.site-search a:hover {
+.search a:hover {
 	background-color: #000;
 }
-
 @media (max-width: 991px) {
-	.site-menu {
+	.main-menu {
 		display: none;
 	}
-	.site-search {
+	.search {
 		right: 65px;
 	}
-	.site-search a {
+	.search a {
 		width: 41px;
 		height: 41px;
 		line-height: 41px;
 	}
 }
-.header-sticky {
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	width: 100%;
-	background-color: #fff;
-	padding: 10px 0;
-	z-index: 3;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	transition: 0.3s;
-}
 /*header-bottom end*/
 
 /*slide-section start*/
 .single-slide {
-	min-height: 700px;
+	min-height: 560px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
 }
 .slide-content {
-	color: #333;
-	font-size: 18px;
-	margin-top: -100px;
+	color: #555;
+	font-weight: 700;
+	font-size: 17px;
+	margin-top: -35px;
 }
-.slide-content .slide-subtitle {
+.slide-content h5 {
     letter-spacing: 2px;
     position: relative;
     display: inline-block;
@@ -656,7 +705,8 @@ a.ht-call span {
     padding-bottom: 5px;
     color: #E12454;
 }
-.slide-content .slide-subtitle:after {content: "";
+.slide-content h5:after {
+	content: "";
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -664,12 +714,12 @@ a.ht-call span {
 	height: 3px;
 	background-color: #E12454;
 }
-.slide-content .slide-title {
+.slide-content h2 {
 	font-size: 55px;
 	color: #0f3365;
 	margin-bottom: 25px;
 }
-.slide-content .slide-paragraph {
+.slide-content p {
 	margin-bottom: 25px;
 }
 .slide-content .slide-btn {
@@ -678,19 +728,29 @@ a.ht-call span {
 	margin-right: 15px;
 	font-weight: 700;
 	padding: 13px 15px;
-	min-width: 250px;
+	min-width: 235px;
 	text-align: center;
 	position: relative;
 	z-index: 1;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	border-radius: 3px;
 	overflow: hidden;
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#37c5a6+0,163f7a+100 */
-	background: #37c5a6; /* Old browsers */
-	background: -moz-linear-gradient(left,  #37c5a6 0%, #163f7a 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left,  #37c5a6 0%,#163f7a 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right,  #37c5a6 0%,#163f7a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37c5a6', endColorstr='#163f7a',GradientType=1 ); /* IE6-9 */
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0f3365+0,0caa87+100 */
+	background: #0f3365; /* Old browsers */
+	background: -webkit-linear-gradient(bottom left, #0f3365 0%, #0caa87 100%);
+	background: -o-linear-gradient(bottom left, #0f3365 0%, #0caa87 100%);
+	background: linear-gradient(to top right, #0f3365 0%, #0caa87 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f3365', endColorstr='#0caa87',GradientType=1 ); /* 
+	IE6-9 fallback on horizontal gradient */
+}
+.slide-content .slide-btn.descending {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0caa87+0,0f3365+100 */
+	background: #0caa87; /* Old browsers */
+	background: -webkit-linear-gradient(bottom left, #0caa87 0%, #0f3365 100%);
+	background: -o-linear-gradient(bottom left, #0caa87 0%, #0f3365 100%);
+	background: linear-gradient(to top right, #0caa87 0%, #0f3365 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0caa87', endColorstr='#0f3365',GradientType=1 ); /*
+	IE6-9 fallback on horizontal gradient */
 }
 .slide-content .slide-btn:hover {
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -702,39 +762,27 @@ a.ht-call span {
 	top: 0;
 	width: 0;
 	height: 100%;
-	background-color: #333;
+	background-color: #000;
 	z-index: -1;
 	transition: 0.3s;
 }
 .slide-content .slide-btn:hover:after {
 	width: 100%;
 }
-.slide-content .slide-btn.descending {
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#37c5a6+0,163f7a+100 */
-	background: #37c5a6; /* Old browsers */
-	background: -moz-linear-gradient(right,  #37c5a6 0%, #163f7a 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(right,  #37c5a6 0%,#163f7a 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to left,  #37c5a6 0%,#163f7a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37c5a6', endColorstr='#163f7a',GradientType=1 ); /* IE6-9 */
-}
 /*slide-section end*/
 
 /*focus-section start*/
 .focus-section {
-	margin-top: -100px;
+	margin: -35px 35px 0;
 	position: relative;
 	z-index: 2;
-}
-.focus-area {
-    border-radius: 5px;
+	border-radius: 5px;
     overflow: hidden;
-	background-color: #f2f2f2;
-	padding-bottom: 25px;
+	background-color: #f1f1f1;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .single-focus {
-	padding: 30px;
-	font-size: 14px;
+	padding: 25px 15px;
 	position: relative;
 }
 .single-focus:after {
@@ -746,36 +794,40 @@ a.ht-call span {
 	height: 120px;
 	margin-top: -60px;
 	background-color: #0f3365;
-	color: #6F8BA4;
-}
-.focus-area div[class^=col-]:last-child .single-focus:after {
-	width: 0;
 }
 .focus-icon-title {
-	margin-bottom: 5px;
+	min-height: 60px;
+	margin-bottom: 15px;
 }
-.focus-icon {	
-	font-size: 65px;
+.focus-icon-title i.fa {
+	display: inline-block;
+	font-size: 60px;
 	color: #E12454;
-	line-height: 1.25;
 }
-.single-focus h5 {
-    font-size: 19px;
+.focus-icon-title h5 {
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 5px;
+	font-size: 19px;
     color: #000;
     margin-bottom: 0;
-    margin-top: -10px;
-    padding-left: 10px;
-    line-height: 1.5;
 }
+
 .single-focus p {
+	display: inline-block;
+	margin-top: 15px;
 	margin-bottom: 20px;
 }
-.single-focus .site-btn {
-	background-color: #0f3365;
+.single-focus ul {
+	margin-top: 15px;
 }
 .single-focus li {
 	padding: 7px 0;
 	border-bottom: 1px solid #e5e5e5;
+}
+.single-focus li:last-child {
+	border-bottom: 0;
+	color: #E12454;
 }
 .single-focus li span {
 	float: right;
@@ -783,9 +835,7 @@ a.ht-call span {
 }
 /*focus-photos start*/
 .focus-photos {
-    padding: 30px 0;
-    margin-top: -10px;
-    margin-right: 30px;
+    padding: 30px 15px 30px 0;
 }
 .single-focus-photo {
     position: relative;
@@ -810,10 +860,8 @@ a.ht-call span {
     padding-bottom: 10px
 }
 .focus-photos-carousel .owl-nav { 
-	position: absolute;
-	right: 0; 
-	bottom: -40px; 
 	text-align: right;
+	margin-top: 10px;
 	margin-right: -10px;
 }
 .focus-photos-carousel .owl-nav div {
@@ -835,40 +883,35 @@ a.ht-call span {
 .focus-photos-carousel .owl-nav div:active {
 	background-color: #fff;
 	color: #000;
-	box-shadow: 0;
 }
 /*focus-photos end*/
 /*focus-section end*/
 
 /*about-us-section start*/
 /*nav-tabs start*/
-.nav-tabs {
+.about-us-section .nav-tabs {
     border: 0;
-    margin: 0 0 50px;
+    margin: 0 0 40px;
     text-align: center;
 }
-.nav-tabs .nav-link {
+.about-us-section .nav-tabs .nav-link {
 	min-width: 130px;
     border: 0;
     padding: 10px 25px;
     background-color: #0caa87;
     color: #fff;
     margin-right: 15px;
-    font-size: 14px;
     font-weight: 700;
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
 }
-.nav-tabs .nav-link.active {
+.about-us-section .nav-tabs .nav-link.active {
 	background-color: #f1f1f1;
     color: #333;
 }
 /*nav-tabs end*/
 .about-us-content p {
 	font-size: 15px;
-}
-.about-us-content p:nth-child(3) {
-	margin-bottom: 20px;
 }
 /*video-area start*/
 .video-area {
@@ -957,6 +1000,50 @@ a.ht-call span {
 /*progressbar end*/
 /*about-us-section end*/
 
+/*services-section start*/
+.single-service {
+	margin: 15px 0;
+}
+.service-image {
+	margin-right: 15px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 5px;
+	overflow: hidden;
+	transition: 0.3s;
+}
+.single-service:hover .service-image {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.service-text {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
+    padding: 25px 25px 25px 30px;
+    margin-top: -15px;
+    margin-left: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.service-text:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 0;
+	background-color: #E12454;
+	transition: 0.3s;
+}
+.single-service:hover .service-text:before {
+    width: 5px;
+}
+.service-text h4 {
+	color: #0f3365;
+	text-transform: inherit;
+}
+/*services-section end*/
+
 /*photo-section start*/
 .photo-gallery {
 	margin-right: 15px;
@@ -964,6 +1051,10 @@ a.ht-call span {
 .single-photo-wrap {
     margin-bottom: 30px;
     position: relative;
+    transition: 0.3s;
+}
+.single-photo-wrap:hover {
+	transform: scale(1.03);
 }
 .single-photo-wrap:after {
 	content: "";
@@ -977,6 +1068,7 @@ a.ht-call span {
 	border-radius: 5px;
 }
 .single-photo-wrap img {
+	width: 100%;
 	border-radius: 5px;
 	box-shadow: 0 0 5px #333;
 }
@@ -1024,6 +1116,7 @@ a.ht-call span {
 	border-bottom: 1px dashed #fff;
 	padding-bottom: 5px;
 	position: relative;
+	min-width: 140px;
 }
 .single-counter span.counter:after {
   content: "+";
@@ -1036,49 +1129,43 @@ a.ht-call span {
 }
 /*counter-section end*/
 
-/*services-section start*/
-.single-service {
-	height: 285px;
-	color: #ccc;
+/*award-section start*/
+.single-award {
+	height: 300px;
+	color: #f1f1f1;
 	z-index: 1;
 	padding: 30px;
-	border-radius: 3px;
-	overflow: hidden;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	margin-bottom: 30px;
-	font-size: 14px;
-	transition: 0.3s;
 }
-.single-service:before {
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#37c5a6+0,163f7a+100 */
-	background: #37c5a6; /* Old browsers */
-	background: -moz-linear-gradient(left,  #37c5a6 0%, #163f7a 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left,  #37c5a6 0%,#163f7a 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right,  #37c5a6 0%,#163f7a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37c5a6', endColorstr='#163f7a',GradientType=1 ); /* IE6-9 */
+.single-award:before {
+	/*background: #0caa87;*/
+	transition: 0.6s;
 }
-.single-service:hover {
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+.award-section div[class^=col-]:nth-child(odd) .single-award:before {
+	/*background: #0f3365;*/
+	transform: rotate(180deg);
 }
-.service-icon {
+.single-award:hover:before {
+	opacity: 1;
+}
+.award-icon {
 	color: #E12454;
     width: 65px;
     height: 65px;
     line-height: 65px;
     text-align: center;
-    margin: 0 auto 15px;
+    margin: 0 0 15px;
     font-size: 60px;
 }
-.service-content h3 {
+.award-content h4 {
 	color: #fff;
 	margin-bottom: 10px;
 	padding-bottom: 7px;
 	position: relative;
 	display: inline-block;
-	font-size: 20px;
+	font-size: 25px;
 	text-transform: capitalize;
 }
-.service-content h3:after {
+.award-content h4:after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -1087,29 +1174,29 @@ a.ht-call span {
 	height: 2px;
 	background-color: #E12454;
 }
-.service-content p {
+.award-content p {
 	margin-bottom: 0;
 }
-
-/*services-section end*/
+/*award-section end*/
 
 /*appoinment-section start*/
-.appoinment-image img {
-	border-radius: 5px;
+.appoinment-image-wrap img {
+	border-radius: 3px;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	margin-bottom: 30px;	
+	margin-bottom: 30px;
+	width: 100%;
 }
 .appoinment-form-wrap p {
 	margin-bottom: 20px;
 }
 .appoinment-form .nice-select {
-    margin-bottom: 30px;
     width: 100%;
-    border-radius: 0;
-    border: 1px solid #e5e5e5;
-    height: 50px;
-    line-height: 50px;
     border-radius: 3px;
+    border: 1px solid #0caa87;
+    height: 45px;
+    line-height: 45px;
+    margin: 10px 0;
+    color: #0f3365;
 }
 .appoinment-form .nice-select .list {
     width: 100%;
@@ -1119,27 +1206,36 @@ a.ht-call span {
 .appoinment-form input, 
 .appoinment-form textarea {
     background-color: #fff;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #0caa87;
     font-family: inherit;
-    font-size: 14px;
-    height: 50px;
-    line-height: 50px;
+    height: 45px;
+    line-height: 45px;
     outline: none;
     padding-left: 18px;
     text-align: left;
     width: 100%;
-    margin-bottom: 30px;
     border-radius: 3px;
+    margin: 10px 0;
 }
 .appoinment-form textarea {
-	height: 150px;
+	height: 125px;
 	resize: none;
+}
+.appoinment-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #0f3365;
+}
+.appoinment-form ::-moz-placeholder { /* Firefox 19+ */
+  color: #0f3365;
+}
+.appoinment-form :-ms-input-placeholder { /* IE 10+ */
+  color: #0f3365;
+}
+.appoinment-form :-moz-placeholder { /* Firefox 18- */
+  color: #0f3365;
 }
 .appoinment-form .site-btn {
 	display: block;
 	width: 100%;
-	cursor: pointer;
-	border: 0;
 	padding: 13px 35px;
 	font-size: 15px;
 }
@@ -1150,7 +1246,7 @@ a.ht-call span {
 	display: none;
 }
 .appoinment-phone span {
-	margin-top: 60px;
+	margin-top: 30px;
 	padding: 60px 0;
 	background-color: #f1f1f1;
 	color: #0f3365;
@@ -1222,7 +1318,7 @@ a.ht-call span {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #0caa87;
+    background-color: #777;
     margin: 0 7px;
     transition: 0.3s;
 }
@@ -1391,6 +1487,7 @@ a.ht-call span {
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
+    border-radius: 50px;
 }
 .newsletter-form button {
     position: absolute;
@@ -1405,6 +1502,8 @@ a.ht-call span {
     text-align: center;
     border: 1px solid #fff;
     border-left: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 .newsletter-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #fff;
@@ -1668,53 +1767,7 @@ a.ht-call span {
 
 
 
-.single-award {
-	height: 300px;
-	color: #f1f1f1;
-	z-index: 1;
-	padding: 30px;
-	font-size: 14px;
-}
-.single-award:before {
-	background: #37c5a6;
-	transition: 0.6s;
-}
-.single-award:hover:before {
-	opacity: 1;
-}
-.award-section div[class^=col-]:nth-child(odd) .single-award:before {
-	background: #0f3365;
-}
-.award-icon {
-	color: #E12454;
-    width: 65px;
-    height: 65px;
-    line-height: 65px;
-    text-align: center;
-    margin: 0 0 15px;
-    font-size: 60px;
-}
-.award-content h4 {
-	color: #fff;
-	margin-bottom: 10px;
-	padding-bottom: 7px;
-	position: relative;
-	display: inline-block;
-	font-size: 25px;
-	text-transform: capitalize;
-}
-.award-content h4:after {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 70px;
-	height: 2px;
-	background-color: #E12454;
-}
-.award-content p {
-	margin-bottom: 0;
-}
+
 
 
 
@@ -1805,7 +1858,6 @@ a.ht-call span {
     padding: 10px 20px 10px 30px;
 	border-left: 3px solid #E12454;
 	margin-bottom: 0;
-	font-size: 14px;
 }
 .faq-accordion .card-body p span {
 	color: #E12454;
@@ -1846,49 +1898,7 @@ a.ht-call span {
 
 
 
-.single-service-2 {
-	margin-bottom: 40px;
-}
-.service-image {
-	margin-right: 25px;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	border-radius: 5px;
-	overflow: hidden;
-	transition: 0.3s;
-}
-.single-service-2:hover .service-image {
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-.service-text {
-    position: relative;
-    background-color: #fff;
-    box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
-    padding: 25px 25px 25px 30px;
 
-    margin-top: -25px;
-    margin-left: 25px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    font-size: 14px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-.service-text:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 0;
-	background-color: #E12454;
-	transition: 0.3s;
-}
-.single-service-2:hover .service-text:before {
-    width: 5px;
-}
-.service-text h4 {
-	color: #0f3365;
-	text-transform: inherit;
-}
 
 
 
@@ -1936,10 +1946,10 @@ a.ht-call span {
     overflow: hidden;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-.form-item {
+.contact-form-wrap .form-item {
     margin: 15px 0;
 }
-.form-item input, .form-item textarea {
+.contact-form .form-item input, .contact-form-wrap .form-item textarea {
     width: 100%;
     display: block;
     padding: 15px 17px;
@@ -2130,11 +2140,6 @@ a.ht-call span {
 .service-details-image-info p {
 	margin-bottom: 0;
 }
-
-
-.service-details-content {
-	font-size: 14px;
-}
 .service-details-content .content-title {
 	margin-bottom: 20px;
 }
@@ -2196,7 +2201,6 @@ a.ht-call span {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     border-radius: 3px; 
     overflow: hidden;
-    font-size: 14px;
 }
 .article-details .article-media-meta-wrap {
 	position: relative;

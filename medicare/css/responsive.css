@@ -10,6 +10,9 @@
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+	.focus-section div[class^=col-]:nth-child(2) .single-focus:after {
+		width: 0;
+	}
 	.focus-photos {
 		margin: 0 100px 20px;
 	}
@@ -78,16 +81,19 @@
 	.slide-content {
 		font-size: 16px;
 	}
-	.slide-content .slide-subtitle {
+	.slide-content h5 {
 		font-size: 16px;
 	}
-	.slide-content .slide-title {
+	.slide-content h2 {
 		font-size: 30px;
 	}
 	.slide-content .slide-btn {
 		min-width: auto;
 		margin-bottom: 5px;
 		padding: 8px 15px;
+	}
+	.focus-section div[class^=col-]:nth-child(2) .single-focus:after {
+		width: 0;
 	}
 	.focus-photos {
 		margin-right: 10px;

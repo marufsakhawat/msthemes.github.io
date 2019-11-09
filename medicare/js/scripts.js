@@ -1,9 +1,36 @@
 (function ($) {
 "use strict";
 	jQuery(document).ready(function($){
+
+		/* magnificPopup video view */
+		$('.ht-location').magnificPopup({
+			type: 'iframe'
+		});
+		
+		// menu add class active
+		$(function() {
+          var pgurl = window.location.href.substr(window.location.href
+             .lastIndexOf("/") + 1);
+          $(".main-menu > ul > li > a, .submenu > li > a").each(function() {
+             if ($(this).attr("href") == pgurl || $(this).attr("href") == '')
+                $(this).addClass("active");
+          })
+       	});
+
 		// data-background (for background image)
 		$("[data-background]").each(function() {
 		    $(this).css("background-image", "url(" + $(this).attr("data-background") + ")")
+		});
+
+		// owlCarousel
+		$('.slides-carousel').owlCarousel({
+		    loop:true,
+		    margin:0,
+			items:1,
+			navText:['<i class="fa fa-arrow-left"></i>','<i class="fa fa-arrow-right"></i>'],
+		    nav:false,
+			dots:false,
+			autoplay:true,
 		});
 		
 		// meanmenu
@@ -15,7 +42,7 @@
 
 	    // off-canvas-overlay
 	    $("a.meanmenu-reveal").on('click', function(){
-	        $(".menu-overlay").toggleClass("active");
+	        $(".responsive-menu-overlay").toggleClass("active");
 	    });
 
 	    // counterUp
@@ -42,6 +69,7 @@
 		    loop:true,
 		    margin:15,
 			items:1,
+			autoplay: true,
 			navText:['<i class="fa fa-arrow-left"></i>','<i class="fa fa-arrow-right"></i>'],
 		    nav:true,
 			dots:false,
@@ -52,6 +80,7 @@
 		    loop:true,
 		    margin:0,
 			items:1,
+			autoplay: true,
 			navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 		    nav:false,
 			dots:true,

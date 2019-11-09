@@ -6,11 +6,9 @@
     <title>MediCare Medical & Doctor's HTML5 Bootstrap Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="manifest" href="site.webmanifest">
 	<link rel="shortcut icon" type="image/x-icon" href="img/icon/icon.png">
     <!-- place favicon.ico in the root directory -->
-
 	<!-- css here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/meanmenu.css">
@@ -20,8 +18,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">  
     <link rel="stylesheet" href="css/nice-select.css">  
-    <link rel="stylesheet" href="css/jquery-ui.min.css">  
-    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">  
+    <link rel="stylesheet" href="css/jquery-ui.min.css"> 
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -30,6 +27,8 @@
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
+
+    <!-- body-preloader start -->
     <div class="body-preloader">
         <span>Loading</span>
         <div class="fading-circle">
@@ -47,7 +46,12 @@
             <div class="circle12 circle"></div>
         </div>
     </div>
-    <div class="menu-overlay"></div>
+    <!-- body-preloader end -->
+
+    <!-- responsive menu active overlay start -->
+    <div class="responsive-menu-overlay"></div>
+    <!-- responsive menu active overlay end -->
+    
     <!-- header-area start -->
     <header class="header-area">
         <!-- header-top start -->
@@ -56,17 +60,23 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-6">
                         <div class="ht-contact">
-                            <a href="" class="ht-call"><span>Emergency :</span> +88 016 810 98 235</a>
+                            <a href="" class="ht-call">
+                                <strong>Emergency:</strong> 818-703-8830
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 text-center col-md-6 text-md-right">
                         <div class="ht-contact">
-                            <a href="" class="ht-location"><i class="fa fa-map-marker"></i>74, South Basabo, Dhaka, BD</a>
+                            <a href="https://www.google.com/maps/@40.6971494,-74.2598655,10z/data=!3m1!4b1!4m2!7m1!2e1" class="ht-location"><i class="fa fa-map-marker"></i>
+                                44, Grand Avenue, NY, USA
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 text-right d-none d-lg-block d-xl-block">
                         <div class="ht-contact">
-                            <a href="" class="ht-mail"><i class="fa fa-envelope"></i>demo@demomail.com</a>
+                            <a href="mailto:support@medicare.com" target="_blank" class="ht-mail"><i class="fa fa-envelope"></i>
+                                support@medicare.com
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -84,30 +94,28 @@
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-8 col-4 text-right">
-                        <div class="site-menu">
-                            <nav id="menu" class="main-menu">
-                                <ul>
-                                    <li><a href="index.html" class="active">Home</a></li>
-                                    <li><a href="about-us.html">About us</a></li>
-                                    <li class="has-submenu"><a href="services.html">Services</a>
-                                        <ul class="submenu">
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="">Service Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="doctors.html">Doctors</a></li>
-                                    <li class="has-submenu"><a href="articles.html">Articles</a>
-                                        <ul class="submenu">
-                                            <li><a href="articles.html">Articles</a></li>
-                                            <li><a href="article-details.html">Article Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                        <nav id="menu" class="main-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li class="has-submenu"><a href="services.html">Services</a>
+                                    <ul class="submenu">
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="doctors.html">Doctors</a></li>
+                                <li class="has-submenu"><a href="articles.html">Articles</a>
+                                    <ul class="submenu">
+                                        <li><a href="articles.html">Articles</a></li>
+                                        <li><a href="article-details.html">Article Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
                         <div class="mean-menu"></div>
-                        <div class="site-search">
+                        <div class="search">
                             <a href=""><i class="fa fa-search"></i></a>
                         </div>
                     </div>
@@ -120,17 +128,32 @@
 
     <main>
         <section class="slides-section">
-            <div class="slides-carousel">
+            <div class="slides-carousel owl-carousel">
                 <div class="single-slide bg-img d-flex align-items-center has-overlay-white-75" data-background="img/slides/slide-bg-1.jpg">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8">
                                 <div class="slide-content">
-                                    <h5 class="slide-subtitle">Your health care solution</h5>
-                                    <h2 class="slide-title">We are here for you</h2>
-                                    <p class="slide-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ipsa laudantium magni voluptatibus a magnam ab ratione unde tempore, omnis.</p>
-                                    <a href="" class="slide-btn">Make an appoinment</a>
-                                    <a href="" class="slide-btn descending">Our departments</a>
+                                    <h5>Your health care solution</h5>
+                                    <h2>We are here for you</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ipsa laudantium magni voluptatibus a magnam ab ratione unde tempore, omnis.</p>
+                                    <a href="appoinment.html" class="slide-btn">Online appoinment</a>
+                                    <a href="services.html" class="slide-btn descending">View our services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slide bg-img d-flex align-items-center has-overlay-white-75" data-background="img/slides/slide-bg-2.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="slide-content">
+                                    <h5>Your health care solution</h5>
+                                    <h2>We are here for you</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ipsa laudantium magni voluptatibus a magnam ab ratione unde tempore, omnis.</p>
+                                    <a href="appoinment.html" class="slide-btn">Online appoinment</a>
+                                    <a href="services.html" class="slide-btn descending">View our services</a>
                                 </div>
                             </div>
                         </div>
@@ -141,27 +164,26 @@
 
         <!-- focus-section start -->
         <section class="focus-section">
-            <div class="container">
-                <div class="focus-area">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="single-focus clearfix">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-focus">
+                            <div class="focus-content">
                                 <div class="focus-icon-title d-flex align-items-center">
-                                    <div class="focus-icon">
-                                        <i class="fa fa-user-md"></i>
-                                    </div>
+                                    <i class="fa fa-user-md"></i>
                                     <h5>Online appoinment</h5>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quis, odio. Possimus architecto, adipisci sunt?</p>
-                                <a href="" class="site-btn">Make an appoinment</a>
+                                <a href="appoinment.html" class="site-btn blue-bg">Make an appoinment</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="single-focus clearfix">
-                                <div class="d-flex align-items-center">
-                                    <div class="focus-icon">
-                                        <i class="fa fa-clock-o"></i>
-                                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-focus">
+                            <div class="focus-content">
+                                <div class="focus-icon-title d-flex align-items-center">
+                                    <i class="fa fa-clock-o"></i>
                                     <h5>Working days</h5>
                                 </div>
                                 <ul>
@@ -172,18 +194,21 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12 text-md-center">
-                            <div class="focus-photos">
-                                <div class="focus-photos-carousel owl-carousel">
-                                    <div class="single-focus-photo">
-                                        <img src="img/photo/about-2.jpg" alt="">
-                                    </div>
-                                    <div class="single-focus-photo">
-                                        <img src="img/photo/about-3.jpg" alt="">
-                                    </div>
-                                    <div class="single-focus-photo">
-                                        <img src="img/photo/about-4.jpg" alt="">
-                                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 text-md-center">
+                        <div class="focus-photos">
+                            <div class="focus-photos-carousel owl-carousel">
+                                <div class="single-focus-photo">
+                                    <img src="img/focus/focus-1.jpg" alt="">
+                                </div>
+                                <div class="single-focus-photo">
+                                    <img src="img/focus/focus-2.jpg" alt="">
+                                </div>
+                                <div class="single-focus-photo">
+                                    <img src="img/focus/focus-3.jpg" alt="">
+                                </div>
+                                <div class="single-focus-photo">
+                                    <img src="img/focus/focus-4.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -197,19 +222,26 @@
         <section class="about-us-section pd-tb-120-bdb">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-6 offset-lg-3 text-center">
                         <div class="content-title">
                             <h5>About us</h5>
                             <h2>Who we are</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit asperiores assumenda blanditiis rem facilis recusandae atque aliquam labore.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
                         <nav class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <a class="nav-item nav-link active" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="true">About Medi</a>
-                            <a class="nav-item nav-link" id="nav-mission-tab" data-toggle="tab" href="#nav-mission" role="tab" aria-controls="nav-mission" aria-selected="false">Our mission</a>
-                            <a class="nav-item nav-link" id="nav-vission-tab" data-toggle="tab" href="#nav-vission" role="tab" aria-controls="nav-vission" aria-selected="false">Our vission</a>
+                            <a class="nav-item nav-link active" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="true">
+                            About Medi
+                            </a>
+                            <a class="nav-item nav-link" id="nav-mission-tab" data-toggle="tab" href="#nav-mission" role="tab" aria-controls="nav-mission" aria-selected="false">
+                            Our mission
+                            </a>
+                            <a class="nav-item nav-link" id="nav-vission-tab" data-toggle="tab" href="#nav-vission" role="tab" aria-controls="nav-vission" aria-selected="false">
+                            Our vission
+                            </a>
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
@@ -220,12 +252,12 @@
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quia ea, ipsa fuga esse cupiditate modi fugiat libero deleniti consequatur adipisci cum, tempora maiores dolorum accusamus autem tenetur</p>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident aliquam sed dignissimos, dicta adipisci debitis sit quas doloribus. Sapiente tempora nobis,</p>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident aliquam sed dignissimos, dicta adipisci debitis sit quas doloribus. Sapiente tempora nobis,</p>
-                                            <a href="" class="site-btn">Read more</a>
+                                            <a href="about-us.html" class="site-btn">Read more</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="video-area">
-                                            <div class="video-wrap bg-img has-overlay-black-75" data-background="img/about/video-bg.jpg"></div>
+                                            <div class="video-wrap bg-img" data-background="img/about/video-bg.jpg"></div>
                                             <a href="https://www.youtube.com/watch?v=vxUmcUPsUQM" class="play-btn">Check out <i class="fa fa-play"></i> the video.</a>
                                         </div>
                                     </div>
@@ -239,14 +271,14 @@
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quia ea, ipsa fuga esse cupiditate modi fugiat libero deleniti consequatur adipisci cum, tempora maiores dolorum accusamus autem tenetur</p>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident aliquam sed dignissimos, dicta adipisci debitis sit quas doloribus. Sapiente tempora nobis,</p>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident aliquam sed dignissimos, dicta adipisci debitis sit quas doloribus. Sapiente tempora nobis,</p>
-                                            <a href="" class="site-btn">Read more</a>
+                                            <a href="about-us.html" class="site-btn">Read more</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="parameter-progess-wrapper">
                                             <h4 class="small-title">Our progress at a glance</h4>
                                             <div class="single-parameter">
-                                                <span class="progress-bar-label">Web design</span>
+                                                <span class="progress-bar-label">Microbilogy</span>
                                                 <div class="progress">
                                                     <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s" role="progressbar" style="width: 74%;" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100">
                                                     </div>
@@ -254,7 +286,7 @@
                                                 </div>
                                             </div>
                                             <div class="single-parameter">
-                                                <span class="progress-bar-label">Adobe photoshop</span>
+                                                <span class="progress-bar-label">Becteriology</span>
                                                 <div class="progress">
                                                     <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s" role="progressbar" style="width: 82%;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
                                                     </div>
@@ -262,7 +294,7 @@
                                                 </div>
                                             </div>
                                             <div class="single-parameter">
-                                                <span class="progress-bar-label">Adobe llustrator</span>
+                                                <span class="progress-bar-label">Mycology</span>
                                                 <div class="progress">
                                                     <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s" role="progressbar" style="width: 63%;" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100">
                                                     </div>
@@ -270,7 +302,7 @@
                                                 </div>
                                             </div>
                                             <div class="single-parameter ">
-                                                <span class="progress-bar-label">React framework</span>
+                                                <span class="progress-bar-label">Physiology</span>
                                                 <div class="progress">
                                                     <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                                     </div>
@@ -285,7 +317,7 @@
                                 <div class="row d-flex align-items-center">
                                     <div class="col-lg-6">
                                         <div class="video-area">
-                                            <div class="video-wrap bg-img has-overlay-black-75" data-background="img/about/video-bg.jpg"></div>
+                                            <div class="video-wrap bg-img" data-background="img/about/video-bg.jpg"></div>
                                             <a href="https://www.youtube.com/watch?v=vxUmcUPsUQM" class="play-btn">Check out <i class="fa fa-play"></i> the video.</a>
                                         </div>
                                     </div>
@@ -293,7 +325,7 @@
                                         <div class="parameter-progess-wrapper">
                                             <h4 class="small-title">Our progress at a glance</h4>
                                             <div class="single-parameter">
-                                                <span class="progress-bar-label">Web design</span>
+                                                <span class="progress-bar-label">Microbilogy</span>
                                                 <div class="progress">
                                                     <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s" role="progressbar" style="width: 74%;" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100">
                                                     </div>
@@ -301,7 +333,7 @@
                                                 </div>
                                             </div>
                                             <div class="single-parameter">
-                                                <span class="progress-bar-label">Adobe photoshop</span>
+                                                <span class="progress-bar-label">Becteriology</span>
                                                 <div class="progress">
                                                     <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s" role="progressbar" style="width: 82%;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
                                                     </div>
@@ -309,7 +341,7 @@
                                                 </div>
                                             </div>
                                             <div class="single-parameter">
-                                                <span class="progress-bar-label">Adobe llustrator</span>
+                                                <span class="progress-bar-label">Mycology</span>
                                                 <div class="progress">
                                                     <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s" role="progressbar" style="width: 63%;" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100">
                                                     </div>
@@ -317,7 +349,7 @@
                                                 </div>
                                             </div>
                                             <div class="single-parameter ">
-                                                <span class="progress-bar-label">React framework</span>
+                                                <span class="progress-bar-label">Physiology</span>
                                                 <div class="progress">
                                                     <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                                     </div>
@@ -335,6 +367,104 @@
         </section>
         <!-- about-us-section end -->
 
+        <!-- services-section start -->
+        <section class="services-section pd-tb-120-bdb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 text-center">
+                        <div class="content-title">
+                            <h5>Services</h5>
+                            <h2>Services we provide</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit asperiores assumenda blanditiis rem facilis recusandae atque aliquam labore.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-service">
+                            <div class="service-image">
+                                <img src="img/service/service-1.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h4>Teeth implunt</h4>
+                                <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-service">
+                            <div class="service-image">
+                                <img src="img/service/service-2.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h4>Teeth implunt</h4>
+                                <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-service">
+                            <div class="service-image">
+                                <img src="img/service/service-3.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h4>Teeth implunt</h4>
+                                <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-service">
+                            <div class="service-image">
+                                <img src="img/service/service-4.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h4>Teeth implunt</h4>
+                                <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-service">
+                            <div class="service-image">
+                                <img src="img/service/service-1.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h4>Teeth implunt</h4>
+                                <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-service">
+                            <div class="service-image">
+                                <img src="img/service/service-2.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h4>Teeth implunt</h4>
+                                <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 text-center">
+                        <a href="services.html" class="site-btn green-bg load-more-btn">View all services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services-section end -->
+
         <!-- photo-section start -->
         <section class="photo-section pd-tb-120-bdb">
             <div class="container">
@@ -347,7 +477,8 @@
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis perspiciatis, vel eligendi itaque qui voluptas, quas delectus, praesentium quibusdam dolor, debitis. Aspernatur alias iste ex.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptatum tenetur esse, minima facilis placeat minus eum praesentium, corporis dolorem quis, harum doloremque incidunt eius ipsam quisquam commodi sint animi distinctio, sed corrupti fugiat. Repellat!</p>
-                            <a href="" class="site-btn">Read more</a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptatum tenetur esse, minima facilis placeat minus eum praesentium, corporis dolorem quis, harum doloremque incidunt eius ipsam quisquam commodi sint animi distinctio, sed corrupti fugiat. Repellat!</p>
+                            <a href="about.html" class="site-btn">Read more</a>
                         </div>
                     </div>
                     <div class="col-lg-7">
@@ -355,27 +486,22 @@
                             <div class="row grid">
                                 <div class="col-lg-6 col-md-6 grid-item">
                                     <div class="single-photo-wrap">
-                                        <img src="img/photo/about-0.jpg" alt="">
+                                        <img src="img/photo/photo-1.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 grid-item">
                                     <div class="single-photo-wrap">
-                                        <img src="img/photo/about-2.jpg" alt="">
+                                        <img src="img/photo/photo-2.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 grid-item">
                                     <div class="single-photo-wrap">
-                                        <img src="img/photo/about-3.jpg" alt="">
+                                        <img src="img/photo/photo-3.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 grid-item">
                                     <div class="single-photo-wrap">
-                                        <img src="img/photo/about-4.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 grid-item">
-                                    <div class="single-photo-wrap">
-                                        <img src="img/photo/about-1.jpg" alt="">
+                                        <img src="img/photo/photo-4.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -419,89 +545,132 @@
         </section>
         <!-- counter-section end -->
 
-        <!-- services-section start -->
-        <section class="services-section pd-tb-120-bdb">
+        <!-- award-section start -->
+        <section class="award-section pd-tb-120-bdb">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 offset-lg-3 text-center">
                         <div class="content-title">
-                            <h5>Services</h5>
-                            <h2>Services we provide</h2>
+                            <h5>Award</h5>
+                            <h2>Awards we have won</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit asperiores assumenda blanditiis rem facilis recusandae atque aliquam labore.</p>
                         </div>
                     </div>
                 </div>
-                <div class="row text-center">
+                <div class="row no-gutters">
+                    
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-service bg-img has-overlay-black-75 d-flex align-items-center" data-background="img/photo/about-1.jpg">
-                            <div class="service-content">
-                                <div class="service-icon">
-                                    <i class="fa fa-ambulance"></i>
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-1.jpg">
+                            <div class="award-content">
+                                <div class="award-icon">
+                                    <i class="fa fa-trophy"></i>
                                 </div>
-                                <h3>High speed ambulance</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati architecto quibusdam placeat.</p>
+                                <h4>Noble in medical</h4>
+                                <p>We have won Noble award 2017 for our best medical services.</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-service bg-img has-overlay-black-75 d-flex align-items-center" data-background="img/photo/about-2.jpg">
-                            <div class="service-content">
-                                <div class="service-icon">
-                                    <i class="fa fa-heartbeat"></i>
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-2.jpg">
+                            <div class="award-content">
+                                <div class="award-icon">
+                                    <i class="fa fa-won"></i>
                                 </div>
-                                <h3>Haematology service</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati architecto quibusdam placeat.</p>
+                                <h4>Noble in medical</h4>
+                                <p>We have won Noble award 2017 for our best medical services.</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-service bg-img has-overlay-black-75 d-flex align-items-center" data-background="img/photo/about-3.jpg">
-                            <div class="service-content">
-                                <div class="service-icon">
-                                    <i class="fa fa-stethoscope"></i>
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-3.jpg">
+                            <div class="award-content">
+                                <div class="award-icon">
+                                    <i class="fa fa-usd"></i>
                                 </div>
-                                <h3>Controlling blood pressure</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati architecto quibusdam placeat.</p>
+                                <h4>Noble in medical</h4>
+                                <p>We have won Noble award 2017 for our best medical services.</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-service bg-img has-overlay-black-75 d-flex align-items-center" data-background="img/photo/about-1.jpg">
-                            <div class="service-content">
-                                <div class="service-icon">
-                                    <i class="fa fa-ambulance"></i>
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-4.jpg">
+                            <div class="award-content">
+                                <div class="award-icon">
+                                    <i class="fa fa-gift"></i>
                                 </div>
-                                <h3>High speed ambulance</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati architecto quibusdam placeat.</p>
+                                <h4>Noble in medical</h4>
+                                <p>We have won Noble award 2017 for our best medical services.</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-service bg-img has-overlay-black-75 d-flex align-items-center" data-background="img/photo/about-2.jpg">
-                            <div class="service-content">
-                                <div class="service-icon">
-                                    <i class="fa fa-heartbeat"></i>
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-1.jpg">
+                            <div class="award-content">
+                                <div class="award-icon">
+                                    <i class="fa fa-money"></i>
                                 </div>
-                                <h3>Haematology service</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati architecto quibusdam placeat.</p>
+                                <h4>Noble in medical</h4>
+                                <p>We have won Noble award 2017 for our best medical services.</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-service bg-img has-overlay-black-75 d-flex align-items-center" data-background="img/photo/about-3.jpg">
-                            <div class="service-content">
-                                <div class="service-icon">
-                                    <i class="fa fa-stethoscope"></i>
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-2.jpg">
+                            <div class="award-content">
+                                <div class="award-icon">
+                                    <i class="fa fa-bitcoin"></i>
                                 </div>
-                                <h3>Controlling blood pressure</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati architecto quibusdam placeat.</p>
+                                <h4>Noble in medical</h4>
+                                <p>We have won Noble award 2017 for our best medical services.</p>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-1.jpg">
+                            <div class="award-content">
+                                <div class="award-icon">
+                                    <i class="fa fa-trophy"></i>
+                                </div>
+                                <h4>Noble in medical</h4>
+                                <p>We have won Noble award 2017 for our best medical services.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-2.jpg">
+                            <div class="award-content">
+                                <div class="award-icon">
+                                    <i class="fa fa-gift"></i>
+                                </div>
+                                <h4>Noble in medical</h4>
+                                <p>We have won Noble award 2017 for our best medical services.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-3.jpg">
+                            <div class="award-content">
+                                <div class="award-icon">
+                                    <i class="fa fa-usd"></i>
+                                </div>
+                                <h4>Noble in medical</h4>
+                                <p>We have won Noble award 2017 for our best medical services.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
-        <!-- services-section end -->
+        <!-- award-section end -->
 
         <!-- appoinment-section start -->
         <section class="appoinment-section pd-tb-120">
@@ -517,10 +686,8 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-5">
-                        <div class="appoinment-content">
-                            <div class="appoinment-image">
-                                <img src="img/appoinment/appoinment-img.jpg" alt="">
-                            </div>
+                        <div class="appoinment-image-wrap">
+                            <img src="img/appoinment/appoinment-img.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-7">
@@ -588,7 +755,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="appoinment-phone">
-                            <span class="appoinment-phone"><i class="fa fa-phone"></i>+88 016 810 98 235</span>
+                            <span class="appoinment-phone"><i class="fa fa-phone"></i>818-703-8830</span>
                         </div>
                     </div>
                 </div>
