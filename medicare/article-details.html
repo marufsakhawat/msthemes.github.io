@@ -47,7 +47,12 @@
             <div class="circle12 circle"></div>
         </div>
     </div>
-    <div class="menu-overlay"></div>
+    <!-- body-preloader end -->
+
+    <!-- responsive menu active overlay start -->
+    <div class="responsive-menu-overlay"></div>
+    <!-- responsive menu active overlay end -->
+    
     <!-- header-area start -->
     <header class="header-area">
         <!-- header-top start -->
@@ -56,17 +61,23 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-6">
                         <div class="ht-contact">
-                            <a href="" class="ht-call"><span>Emergency :</span> +88 016 810 98 235</a>
+                            <a href="" class="ht-call">
+                                <strong>Emergency:</strong> 818-703-8830
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 text-center col-md-6 text-md-right">
                         <div class="ht-contact">
-                            <a href="" class="ht-location"><i class="fa fa-map-marker"></i>74, South Basabo, Dhaka, BD</a>
+                            <a href="https://www.google.com/maps/@40.6971494,-74.2598655,10z/data=!3m1!4b1!4m2!7m1!2e1" class="ht-location"><i class="fa fa-map-marker"></i>
+                                44, Grand Avenue, NY, USA
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 text-right d-none d-lg-block d-xl-block">
                         <div class="ht-contact">
-                            <a href="" class="ht-mail"><i class="fa fa-envelope"></i>demo@demomail.com</a>
+                            <a href="mailto:support@medicare.com" target="_blank" class="ht-mail"><i class="fa fa-envelope"></i>
+                                support@medicare.com
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -84,30 +95,28 @@
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-8 col-4 text-right">
-                        <div class="site-menu">
-                            <nav id="menu" class="main-menu">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about-us.html">About us</a></li>
-                                    <li class="has-submenu"><a href="services.html">Services</a>
-                                        <ul class="submenu">
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="doctors.html">Doctors</a></li>
-                                    <li class="has-submenu"><a href="articles.html">Articles</a>
-                                        <ul class="submenu">
-                                            <li><a href="articles.html">Articles</a></li>
-                                            <li><a href="article-details.html">Article Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                        <nav id="menu" class="main-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li class="has-submenu"><a href="services.html">Services</a>
+                                    <ul class="submenu">
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="service-details.html">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="doctors.html">Doctors</a></li>
+                                <li class="has-submenu"><a href="articles.html">Articles</a>
+                                    <ul class="submenu">
+                                        <li><a href="articles.html">Articles</a></li>
+                                        <li><a href="article-details.html">Article Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
                         <div class="mean-menu"></div>
-                        <div class="site-search">
+                        <div class="search">
                             <a href=""><i class="fa fa-search"></i></a>
                         </div>
                     </div>
@@ -118,19 +127,18 @@
     </header>
     <!-- header-area end -->
 
-    <main class="articles-page-wrap">
-        <section class="breadcumb-area bg-img has-overlay-black-75 d-flex align-items-center" data-background="img/about/breadcumb-bg.jpg">
+    <main class="article-details-page-wrap">
+        <section class="breadcumb-area bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/breadcumb/breadcumb-bg.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="breadcumb-title">
-                            <h2>Read our latest articles</h2>
+                            <h2>Read <span>MediCare's</span> latest articles</h2>
                         </div>
                         <div class="breadcumb-path">
                             <ul>
                                 <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-                                <li><a href="articles.html">Articles</a></li>
-                                <li><a href="articles-details.html" class="active">Article details</a></li>
+                                <li><a href="articles.html" class="active">Articles</a></li>
                             </ul>
                         </div>
                     </div>
@@ -144,21 +152,135 @@
                     <div class="col-lg-8 col-md-12">
                         <article class="article-details">
                             <div class="article-media-meta-wrap">
-                                <div class="article-media bg-img" data-background="img/article/article-pressure.jpg"></div>
+                                <div class="article-media bg-img" data-background="img/article/article-neurology.jpg"></div>
                                 <div class="article-meta">
                                     <a href="" class="article-date"><i class="fa fa-calendar"></i> 25 Nov, 2018</a>
-                                    <a href="" class="article-category">Blood pressure</a>
+                                    <a href="" class="article-category blue">Neurology</a>
                                 </div>
                             </div>
                             <div class="article-content">
-                                <h2 class="article-title"><a href="">Check your blood pressure in every week</a></h2>
+                                <h2 class="article-title"><a href="">We have best and long experience in neurology</a></h2>
+                                <ul class="article-meta-2">
+                                    <li class="article-by"><i class="fa fa-user"></i>BY author</li>
+                                    <li class="article-like"><i class="fa fa-thumbs-up"></i>75 Likes</li>
+                                    <li class="article-comment"><i class="fa fa-comment"></i>3 Comments</li>
+                                </ul>
                                 <p>It doesn’t take a college degree to understand that a four-year education may not be the end-all and...</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nisi cupiditate assumenda voluptatem cumque, officiis quod aliquid dolores! Corrupti nesciunt libero iure vel numquam obcaecati aliquid tempora quam sed, deserunt, similique, labore ea. Voluptas, dolor.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit minus numquam vero tempora et eum est, enim ipsam fugiat. At, asperiores eligendi! Enim, dolorem, optio.</p>
-                                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores commodi ea quidem amet, culpa aperiam excepturi rem deserunt magnam quasi eum, ex veritatis aut nihil fugit quas impedit exercitationem modi?</blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eum, ipsum voluptatibus, natus suscipit laboriosam. Ipsam, adipisci. Dolorum, aspernatur, quasi!</p>
+                                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores commodi ea quidem amet, culpa aperiam excepturi rem deserunt magnam quasi eum, ex veritatis aut nihil fugit quas impedit exercitationem modi?
+                                <i class="fa fa-quote-right"></i></blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptatibus expedita reprehenderit eveniet accusamus, rerum omnis provident enim ducimus commodi voluptates incidunt, iure labore? Porro, iure esse saepe ea nisi magnam alias veniam aperiam est recusandae! Assumenda eum, odit officia ullam nobis ipsa expedita aliquid velit! Quaerat sapiente veritatis doloremque!</p>
                             </div>
                         </article>
+                        <div class="article-tags-share">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <span>Tags:</span>
+                                    <ul class="article-tags">
+                                        <li><a href="">Laboratory</a></li>
+                                        <li><a href="">Neurology</a></li>
+                                        <li><a href="">Oncology</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5 text-right">
+                                    <span>Share:</span>
+                                    <ul class="article-share">
+                                        <li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                                        <li><a href="" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="go-to-prev-home-next">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="go-to-prev">
+                                        <a href="article-details.html">
+                                            <i class="fa fa-angle-double-left"></i>
+                                            Prev
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <div class="go-to-home">
+                                        <a href="articles.html"><i class="fa fa-list-ul"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 text-right">
+                                    <div class="go-to-next">
+                                        <a href="article-details.html">
+                                            Next
+                                            <i class="fa fa-angle-double-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-comments">
+                            <h3>All Comments</h3>
+                            <ul class="comments">
+                                <li>
+                                    <div class="comments-author-image">
+                                        <img src="img/article/comments-author-1.jpg" alt="">
+                                    </div>
+                                    <div class="comments-meta">
+                                        <a href="" class="comments-author-name">John cooper</a>
+                                        <span class="comments-time"><i class="fa fa-clock-o"></i> March 15, 2019</span>
+                                    </div>
+                                    <div class="comments-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit rem, omnis aliquam maiores nam et quibusdam natus veniam asperiores fugit.</p>
+                                    </div>
+                                    <a href="" class="comments-reply"><i class="fa fa-reply"></i>Reply</a>
+                                </li>
+                                <li class="replied-comments">
+                                    <div class="comments-author-image">
+                                        <img src="img/article/comments-author-2.jpg" alt="">
+                                    </div>
+                                    <div class="comments-meta">
+                                        <a href="" class="comments-author-name">John cooper</a>
+                                        <span class="comments-time"><i class="fa fa-clock-o"></i> March 15, 2019</span>
+                                    </div>
+                                    <div class="comments-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit rem, omnis aliquam maiores nam et quibusdam natus veniam asperiores fugit.</p>
+                                    </div>
+                                    <a href="" class="comments-reply"><i class="fa fa-reply"></i>Reply</a>
+                                </li>
+                                <li>
+                                    <div class="comments-author-image">
+                                        <img src="img/article/comments-author-1.jpg" alt="">
+                                    </div>
+                                    <div class="comments-meta">
+                                        <a href="" class="comments-author-name">John cooper</a>
+                                        <span class="comments-time"><i class="fa fa-clock-o"></i> March 15, 2019</span>
+                                    </div>
+                                    <div class="comments-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit rem, omnis aliquam maiores nam et quibusdam natus veniam asperiores fugit.</p>
+                                    </div>
+                                    <a href="" class="comments-reply"><i class="fa fa-reply"></i>Reply</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="article-comment-form">
+                            <h3>leave a reply</h3>
+                            <p>Your email address will not be published.</p>
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Email">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Comment"></textarea>
+                                        <button class="site-btn green-bg" type="submit">Post it</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="article-widget">
@@ -192,8 +314,8 @@
                         </div>
 
                         <div class="article-widget">
-                            <h3>Article Categories</h3>
-                            <div class="article-category clearfix">
+                            <h3>All Article Categories</h3>
+                            <div class="article-categories clearfix">
                                 <a href="">Blood Pressure <i class="fa fa-play"></i></a>
                                 <a href="">Neurology <i class="fa fa-play"></i></a>
                                 <a href="">Oncology <i class="fa fa-play"></i></a>
@@ -201,10 +323,42 @@
                                 <a href="">Body Check <i class="fa fa-play"></i></a>
                             </div>
                         </div>
+                        <div class="article-widget">
+                            <h3>All Article Tags</h3>
+                            <ul class="article-tags">
+                                <li><a href="">Laboratory</a></li>
+                                <li><a href="">Neurology</a></li>
+                                <li><a href="">Oncology</a></li>
+                                <li><a href="">Health</a></li>
+                                <li><a href="">Gym</a></li>
+                                <li><a href="">Exercise</a></li>
+                                <li><a href="">Heapy way</a></li>
+                                <li><a href="">Smile</a></li>
+                                <li><a href="">Happy family</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- newsletter-section start -->
+        <section class="newsletter-section pd-tb-120 bg-img has-overlay-theme-75" data-background="img/article/newsletter-bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+                        <div class="newsletter-form-wrap">
+                            <h4>Get newsletter</h4>
+                            <form action="newsletter.php" class="newsletter-form">
+                                <input type="text" placeholder="Your email address">
+                                <button><i class="fa fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- newsletter-section end -->
 
         <!-- article-section start -->
         <section class="article-section pd-tb-120-bdb">
@@ -212,6 +366,7 @@
                 <div class="row">
                     <div class="col-lg-6 offset-lg-3 text-center">
                         <div class="content-title">
+                            <h5>Articles</h5>
                             <h2>Related Articles</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit asperiores assumenda blanditiis rem facilis recusandae atque aliquam labore.</p>
                         </div>
@@ -219,20 +374,27 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
+                        
                         <article class="single-article link-to-post">
                             <div class="article-media-meta-wrap">
                                 <div class="article-media bg-img" data-background="img/article/article-pressure.jpg"></div>
                                 <div class="article-meta">
-                                    <a href="" class="article-date"><i class="fa fa-calendar"></i> 25 Nov, 2018</a>
-                                    <a href="" class="article-category">Blood pressure</a>
+                                    <a href="article-details.html" class="article-date"><i class="fa fa-calendar"></i> 25 Nov, 2018</a>
+                                    <a href="article-details.html" class="article-category">Pressure</a>
                                 </div>
                             </div>
                             <div class="article-content">
-                                <h2 class="article-title"><a href="">Check your blood pressure in every week</a></h2>
+                                <h2 class="article-title"><a href="article-details.html">Check your blood pressure in every week</a></h2>
+                                <ul class="article-meta-2">
+                                    <li class="article-by"><i class="fa fa-user"></i>BY author</li>
+                                    <li class="article-like"><i class="fa fa-thumbs-up"></i>75 Likes</li>
+                                    <li class="article-comment"><i class="fa fa-comment"></i>3 Comments</li>
+                                </ul>
                                 <p>It doesn’t take a college degree to understand that a four-year education may not be the end-all and...</p>
-                                <a href="" class="inline-btn">Read more</a>
+                                <a href="article-details.html" class="inline-btn">Read more</a>
                             </div>
                         </article>
+
                     </div>
 
                     <div class="col-lg-4 col-md-6">
@@ -240,14 +402,19 @@
                             <div class="article-media-meta-wrap">
                                 <div class="article-media bg-img" data-background="img/article/article-neurology.jpg"></div>
                                 <div class="article-meta">
-                                    <a href="" class="article-date"><i class="fa fa-calendar"></i> 25 Nov, 2018</a>
-                                    <a href="" class="article-category blue">Neurology</a>
+                                    <a href="article-details.html" class="article-date"><i class="fa fa-calendar"></i> 25 Nov, 2018</a>
+                                    <a href="article-details.html" class="article-category blue">Neurology</a>
                                 </div>
                             </div>
                             <div class="article-content">
-                                <h2 class="article-title"><a href="">We have best and long experience in neurology</a></h2>
+                                <h2 class="article-title"><a href="article-details.html">We have best and long experience in neurology</a></h2>
+                                <ul class="article-meta-2">
+                                    <li class="article-by"><i class="fa fa-user"></i>By author</li>
+                                    <li class="article-like"><i class="fa fa-thumbs-up"></i>75 Likes</li>
+                                    <li class="article-comment"><i class="fa fa-comment"></i>3 Comments</li>
+                                </ul>
                                 <p>It doesn’t take a college degree to understand that a four-year education may not be the end-all and...</p>
-                                <a href="" class="inline-btn">Read more</a>
+                                <a href="article-details.html" class="inline-btn">Read more</a>
                             </div>
                         </article>
                     </div>
@@ -257,16 +424,26 @@
                             <div class="article-media-meta-wrap">
                                 <div class="article-media bg-img" data-background="img/article/article-medicine.jpg"></div>
                                 <div class="article-meta">
-                                    <a href="" class="article-date"><i class="fa fa-calendar"></i> 25 Nov, 2018</a>
-                                    <a href="" class="article-category pink">Medicine</a>
+                                    <a href="article-details.html" class="article-date"><i class="fa fa-calendar"></i> 25 Nov, 2018</a>
+                                    <a href="article-details.html" class="article-category pink">Medicine</a>
                                 </div>
                             </div>
                             <div class="article-content">
-                                <h2 class="article-title"><a href="">Be careful to take any local medicine</a></h2>
+                                <h2 class="article-title"><a href="article-details.html">Be careful to take any local medicine</a></h2>
+                                <ul class="article-meta-2">
+                                    <li class="article-by"><i class="fa fa-user"></i>By author</li>
+                                    <li class="article-like"><i class="fa fa-thumbs-up"></i>75 Likes</li>
+                                    <li class="article-comment"><i class="fa fa-comment"></i>3 Comments</li>
+                                </ul>
                                 <p>It doesn’t take a college degree to understand that a four-year education may not be the end-all and... </p>
-                                <a href="" class="inline-btn">Read more</a>
+                                <a href="article-details.html" class="inline-btn">Read more</a>
                             </div>
                         </article>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 text-center">
+                        <a href="articles.html" class="site-btn green-bg load-more-btn">View all articles</a>
                     </div>
                 </div>
             </div>
@@ -277,7 +454,7 @@
 
     <!-- footer-area start -->
     <footer class="footer-area">
-        <div class="footer-top has-overlay-black-75 bg-img" data-background="img/footer/footer-bg.jpg">
+        <div class="footer-top bg-img has-overlay-theme-75" data-background="img/footer/footer-bg.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 offset-lg-4 text-center">
@@ -303,16 +480,16 @@
                         <div class="footer-widget quick-links">
                             <h4>Useful links</h4>
                             <ul class="footer-quick-links clearfix">
-                                <li><a href="">Appoinment</a></li>
-                                <li><a href="">Departments</a></li>
-                                <li><a href="">Doctors</a></li>
-                                <li><a href="">Articles</a></li>
-                                <li><a href="">Services</a></li>
-                                <li><a href="">Contact</a></li>
-                                <li><a href="">Google map</a></li>
-                                <li><a href="">Social</a></li>
-                                <li><a href="">Photos</a></li>
-                                <li><a href="">services</a></li>
+                                <li><a href="appoinment.html">Appoinment</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="doctors.html">Doctors</a></li>
+                                <li><a href="articles.html">Articles</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="article-details.html">Article details</a></li>
+                                <li><a href="service-details.html">Service details</a></li>
+                                <li><a href="404.html">404 Page not found</a></li>
                             </ul>
                         </div>
                     </div>
@@ -321,8 +498,8 @@
                             <h4>Contact us</h4>
                             <ul class="footer-contact-media">
                                 <li><i class="fa fa-phone"></i> +1-234-56789</li>
-                                <li><i class="fa fa-envelope"></i> mail@demomail.com</li>
-                                <li><i class="fa fa-map-marker"></i> 379 5th Avenue, New york, United states</li>
+                                <li><a href="mailto:support@medicare.com" target="_blank"><i class="fa fa-envelope"></i> mail@demomail.com</a></li>
+                                <li><a href="https://www.google.com/maps/@40.6971494,-74.2598655,10z/data=!3m1!4b1!4m2!7m1!2e1" class="f-location"><i class="fa fa-map-marker"></i> 379 5th Avenue, New york, United states</a></li>
                                 <li><i class="fa fa-clock-o"></i> Available: 8:00am - 4:00pm <br> Sat - Sun: 9:00am - 4:00pm</li>
                             </ul>
                         </div>
@@ -331,7 +508,7 @@
             </div>
         </div>
         <div class="footer-bottom text-center">
-            <p>&copy; Copyright for msthemes.com</p>
+            <p>&copy; Copyright for <a href="">www.medicare.com</a></p>
         </div>
     </footer>
     <!-- footer-area end -->

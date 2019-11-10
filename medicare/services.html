@@ -47,7 +47,12 @@
             <div class="circle12 circle"></div>
         </div>
     </div>
-    <div class="menu-overlay"></div>
+    <!-- body-preloader end -->
+
+    <!-- responsive menu active overlay start -->
+    <div class="responsive-menu-overlay"></div>
+    <!-- responsive menu active overlay end -->
+    
     <!-- header-area start -->
     <header class="header-area">
         <!-- header-top start -->
@@ -56,17 +61,23 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-6">
                         <div class="ht-contact">
-                            <a href="" class="ht-call"><span>Emergency :</span> +88 016 810 98 235</a>
+                            <a href="" class="ht-call">
+                                <strong>Emergency:</strong> 818-703-8830
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 text-center col-md-6 text-md-right">
                         <div class="ht-contact">
-                            <a href="" class="ht-location"><i class="fa fa-map-marker"></i>74, South Basabo, Dhaka, BD</a>
+                            <a href="https://www.google.com/maps/@40.6971494,-74.2598655,10z/data=!3m1!4b1!4m2!7m1!2e1" class="ht-location"><i class="fa fa-map-marker"></i>
+                                44, Grand Avenue, NY, USA
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 text-right d-none d-lg-block d-xl-block">
                         <div class="ht-contact">
-                            <a href="" class="ht-mail"><i class="fa fa-envelope"></i>demo@demomail.com</a>
+                            <a href="mailto:support@medicare.com" target="_blank" class="ht-mail"><i class="fa fa-envelope"></i>
+                                support@medicare.com
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -84,30 +95,28 @@
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-8 col-4 text-right">
-                        <div class="site-menu">
-                            <nav id="menu" class="main-menu">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about-us.html">About us</a></li>
-                                    <li class="has-submenu"><a href="services.html">Services</a>
-                                        <ul class="submenu">
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="doctors.html">Doctors</a></li>
-                                    <li class="has-submenu"><a href="articles.html">Articles</a>
-                                        <ul class="submenu">
-                                            <li><a href="articles.html">Articles</a></li>
-                                            <li><a href="article-details.html">Article Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                        <nav id="menu" class="main-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li class="has-submenu"><a href="services.html">Services</a>
+                                    <ul class="submenu">
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="service-details.html">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="doctors.html">Doctors</a></li>
+                                <li class="has-submenu"><a href="articles.html">Articles</a>
+                                    <ul class="submenu">
+                                        <li><a href="articles.html">Articles</a></li>
+                                        <li><a href="article-details.html">Article Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
                         <div class="mean-menu"></div>
-                        <div class="site-search">
+                        <div class="search">
                             <a href=""><i class="fa fa-search"></i></a>
                         </div>
                     </div>
@@ -119,12 +128,12 @@
     <!-- header-area end -->
 
     <main class="services-page-wrap">
-        <section class="breadcumb-area bg-img has-overlay-black-75 d-flex align-items-center" data-background="img/about/breadcumb-bg.jpg">
+        <section class="breadcumb-area bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/breadcumb/breadcumb-bg.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="breadcumb-title">
-                            <h2>Look our awesome services</h2>
+                            <h2>View all services of <span>MediCare</span></h2>
                         </div>
                         <div class="breadcumb-path">
                             <ul>
@@ -138,7 +147,7 @@
         </section>
 
         <!-- services-section start -->
-        <section class="services-section pd-tb-120-bdb">
+        <section class="services-section pd-tb-120">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 offset-lg-3 text-center">
@@ -151,84 +160,182 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-service-2">
+                        <div class="single-service">
                             <div class="service-image">
                                 <img src="img/service/service-1.jpg" alt="">
                             </div>
                             <div class="service-text">
                                 <h4>Teeth implunt</h4>
                                 <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
-                                <a href="" class="inline-btn">Learn more</a>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-service-2">
+                        <div class="single-service">
                             <div class="service-image">
                                 <img src="img/service/service-2.jpg" alt="">
                             </div>
                             <div class="service-text">
                                 <h4>Teeth implunt</h4>
                                 <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
-                                <a href="" class="inline-btn">Learn more</a>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-service-2">
+                        <div class="single-service">
                             <div class="service-image">
                                 <img src="img/service/service-3.jpg" alt="">
                             </div>
                             <div class="service-text">
                                 <h4>Teeth implunt</h4>
                                 <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
-                                <a href="" class="inline-btn">Learn more</a>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-service-2">
+                        <div class="single-service">
                             <div class="service-image">
                                 <img src="img/service/service-4.jpg" alt="">
                             </div>
                             <div class="service-text">
                                 <h4>Teeth implunt</h4>
                                 <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
-                                <a href="" class="inline-btn">Learn more</a>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-service-2">
+                        <div class="single-service">
                             <div class="service-image">
-                                <img src="img/service/service-5.jpg" alt="">
+                                <img src="img/service/service-1.jpg" alt="">
                             </div>
                             <div class="service-text">
                                 <h4>Teeth implunt</h4>
                                 <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
-                                <a href="" class="inline-btn">Learn more</a>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-service-2">
+                        <div class="single-service">
                             <div class="service-image">
-                                <img src="img/service/service-6.jpg" alt="">
+                                <img src="img/service/service-2.jpg" alt="">
                             </div>
                             <div class="service-text">
                                 <h4>Teeth implunt</h4>
                                 <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
-                                <a href="" class="inline-btn">Learn more</a>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
                             </div>
                         </div>
-                    </div>                   
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-service">
+                            <div class="service-image">
+                                <img src="img/service/service-1.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h4>Teeth implunt</h4>
+                                <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-service">
+                            <div class="service-image">
+                                <img src="img/service/service-2.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h4>Teeth implunt</h4>
+                                <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-service">
+                            <div class="service-image">
+                                <img src="img/service/service-3.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h4>Teeth implunt</h4>
+                                <p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt</p>
+                                <a href="service-details.html" class="inline-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                 
                 </div>
             </div>
         </section>
         <!-- services-section end -->
 
+        <!-- testimonial-section start -->
+        <section class="testimonial-section">
+            <div class="testimonial-carousel owl-carousel">
+                <div class="single-testimonial bg-img has-overlay-black-75" data-background="img/testimonial/testimonial-bg.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2 text-center">
+                                <div class="testimonial-author">
+                                    <div class="author-image">
+                                        <img src="img/testimonial/testimonial-author-1.jpg" alt="">
+                                    </div>
+                                    <h4>Jonathan Marker</h4>
+                                    <span>Civil engineer, NY, USA</span>
+                                </div>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li class="disabled"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="testimonial-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae magni ducimus repellendus, autem dolor error, quaerat provident ab aliquam dolorum impedit distinctio nobis minus expedita itaque fugiat sunt labore nostrum!</p>
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="single-testimonial bg-img has-overlay-black-75" data-background="img/testimonial/testimonial-bg.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2 text-center">
+                                <div class="testimonial-author">
+                                    <div class="author-image">
+                                        <img src="img/testimonial/testimonial-author-2.jpg" alt="">
+                                    </div>
+                                    <h4>Jessinda Thomas</h4>
+                                    <span>Bunsinessman, Manhaton, USA</span>
+                                </div>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li class="disabled"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="testimonial-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae magni ducimus repellendus, autem dolor error, quaerat provident ab aliquam dolorum impedit distinctio nobis minus expedita itaque fugiat sunt labore nostrum!</p>
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial-section end -->
+
         <!-- appoinment-section start -->
-        <section class="appoinment-section pd-tb-120-bdb">
+        <section class="appoinment-section pd-tb-120">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 offset-lg-3 text-center">
@@ -241,10 +348,8 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-5">
-                        <div class="appoinment-content">
-                            <div class="appoinment-image">
-                                <img src="img/appoinment/appoinment-img.jpg" alt="">
-                            </div>
+                        <div class="appoinment-image-wrap">
+                            <img src="img/appoinment/appoinment-img.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-7">
@@ -300,7 +405,7 @@
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-item">
-                                            <textarea name="" id="" cols="30" rows="10" placeholder="Write - why you want appoinment? *This is optional"></textarea>
+                                            <textarea name="" id="" cols="30" rows="10" placeholder="How much do you need to get an appoinment? *Optional"></textarea>
                                             <button class="site-btn">Book it now</button>
                                         </div>
                                     </div>
@@ -312,21 +417,18 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="appoinment-phone">
-                            <span class="appoinment-phone"><i class="fa fa-phone"></i>+88 016 810 98 235</span>
+                            <span class="appoinment-phone"><i class="fa fa-phone"></i>818-703-8830</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- appoinment-section end -->
-
-
-                
+        <!-- appoinment-section end -->                
     </main>
 
     <!-- footer-area start -->
     <footer class="footer-area">
-        <div class="footer-top has-overlay-black-75 bg-img" data-background="img/footer/footer-bg.jpg">
+        <div class="footer-top bg-img has-overlay-theme-75" data-background="img/footer/footer-bg.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 offset-lg-4 text-center">
@@ -352,16 +454,16 @@
                         <div class="footer-widget quick-links">
                             <h4>Useful links</h4>
                             <ul class="footer-quick-links clearfix">
-                                <li><a href="">Appoinment</a></li>
-                                <li><a href="">Departments</a></li>
-                                <li><a href="">Doctors</a></li>
-                                <li><a href="">Articles</a></li>
-                                <li><a href="">Services</a></li>
-                                <li><a href="">Contact</a></li>
-                                <li><a href="">Google map</a></li>
-                                <li><a href="">Social</a></li>
-                                <li><a href="">Photos</a></li>
-                                <li><a href="">services</a></li>
+                                <li><a href="appoinment.html">Appoinment</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="doctors.html">Doctors</a></li>
+                                <li><a href="articles.html">Articles</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="article-details.html">Article details</a></li>
+                                <li><a href="service-details.html">Service details</a></li>
+                                <li><a href="404.html">404 Page not found</a></li>
                             </ul>
                         </div>
                     </div>
@@ -370,8 +472,8 @@
                             <h4>Contact us</h4>
                             <ul class="footer-contact-media">
                                 <li><i class="fa fa-phone"></i> +1-234-56789</li>
-                                <li><i class="fa fa-envelope"></i> mail@demomail.com</li>
-                                <li><i class="fa fa-map-marker"></i> 379 5th Avenue, New york, United states</li>
+                                <li><a href="mailto:support@medicare.com" target="_blank"><i class="fa fa-envelope"></i> mail@demomail.com</a></li>
+                                <li><a href="https://www.google.com/maps/@40.6971494,-74.2598655,10z/data=!3m1!4b1!4m2!7m1!2e1" class="f-location"><i class="fa fa-map-marker"></i> 379 5th Avenue, New york, United states</a></li>
                                 <li><i class="fa fa-clock-o"></i> Available: 8:00am - 4:00pm <br> Sat - Sun: 9:00am - 4:00pm</li>
                             </ul>
                         </div>
@@ -380,7 +482,7 @@
             </div>
         </div>
         <div class="footer-bottom text-center">
-            <p>&copy; Copyright for msthemes.com</p>
+            <p>&copy; Copyright for <a href="">www.medicare.com</a></p>
         </div>
     </footer>
     <!-- footer-area end -->

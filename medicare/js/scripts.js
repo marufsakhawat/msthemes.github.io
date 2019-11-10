@@ -3,7 +3,7 @@
 	jQuery(document).ready(function($){
 
 		/* magnificPopup video view */
-		$('.ht-location').magnificPopup({
+		$('.ht-location, .f-location').magnificPopup({
 			type: 'iframe'
 		});
 		
@@ -27,10 +27,10 @@
 		    loop:true,
 		    margin:0,
 			items:1,
+			autoplay:true,
 			navText:['<i class="fa fa-arrow-left"></i>','<i class="fa fa-arrow-right"></i>'],
 		    nav:false,
 			dots:false,
-			autoplay:true,
 		});
 		
 		// meanmenu
@@ -69,7 +69,7 @@
 		    loop:true,
 		    margin:15,
 			items:1,
-			autoplay: true,
+			autoplay: false,
 			navText:['<i class="fa fa-arrow-left"></i>','<i class="fa fa-arrow-right"></i>'],
 		    nav:true,
 			dots:false,
@@ -91,6 +91,7 @@
 		    loop:true,
 		    margin:50,
 			items:4,
+			autoplay: true,
 			navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 		    nav:false,
 			dots:false,

@@ -80,36 +80,53 @@
 	}
 	.slide-content {
 		font-size: 16px;
+		font-weight: 400;
 	}
 	.slide-content h5 {
 		font-size: 16px;
+		margin-bottom: 15px;
 	}
 	.slide-content h2 {
 		font-size: 30px;
+		margin-bottom: 15px;
 	}
 	.slide-content .slide-btn {
 		min-width: auto;
 		margin-bottom: 5px;
 		padding: 8px 15px;
 	}
-	.focus-section div[class^=col-]:nth-child(2) .single-focus:after {
+
+
+	.focus-section {
+		margin: 0 0 0;
+		border-radius: 0;
+	}
+	.focus-section .single-focus:after {
 		width: 0;
 	}
 	.focus-photos {
-		margin-right: 10px;
-		margin-bottom: 20px;
+	    padding: 30px 10px 30px 0;
 	}
-	.focus-photos-carousel .owl-nav {
-		right: 15px;
+
+
+
+
+	
+
+
+	.about-us-section .nav-tabs {
+		border-bottom: 0;
 	}
-	.nav-tabs .nav-link {
+	.about-us-section .nav-tabs .nav-link {
 		margin-bottom: 15px;
+		margin-right: 15px;
+		border-radius: 0;
 	}
 	.about-us-content {
 		margin-bottom: 60px;
 	}
 	.video-area {
-		margin-bottom: 30px;
+		margin-bottom: 60px;
 	}
 	.play-btn {
 		font-size: 21px;
@@ -121,20 +138,23 @@
 		margin: 30px 0;
 	}
 	.appoinment-phone span {
-		font-size: 26px;
+		font-size: 35px;
 	}
 	.single-doctor {
-		margin: 20px 0;
+		margin: 15px 0;
+	}
+	.footer-widget {
+		margin-bottom: 60px;
 	}
 	.footer-top div[class^=col-]:last-child .footer-widget {
 		margin-bottom: 0;
 	}
-	.footer-widget {
-		margin-bottom: 80px;
-	}
 	.footer-widget.quick-links {
 		padding-left: 0;
 	}
+	.footer-bottom p {
+		font-size: 16px;
+	}
 
 
 
@@ -142,11 +162,13 @@
 
 
 
+	
+
+	/*about-us page*/
 	.breadcumb-title h2 {
 		font-size: 32px;
 	}
 
-	/*about-us page*/
 	.about-us-page-wrap .video-area {
 	    margin-bottom: 60px;
 	}

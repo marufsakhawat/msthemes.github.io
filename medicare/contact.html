@@ -47,7 +47,12 @@
             <div class="circle12 circle"></div>
         </div>
     </div>
-    <div class="menu-overlay"></div>
+    <!-- body-preloader end -->
+
+    <!-- responsive menu active overlay start -->
+    <div class="responsive-menu-overlay"></div>
+    <!-- responsive menu active overlay end -->
+    
     <!-- header-area start -->
     <header class="header-area">
         <!-- header-top start -->
@@ -56,17 +61,23 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-6">
                         <div class="ht-contact">
-                            <a href="" class="ht-call"><span>Emergency :</span> +88 016 810 98 235</a>
+                            <a href="" class="ht-call">
+                                <strong>Emergency:</strong> 818-703-8830
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 text-center col-md-6 text-md-right">
                         <div class="ht-contact">
-                            <a href="" class="ht-location"><i class="fa fa-map-marker"></i>74, South Basabo, Dhaka, BD</a>
+                            <a href="https://www.google.com/maps/@40.6971494,-74.2598655,10z/data=!3m1!4b1!4m2!7m1!2e1" class="ht-location"><i class="fa fa-map-marker"></i>
+                                44, Grand Avenue, NY, USA
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 text-right d-none d-lg-block d-xl-block">
                         <div class="ht-contact">
-                            <a href="" class="ht-mail"><i class="fa fa-envelope"></i>demo@demomail.com</a>
+                            <a href="mailto:support@medicare.com" target="_blank" class="ht-mail"><i class="fa fa-envelope"></i>
+                                support@medicare.com
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -84,30 +95,28 @@
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-8 col-4 text-right">
-                        <div class="site-menu">
-                            <nav id="menu" class="main-menu">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about-us.html">About us</a></li>
-                                    <li class="has-submenu"><a href="services.html">Services</a>
-                                        <ul class="submenu">
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="doctors.html">Doctors</a></li>
-                                    <li class="has-submenu"><a href="articles.html">Articles</a>
-                                        <ul class="submenu">
-                                            <li><a href="articles.html">Articles</a></li>
-                                            <li><a href="article-details.html">Article Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                        <nav id="menu" class="main-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li class="has-submenu"><a href="services.html">Services</a>
+                                    <ul class="submenu">
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="service-details.html">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="doctors.html">Doctors</a></li>
+                                <li class="has-submenu"><a href="articles.html">Articles</a>
+                                    <ul class="submenu">
+                                        <li><a href="articles.html">Articles</a></li>
+                                        <li><a href="article-details.html">Article Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
                         <div class="mean-menu"></div>
-                        <div class="site-search">
+                        <div class="search">
                             <a href=""><i class="fa fa-search"></i></a>
                         </div>
                     </div>
@@ -119,12 +128,12 @@
     <!-- header-area end -->
 
     <main class="contact-page-wrap">
-        <section class="breadcumb-area bg-img has-overlay-black-75 d-flex align-items-center" data-background="img/about/breadcumb-bg.jpg">
+        <section class="breadcumb-area bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/breadcumb/breadcumb-bg.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="breadcumb-title">
-                            <h2>Contact with us</h2>
+                            <h2>Contact with <span>MediCare's</span> support</h2>
                         </div>
                         <div class="breadcumb-path">
                             <ul>
@@ -132,6 +141,124 @@
                                 <li><a href="contact.html" class="active">Contact</a></li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section pd-tb-120-bdb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 text-center">
+                        <div class="content-title">
+                            <h5>FAQ</h5>
+                            <h2>Frequently Asked Questions</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit asperiores assumenda blanditiis rem facilis recusandae atque aliquam labore.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                       <div class="faq-content">
+                            <!-- accordion start -->
+                            <div class="faq-accordion" id="siteaccordion">
+                                <!-- single card start -->
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            How much expensive neurology cost here?
+                                        </button>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#siteaccordion">
+                                        <div class="card-body d-flex align-items-center">
+                                            <p>Please contact your agent, call 1-234-567-789, access it from our <span>mobile app</span> or log in to <span>Online Account</span> Access.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single card end -->
+
+                                <!-- single card start -->
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            How much expensive neurology cost here?
+                                        </button>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#siteaccordion">
+                                        <div class="card-body d-flex align-items-center">
+                                            <p>Please contact your agent, call 1-234-567-789, access it from our <span>mobile app</span> or log in to <span>Online Account</span> Access.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single card end -->
+                                <!-- single card start -->
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            How much expensive neurology cost here?
+                                        </button>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#siteaccordion">
+                                        <div class="card-body d-flex align-items-center">
+                                            <p>Please contact your agent, call 1-234-567-789, access it from our <span>mobile app</span> or log in to <span>Online Account</span> Access.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single card end -->
+                            </div>
+                            <!-- accordion end -->
+                       </div> 
+                    </div>
+                    <div class="col-lg-6">
+                       <div class="faq-content">
+                            <!-- accordion start -->
+                            <div class="faq-accordion" id="siteaccordion2">
+                                <!-- single card start -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <button type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                            How much expensive neurology cost here?
+                                        </button>
+                                    </div>
+                                    <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#siteaccordion2">
+                                        <div class="card-body d-flex align-items-center">
+                                            <p>Please contact your agent, call 1-234-567-789, access it from our <span>mobile app</span> or log in to <span>Online Account</span> Access.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single card end -->
+
+                                <!-- single card start -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFive">
+                                        <button type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            How much expensive neurology cost here?
+                                        </button>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#siteaccordion2">
+                                        <div class="card-body d-flex align-items-center">
+                                            <p>Please contact your agent, call 1-234-567-789, access it from our <span>mobile app</span> or log in to <span>Online Account</span> Access.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single card end -->
+                                <!-- single card start -->
+                                <div class="card">
+                                    <div class="card-header" id="headingSix">
+                                        <button type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            How much expensive neurology cost here?
+                                        </button>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#siteaccordion2">
+                                        <div class="card-body d-flex align-items-center">
+                                            <p>Please contact your agent, call 1-234-567-789, access it from our <span>mobile app</span> or log in to <span>Online Account</span> Access.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single card end -->
+                            </div>
+                            <!-- accordion end -->
+                       </div> 
                     </div>
                 </div>
             </div>
@@ -238,7 +365,7 @@
 
     <!-- footer-area start -->
     <footer class="footer-area">
-        <div class="footer-top has-overlay-black-75 bg-img" data-background="img/footer/footer-bg.jpg">
+        <div class="footer-top bg-img has-overlay-theme-75" data-background="img/footer/footer-bg.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 offset-lg-4 text-center">
@@ -264,16 +391,16 @@
                         <div class="footer-widget quick-links">
                             <h4>Useful links</h4>
                             <ul class="footer-quick-links clearfix">
-                                <li><a href="">Appoinment</a></li>
-                                <li><a href="">Departments</a></li>
-                                <li><a href="">Doctors</a></li>
-                                <li><a href="">Articles</a></li>
-                                <li><a href="">Services</a></li>
-                                <li><a href="">Contact</a></li>
-                                <li><a href="">Google map</a></li>
-                                <li><a href="">Social</a></li>
-                                <li><a href="">Photos</a></li>
-                                <li><a href="">services</a></li>
+                                <li><a href="appoinment.html">Appoinment</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="doctors.html">Doctors</a></li>
+                                <li><a href="articles.html">Articles</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="article-details.html">Article details</a></li>
+                                <li><a href="service-details.html">Service details</a></li>
+                                <li><a href="404.html">404 Page not found</a></li>
                             </ul>
                         </div>
                     </div>
@@ -282,8 +409,8 @@
                             <h4>Contact us</h4>
                             <ul class="footer-contact-media">
                                 <li><i class="fa fa-phone"></i> +1-234-56789</li>
-                                <li><i class="fa fa-envelope"></i> mail@demomail.com</li>
-                                <li><i class="fa fa-map-marker"></i> 379 5th Avenue, New york, United states</li>
+                                <li><a href="mailto:support@medicare.com" target="_blank"><i class="fa fa-envelope"></i> mail@demomail.com</a></li>
+                                <li><a href="https://www.google.com/maps/@40.6971494,-74.2598655,10z/data=!3m1!4b1!4m2!7m1!2e1" class="f-location"><i class="fa fa-map-marker"></i> 379 5th Avenue, New york, United states</a></li>
                                 <li><i class="fa fa-clock-o"></i> Available: 8:00am - 4:00pm <br> Sat - Sun: 9:00am - 4:00pm</li>
                             </ul>
                         </div>
@@ -292,7 +419,7 @@
             </div>
         </div>
         <div class="footer-bottom text-center">
-            <p>&copy; Copyright for msthemes.com</p>
+            <p>&copy; Copyright for <a href="">www.medicare.com</a></p>
         </div>
     </footer>
     <!-- footer-area end -->

@@ -30,6 +30,7 @@
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
+    <!-- body-preloader start -->
     <div class="body-preloader">
         <span>Loading</span>
         <div class="fading-circle">
@@ -47,7 +48,12 @@
             <div class="circle12 circle"></div>
         </div>
     </div>
-    <div class="menu-overlay"></div>
+    <!-- body-preloader end -->
+
+    <!-- responsive menu active overlay start -->
+    <div class="responsive-menu-overlay"></div>
+    <!-- responsive menu active overlay end -->
+    
     <!-- header-area start -->
     <header class="header-area">
         <!-- header-top start -->
@@ -56,17 +62,23 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-6">
                         <div class="ht-contact">
-                            <a href="" class="ht-call"><span>Emergency :</span> +88 016 810 98 235</a>
+                            <a href="" class="ht-call">
+                                <strong>Emergency:</strong> 818-703-8830
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 text-center col-md-6 text-md-right">
                         <div class="ht-contact">
-                            <a href="" class="ht-location"><i class="fa fa-map-marker"></i>74, South Basabo, Dhaka, BD</a>
+                            <a href="https://www.google.com/maps/@40.6971494,-74.2598655,10z/data=!3m1!4b1!4m2!7m1!2e1" class="ht-location"><i class="fa fa-map-marker"></i>
+                                44, Grand Avenue, NY, USA
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 text-right d-none d-lg-block d-xl-block">
                         <div class="ht-contact">
-                            <a href="" class="ht-mail"><i class="fa fa-envelope"></i>demo@demomail.com</a>
+                            <a href="mailto:support@medicare.com" target="_blank" class="ht-mail"><i class="fa fa-envelope"></i>
+                                support@medicare.com
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -84,30 +96,28 @@
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-8 col-4 text-right">
-                        <div class="site-menu">
-                            <nav id="menu" class="main-menu">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about-us.html">About us</a></li>
-                                    <li class="has-submenu"><a href="services.html">Services</a>
-                                        <ul class="submenu">
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="doctors.html">Doctors</a></li>
-                                    <li class="has-submenu"><a href="articles.html">Articles</a>
-                                        <ul class="submenu">
-                                            <li><a href="articles.html">Articles</a></li>
-                                            <li><a href="article-details.html">Article Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                        <nav id="menu" class="main-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li class="has-submenu"><a href="services.html">Services</a>
+                                    <ul class="submenu">
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="service-details.html">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="doctors.html">Doctors</a></li>
+                                <li class="has-submenu"><a href="articles.html">Articles</a>
+                                    <ul class="submenu">
+                                        <li><a href="articles.html">Articles</a></li>
+                                        <li><a href="article-details.html">Article Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
                         <div class="mean-menu"></div>
-                        <div class="site-search">
+                        <div class="search">
                             <a href=""><i class="fa fa-search"></i></a>
                         </div>
                     </div>
@@ -119,12 +129,12 @@
     <!-- header-area end -->
 
     <main class="about-us-page-wrap">
-        <section class="breadcumb-area bg-img has-overlay-black-75 d-flex align-items-center" data-background="img/about/breadcumb-bg.jpg">
+        <section class="breadcumb-area bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/breadcumb/breadcumb-bg.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="breadcumb-title">
-                            <h2>MediCare is awesome for everyone</h2>
+                            <h2>Learn more about <span>MediCare</span></h2>
                         </div>
                         <div class="breadcumb-path">
                             <ul>
@@ -141,10 +151,11 @@
         <section class="about-us-section pd-tb-120-bdb">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 offset-lg-2 text-center">
+                    <div class="col-lg-6 offset-lg-3 text-center">
                         <div class="content-title">
                             <h5>About us</h5>
                             <h2>Who we are</h2>
+                            <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit asperiores assumenda blanditiis rem facilis recusandae atque aliquam labore.</p></p>
                         </div>
                     </div>
                 </div>
@@ -211,6 +222,34 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="photo-gallery">
+                            <div class="row grid" style="position: relative; height: 696.703px;">
+                                <div class="col-lg-6 col-md-6 grid-item" style="position: absolute; left: 0%; top: 0px;">
+                                    <div class="single-photo-wrap">
+                                        <img src="img/photo/photo-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 grid-item" style="position: absolute; left: 50%; top: 0px;">
+                                    <div class="single-photo-wrap">
+                                        <img src="img/photo/photo-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 grid-item" style="position: absolute; left: 50%; top: 240px;">
+                                    <div class="single-photo-wrap">
+                                        <img src="img/photo/photo-3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 grid-item" style="position: absolute; left: 0%; top: 455px;">
+                                    <div class="single-photo-wrap">
+                                        <img src="img/photo/photo-4.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- about-us-section end -->
@@ -218,11 +257,11 @@
         <section class="faq-section pd-tb-120-bdb">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 offset-lg-2 text-center">
+                    <div class="col-lg-6 offset-lg-3 text-center">
                         <div class="content-title">
                             <h5>FAQ</h5>
                             <h2>Frequently Asked Questions</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab officiis harum possimus minus atque in, commodi iusto quasi!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit asperiores assumenda blanditiis rem facilis recusandae atque aliquam labore.</p>
                         </div>
                     </div>
                 </div>
@@ -333,19 +372,22 @@
             </div>
         </section>
 
+        <!-- award-section start -->
         <section class="award-section pd-tb-120">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 offset-lg-2 text-center">
+                    <div class="col-lg-6 offset-lg-3 text-center">
                         <div class="content-title">
                             <h5>Award</h5>
                             <h2>Awards we have won</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit asperiores assumenda blanditiis rem facilis recusandae atque aliquam labore.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row no-gutters">
+                    
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-award bg-img d-flex align-items-center has-overlay-black-75" data-background="img/photo/about-1.jpg">
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-1.jpg">
                             <div class="award-content">
                                 <div class="award-icon">
                                     <i class="fa fa-trophy"></i>
@@ -355,8 +397,69 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-award bg-img d-flex align-items-center has-overlay-black-75" data-background="img/photo/about-2.jpg">
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-2.jpg">
+                            <div class="award-content">
+                                <div class="award-icon">
+                                    <i class="fa fa-won"></i>
+                                </div>
+                                <h4>Noble in medical</h4>
+                                <p>We have won Noble award 2017 for our best medical services.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-3.jpg">
+                            <div class="award-content">
+                                <div class="award-icon">
+                                    <i class="fa fa-usd"></i>
+                                </div>
+                                <h4>Noble in medical</h4>
+                                <p>We have won Noble award 2017 for our best medical services.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-4.jpg">
+                            <div class="award-content">
+                                <div class="award-icon">
+                                    <i class="fa fa-gift"></i>
+                                </div>
+                                <h4>Noble in medical</h4>
+                                <p>We have won Noble award 2017 for our best medical services.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-1.jpg">
+                            <div class="award-content">
+                                <div class="award-icon">
+                                    <i class="fa fa-money"></i>
+                                </div>
+                                <h4>Noble in medical</h4>
+                                <p>We have won Noble award 2017 for our best medical services.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-2.jpg">
+                            <div class="award-content">
+                                <div class="award-icon">
+                                    <i class="fa fa-bitcoin"></i>
+                                </div>
+                                <h4>Noble in medical</h4>
+                                <p>We have won Noble award 2017 for our best medical services.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-1.jpg">
                             <div class="award-content">
                                 <div class="award-icon">
                                     <i class="fa fa-trophy"></i>
@@ -366,86 +469,35 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-award bg-img d-flex align-items-center has-overlay-black-75" data-background="img/photo/about-3.jpg">
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-2.jpg">
                             <div class="award-content">
                                 <div class="award-icon">
-                                    <i class="fa fa-trophy"></i>
+                                    <i class="fa fa-gift"></i>
                                 </div>
                                 <h4>Noble in medical</h4>
                                 <p>We have won Noble award 2017 for our best medical services.</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-award bg-img d-flex align-items-center has-overlay-black-75" data-background="img/photo/about-4.jpg">
+                        <div class="single-award bg-img has-overlay-theme-75 d-flex align-items-center" data-background="img/award/award-3.jpg">
                             <div class="award-content">
                                 <div class="award-icon">
-                                    <i class="fa fa-trophy"></i>
+                                    <i class="fa fa-usd"></i>
                                 </div>
                                 <h4>Noble in medical</h4>
                                 <p>We have won Noble award 2017 for our best medical services.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-award bg-img d-flex align-items-center has-overlay-black-75" data-background="img/photo/about-5.jpg">
-                            <div class="award-content">
-                                <div class="award-icon">
-                                    <i class="fa fa-trophy"></i>
-                                </div>
-                                <h4>Noble in medical</h4>
-                                <p>We have won Noble award 2017 for our best medical services.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-award bg-img d-flex align-items-center has-overlay-black-75" data-background="img/photo/about-2.jpg">
-                            <div class="award-content">
-                                <div class="award-icon">
-                                    <i class="fa fa-trophy"></i>
-                                </div>
-                                <h4>Noble in medical</h4>
-                                <p>We have won Noble award 2017 for our best medical services.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-award bg-img d-flex align-items-center has-overlay-black-75" data-background="img/photo/about-4.jpg">
-                            <div class="award-content">
-                                <div class="award-icon">
-                                    <i class="fa fa-trophy"></i>
-                                </div>
-                                <h4>Noble in medical</h4>
-                                <p>We have won Noble award 2017 for our best medical services.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-award bg-img d-flex align-items-center has-overlay-black-75" data-background="img/photo/about-5.jpg">
-                            <div class="award-content">
-                                <div class="award-icon">
-                                    <i class="fa fa-trophy"></i>
-                                </div>
-                                <h4>Noble in medical</h4>
-                                <p>We have won Noble award 2017 for our best medical services.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-award bg-img d-flex align-items-center has-overlay-black-75" data-background="img/photo/about-2.jpg">
-                            <div class="award-content">
-                                <div class="award-icon">
-                                    <i class="fa fa-trophy"></i>
-                                </div>
-                                <h4>Noble in medical</h4>
-                                <p>We have won Noble award 2017 for our best medical services.</p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
+        <!-- award-section end -->
 
         <!-- testimonial-section start -->
         <section class="testimonial-section">
@@ -475,7 +527,7 @@
                         </div>
                     </div>
                 </div>                
-                <div class="single-testimonial has-overlay-black-75">
+                <div class="single-testimonial bg-img has-overlay-black-75" data-background="img/testimonial/testimonial-bg.jpg">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 offset-lg-2 text-center">
@@ -505,7 +557,7 @@
         <!-- testimonial-section end -->
 
         <!-- doctor-section start -->
-        <section class="doctor-section pd-tb-120">
+        <section class="doctor-section pd-tb-120-bdb">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 offset-lg-3 text-center">
@@ -571,12 +623,72 @@
                 </div>
             </div>
         </section>
-        <!-- doctor-section end -->        
+        <!-- doctor-section end -->
+
+        <!-- partner-section start -->
+        <section class="partner-section pd-tb-120-bdb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 text-center">
+                        <div class="content-title">
+                            <h5>Partner</h5>
+                            <h2>Our awesome parnters</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit asperiores assumenda blanditiis rem facilis recusandae atque aliquam labore.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="partner-carousel owl-carousel">
+                            <div class="single-partner">
+                                <div class="partner-image d-flex align-items-center">
+                                    <div>
+                                        <img src="img/partner/partner-1.png" alt="">
+                                    </div>
+                                </div>
+                                <h4>Ezell consulting</h4>
+                            </div>
+                            <div class="single-partner">
+                                <div class="partner-image d-flex align-items-center">
+                                    <div>
+                                        <img src="img/partner/partner-2.png" alt="">
+                                    </div>
+                                </div>
+                                <h4>Fluid engage</h4>
+                            </div>
+                            <div class="single-partner">
+                                <div class="partner-image d-flex align-items-center">
+                                    <img src="img/partner/partner-3.png" alt="">
+                                </div>
+                                <h4>Health england</h4>
+                            </div>
+                            <div class="single-partner">
+                                <div class="partner-image d-flex align-items-center">
+                                    <div>
+                                        <img src="img/partner/partner-4.png" alt="">
+                                    </div>
+                                </div>
+                                <h4>Valparaiso university</h4>
+                            </div>
+                            <div class="single-partner">
+                                <div class="partner-image d-flex align-items-center">
+                                    <div>
+                                        <img src="img/partner/partner-5.png" alt="">
+                                    </div>
+                                </div>
+                                <h4>Stark country</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- partner-section end -->    
     </main>
 
     <!-- footer-area start -->
     <footer class="footer-area">
-        <div class="footer-top has-overlay-black-75 bg-img" data-background="img/footer/footer-bg.jpg">
+        <div class="footer-top bg-img has-overlay-theme-75" data-background="img/footer/footer-bg.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 offset-lg-4 text-center">
@@ -602,16 +714,16 @@
                         <div class="footer-widget quick-links">
                             <h4>Useful links</h4>
                             <ul class="footer-quick-links clearfix">
-                                <li><a href="">Appoinment</a></li>
-                                <li><a href="">Departments</a></li>
-                                <li><a href="">Doctors</a></li>
-                                <li><a href="">Articles</a></li>
-                                <li><a href="">Services</a></li>
-                                <li><a href="">Contact</a></li>
-                                <li><a href="">Google map</a></li>
-                                <li><a href="">Social</a></li>
-                                <li><a href="">Photos</a></li>
-                                <li><a href="">services</a></li>
+                                <li><a href="appoinment.html">Appoinment</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="doctors.html">Doctors</a></li>
+                                <li><a href="articles.html">Articles</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="article-details.html">Article details</a></li>
+                                <li><a href="service-details.html">Service details</a></li>
+                                <li><a href="404.html">404 Page not found</a></li>
                             </ul>
                         </div>
                     </div>
@@ -620,8 +732,8 @@
                             <h4>Contact us</h4>
                             <ul class="footer-contact-media">
                                 <li><i class="fa fa-phone"></i> +1-234-56789</li>
-                                <li><i class="fa fa-envelope"></i> mail@demomail.com</li>
-                                <li><i class="fa fa-map-marker"></i> 379 5th Avenue, New york, United states</li>
+                                <li><a href="mailto:support@medicare.com" target="_blank"><i class="fa fa-envelope"></i> mail@demomail.com</a></li>
+                                <li><a href="https://www.google.com/maps/@40.6971494,-74.2598655,10z/data=!3m1!4b1!4m2!7m1!2e1" class="f-location"><i class="fa fa-map-marker"></i> 379 5th Avenue, New york, United states</a></li>
                                 <li><i class="fa fa-clock-o"></i> Available: 8:00am - 4:00pm <br> Sat - Sun: 9:00am - 4:00pm</li>
                             </ul>
                         </div>
@@ -630,7 +742,7 @@
             </div>
         </div>
         <div class="footer-bottom text-center">
-            <p>&copy; Copyright for msthemes.com</p>
+            <p>&copy; Copyright for <a href="">www.medicare.com</a></p>
         </div>
     </footer>
     <!-- footer-area end -->
