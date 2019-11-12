@@ -1,18 +1,12 @@
 /*
 	Theme Name: MediCare HTML5 Bootstrap Template
-	Author: Maruf Sakhawat
-	Author Mail: admin@msthemes.com
+	Author: MiPlugins
+	Author URI: www.miplugins.com
 	Description: Medical & Doctor HTML5 Template
 	Version: 1.0.0
-	Website: www.msthemes.com;
+	Website: www.miplugins.com;
 */
-/* css index
------------------------------------
-1.	base
-2.	header
-3.	slider
-4.	etc
-*/
+
 /*base css start*/
 @import url('https://fonts.googleapis.com/css?family=Hind:400,700|Rajdhani:400,700&display=swap');
 body {
@@ -58,7 +52,7 @@ button:focus {
 	outline: 0;
 }
 input:focus, textarea, textarea:focus{
-	outline: 0
+	outline: 0;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Rajdhani', sans-serif;
@@ -486,18 +480,23 @@ img {
     background-color: #0f3365;
     padding: 15px 0;
 }
+.ht-contact span,
 .ht-contact a {
     display: inline-block;
     margin-right: 15px;
     font-size: 15px;
     color: #fff;
+    transition: 0.3s;
 }
+.ht-contact span:last-child,
 .ht-contact a:last-child {
     margin-right: 0;
 }
-.ht-contact a:hover {
-	opacity: .80;
+.ht-contact a:hover,
+.ht-contact span:hover {
+	opacity: .85;
 }
+.ht-contact span i.fa,
 .ht-contact a i.fa {
 	color: #fff;
 	margin-right: 10px;
@@ -510,21 +509,19 @@ img {
 	border-radius: 50%;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-.ht-contact a.ht-call {
+.ht-contact .ht-call {
     font-size: 18px;
     font-weight: 700;
-    pointer-events: none;
 }
-.ht-contact a.ht-call strong {
+.ht-call strong {
 	color: #E12454;
 	margin-right: 5px;
 }
 /*header-top end*/
 
 /*header-bottom start*/
-.header-bottom {
+.header-bottom-wrap {
     position: relative;
-    padding: 25px 0;
 }
 .header-sticky {
 	position: fixed;
@@ -533,10 +530,16 @@ img {
 	top: 0;
 	width: 100%;
 	background-color: #fff;
-	padding: 10px 0;
 	z-index: 3;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+.header-bottom {
+	padding: 25px 0;
+}
+.header-sticky .header-bottom {
+	padding: 10px 0;
+}
+/*main-menu start*/
 .main-menu {
     margin-right: 65px;
 }
@@ -559,7 +562,22 @@ img {
 }
 /*dropdown menu start*/
 .main-menu > ul > li.has-submenu {
-  position: relative;
+	position: relative;
+}
+.main-menu > ul > li.has-submenu > a {
+	position: relative;
+}
+.main-menu > ul > li.has-submenu > a:after {
+	content: "\f105";
+	font-family: fontawesome;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: 0.6s;
+}
+.main-menu > ul > li.has-submenu:hover > a:after {
+	transform: translateY(-50%) rotate(90deg);
 }
 .main-menu > ul > li > .submenu {
   position: absolute;
@@ -580,7 +598,7 @@ img {
 	visibility: visible;
 }
 .submenu > li > a {
-  padding: 7px 17px;
+  padding: 15px 20px;
   border-bottom: 1px solid #e5e5e5;
   display: block;
   font-weight: 700;
@@ -593,7 +611,105 @@ img {
 .submenu > li > a.active {
 	color: #0caa87;
 }
+@media (max-width: 991px) {
+	.main-menu {
+		display: none;
+	}
+}
+/*main-menu end*/
 /*dropdown menu end*/
+
+/*search-trigger start*/
+.search-trigger-wrap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+.search-trigger {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #0caa87;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.search-trigger:hover {
+	background-color: #333;
+}
+.search-trigger:active {
+	background-color: #adadad;
+}
+@media (max-width: 991px) {
+	.search-trigger-wrap {
+		right: 65px;
+	}
+	.search-trigger {
+		width: 41px;
+		height: 41px;
+		line-height: 41px;
+	}
+}
+/*search-trigger end*/
+
+/*search-form start*/
+.search-form-wrap {
+	background-color: #0caa87;
+    height: 0;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.search-form-wrap.active {
+	height: 70px;
+}
+.search-form {
+	background-color: #333;
+    color: #fff;
+    width: calc(100% - 70px);
+    float: left;
+}
+.search-form input {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    border: 0;
+    background-color: #0caa87;
+    color: #fff;
+    font-size: 20px;
+}
+.search-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+  font-size: 20px;
+}
+.search-form ::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+  font-size: 20px;
+}
+.search-form :-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+  font-size: 20px;
+}
+.search-form :-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+  font-size: 20px;
+}
+.close-search {
+    float: right;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: right;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+/*search-form end*/
+
 /*meanmenu start*/
 .mean-menu {
     position: absolute;
@@ -621,8 +737,8 @@ img {
     float: right;
 }
 .mean-container .mean-nav ul li a {
-    color: #000;
-    font-weight: 600;
+    color: #333;
+    font-weight: 700;
     border-top: 1px solid #e5e5e5;
 }
 .mean-container .mean-nav ul li a.mean-expand {
@@ -635,57 +751,29 @@ img {
     background-color: #000;
     color: #fff;
 }
-.responsive-menu-overlay {
+.mean-menu-overlay {
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #0caa87;
+	background-color: #0f3365;
 	z-index: 3;
 	opacity: 0;
 	visibility: hidden;
 	transition: 0.3s;
 }
-.responsive-menu-overlay.active {
+.mean-menu-overlay.active {
 	opacity: .75;
 	visibility: visible;
 }
 /*meanmenu end*/
-.search {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 15px;
-}
-.search a {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background-color: #0f3365;
-    color: #fff;
-    font-size: 15px;
-    transition: 0.3s;
-}
-.search a:hover {
-	background-color: #000;
-}
-@media (max-width: 991px) {
-	.main-menu {
-		display: none;
-	}
-	.search {
-		right: 65px;
-	}
-	.search a {
-		width: 41px;
-		height: 41px;
-		line-height: 41px;
-	}
-}
 /*header-bottom end*/
+
+
+
+
+
 
 /*slide-section start*/
 .single-slide {
@@ -2016,7 +2104,17 @@ img {
 .contact-form .site-btn:hover {
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-
+.form-message {
+    font-weight: 700;
+    color: #333;
+    font-size: 15px;
+}
+.form-message.success {
+    color: #0caa87;
+}
+.form-message.error {
+    color: red;
+}
 
 
 
