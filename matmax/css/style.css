@@ -97,6 +97,9 @@ img {
 	max-width: 100%;
 	transition: 0.3s;
 }
+section {
+	border-bottom: 1px solid #ddd;
+}
 .area-title {
     margin-bottom: 65px;
 }
@@ -179,6 +182,9 @@ img {
 	background-color: #999;
 	background-position: center;
 	background-size: cover;
+}
+.gray-bg {
+	background-color: #f8f8f8;
 }
 /*for selection start*/
 *::-moz-selection {
@@ -396,6 +402,7 @@ img {
     color: #fff;
     font-size: 47px;
     font-weight: 900;
+    line-height: 1.5;
 }
 .slide-content h2 span {
 	color: #cdcdcd;
@@ -695,4 +702,70 @@ img {
 .wcu-content-carousel-wrap .owl-dots div.active {
     width: 30px;
     background-color: #ff5353;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.single-service {
+	height: 320px;
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	margin: 15px 0;
+	transition: 0.3s;
+}
+.single-service:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.service-icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    margin: 0 auto 30px;
+    background-color: #ff5353;
+    color: #fff;
+    font-size: 35px;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.service-content {
+	padding: 30px;
+}
+.service-content p {
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 2.25;
 }
