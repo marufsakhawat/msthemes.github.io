@@ -40,6 +40,47 @@
 			dots:true,
 		});
 
+		// isotop massonry
+        $('.grid').imagesLoaded(function() {
+            // init Isotope
+            var $grid = $('.grid').isotope({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                masonry: {
+                    // use outer width of grid-sizer for columnWidth
+                    columnWidth: 1,
+                }
+            });
+            // filter items on button click
+            $('.button-group').on('click', 'button', function() {
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({
+                    filter: filterValue
+                });
+            });
+        });
+        //for isotop massonry menu active class
+        $('.button-group > button').on('click', function(event) {
+            $(this).siblings('.active').removeClass('active');
+            $(this).addClass('active');
+            event.preventDefault();
+        });
+
+        // magnificPopup image
+        $('.pis-btn').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+            },
+        });
+
+       // counter
+	   $('.counter').counterUp({
+	       delay: .5,
+	       time: 300,
+	   });
+
+
 		// // search-form sho-hide
 	 //    $(".search-trigger, .close-search").on('click', function(){
 	 //        $(".search-form-wrap").toggleClass("active");
@@ -127,11 +168,7 @@
 		// 	});
 		// });
 		
-	 //    // counter
-	 //    $('.counter').counterUp({
-	 //        delay: .5,
-	 //        time: 300,
-	 //    });
+	 
 
 	 //    // appoinment-form niceSelect active
 	 //    $('select').niceSelect();
