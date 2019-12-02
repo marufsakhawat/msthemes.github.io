@@ -21,11 +21,11 @@
             scrollTime: 900, // how long (in ms) the animation takes
             activeClass: 'active', // class given to the active nav element
             onPageChange: null, // function(pageIndex) that is called when page is changed
-            topOffset: -69 // offste (in px) for fixed top navigation
+            topOffset: -79 // offste (in px) for fixed top navigation
         });
 
         // menu active class (for removing auto class active from child 2)
-        $('.main-menu ul li:nth-child(2) a').removeClass('active');
+        $('.main-menu.homepage-menu ul li:nth-child(2) a').removeClass('active');
 
 
 
@@ -47,7 +47,7 @@
 		    loop:true,
 		    margin:0,
 			items:1,
-			autoplay:false,
+			autoplay:true,
 			autoplayTimeout: 9000,
 			animateOut: 'slideOutLeft',
     		animateIn: 'slideInRight',
@@ -73,7 +73,7 @@
 		    loop:true,
 		    margin:0,
 			items:1,
-			autoplay:false,
+			autoplay:true,
 			animateOut: 'slideOutRight',
     		animateIn: 'slideInLeft',
 			navText:['<i class="zmdi zmdi-chevron-left"></i>','<i class="zmdi zmdi-chevron-right"></i>'],
@@ -88,7 +88,7 @@
 		    loop:true,
 		    margin:0,
 			items:1,
-			autoplay:false,
+			autoplay:true,
 			animateOut: 'fadeOutDown',
     		animateIn: 'fadeInDown',
 			navText:['<i class="zmdi zmdi-chevron-left"></i>','<i class="zmdi zmdi-chevron-right"></i>'],
@@ -103,7 +103,7 @@
 		    loop:true,
 		    margin:0,
 			items:1,
-			autoplay:false,
+			autoplay:true,
 			autoplayTimeout: 9000,
 			animateOut: 'fadeOut',
     		animateIn: 'fadeIn',
@@ -117,7 +117,7 @@
 		    loop:true,
 		    margin:50,
 			items:4,
-			autoplay: false,
+			autoplay:true,
 			navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 		    nav:false,
 			dots:false,
@@ -139,7 +139,7 @@
 		    loop:true,
 		    margin:0,
 			items:2,
-			autoplay: false,
+			autoplay:true,
 			navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 		    nav:false,
 			dots:true,

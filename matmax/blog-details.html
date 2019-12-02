@@ -48,7 +48,7 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="blog.html">Blog</a></li>
-                            <li><a href="blog-details.html">Blog details</a></li>
+                            <li><a href="blog-details.html" class="active">Blog details</a></li>
                         </ul>
                     </nav>
                     <!-- responsive-menu-trigger -->
@@ -64,19 +64,21 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="blog-details.html">Blog details</a></li>
+                <li><a href="blog-details.html" class="active">Blog details</a></li>
             </ul>
         </nav>
     </div>
     <div class="responsive-menu-overlay"></div>
     <!-- responsive-menu end -->
     <!-- header-area end -->
-
+    <!-- blog-details-page-wrap -->
     <main class="blog-details-page-wrap">
-        <div class="breadcumb-area d-flex align-items-center bg-img" data-background="img/blog/blog-details-breadcumb-bg.jpg">
+        <!-- breadcumb-area -->
+        <div class="breadcumb-area d-flex align-items-center bg-img" data-background="img/blog/breadcumb-bg.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1 text-center">
+                        <!-- breadcumb-content -->
                         <div class="breadcumb-content">
                             <h2>Why MatMax is best for you</h2>
                             <ul class="breadcumb-path">
@@ -89,13 +91,14 @@
                 </div>
             </div>
         </div>
+        <!-- blog-details-area -->
         <div class="blog-details-area pd-tb-120">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <!-- blog-carousel -->
+                        <!-- blog-details-left-side -->
                         <div class="blog-details-left-side">
-                            <!-- single-blog -->
+                            <!-- blog-post -->
                             <article class="single-blog blog-post">
                                 <!-- blog-media-wrap -->
                                 <div class="blog-media-wrap">
@@ -121,6 +124,7 @@
                             <div class="article-tag-share">
                                 <div class="row">
                                     <div class="col-lg-8">
+                                        <!-- article-tags -->
                                         <div class="article-tags">
                                             <span>Tags:</span>
                                             <a href="">Material</a>
@@ -130,6 +134,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
+                                        <!-- article-share -->
                                         <div class="article-share">
                                             <span>Share:</span>
                                             <a href=""><i class="zmdi zmdi-facebook"></i></a>
@@ -140,9 +145,11 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- related-post -->
                             <div class="related-post">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6">
+                                        <!-- blog show-as-related -->
                                         <article class="single-blog show-as-related">
                                             <a href="blog-details.html">
                                                 <!-- blog-media-wrap -->
@@ -164,6 +171,7 @@
                                         </article>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
+                                        <!-- blog show-as-related -->
                                         <article class="single-blog show-as-related">
                                             <a href="blog-details.html">
                                                 <!-- blog-media-wrap -->
@@ -186,8 +194,7 @@
                                     </div>
                                 </div>
                             </div>
-
-
+                            <!-- article-comments -->
                             <div class="article-comments">
                                 <h3>Articles comments</h3>
                                 <ul class="comments">
@@ -235,7 +242,7 @@
                                     </li>
                                 </ul>
                             </div>
-
+                            <!-- article-comment-form -->
                             <div class="article-comment-form">
                                 <h3>leave a Comment</h3>
                                 <form action="">
@@ -256,14 +263,12 @@
                                     </div>
                                 </form>
                             </div>
-
-
-
                         </div>
                     </div>
                     <div class="col-lg-4">
+                        <!-- article-widget search -->
                         <div class="article-widget">
-                            <div class="aricle-search">
+                            <div class="aricle-search-wrap">
                                 <h3>Search</h3>
                                 <form action="" class="article-search-form">
                                     <input type="text" placeholder="Your keyword">
@@ -271,7 +276,7 @@
                                 </form>
                             </div>
                         </div>
-
+                        <!-- article-widget categories -->
                         <div class="article-widget">
                             <div class="article-categories-wrap">
                                 <h3>All Categories</h3>
@@ -284,7 +289,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!-- article-widget recent-post -->
                         <div class="article-widget">
                             <div class="recent-post-wrap">
                                 <h3>Recent post</h3>
@@ -312,7 +317,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!-- article-widget tags -->
                         <div class="article-widget">
                             <div class="all-article-tags-wrap">
                                 <h3>All tags</h3>
@@ -330,7 +335,6 @@
                 </div>
             </div>
         </div>       
-            
     </main>
     <!-- footer start -->
     <footer>
