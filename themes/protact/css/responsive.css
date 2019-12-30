@@ -1,0 +1,307 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+	.container {
+	    max-width: 1170px;
+	}
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+	
+}
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+	.header-area {
+		padding: 10px 0;
+		transition: 0s;
+	}
+	.header-sticky {
+		transition: 0s;
+	}
+	.main-menu {
+		display: none;
+	}
+	section.pd-l-50 {
+		padding-left: 0;
+	}
+	section.pd-r-50 {
+		padding-right: 0;
+	}
+	.contact-us-section .site-content {
+		margin-bottom: 60px;
+	}
+	.phone-no-area {
+		position: relative;
+	}
+	.service-img {
+		display: none;
+	}
+	.site-tab .nav-tabs {
+		left: 15px;
+	}
+	.tab-content .site-content {
+		margin-left: 215px;
+	}
+	.faq-accordion .card-body {
+		margin-left: 5px;
+		width: 50%;
+	}
+	.faq-accordion .card-body p {
+	    padding: 10px 20px 10px 15px;
+	}
+	.single-testimonial {
+		margin: 0 auto 60px;
+	}
+	.testimonials-carousel .owl-dots {
+	    left: 130px;
+	    bottom: 80px;
+	}
+	.footer-widget.about-company,
+	.footer-widget.quick-links {
+		margin-bottom: 80px;
+	}
+
+
+
+
+	/*about page*/
+	.agent-image-wrap {
+		margin-right: 0;
+		margin-bottom: 120px;
+		text-align: center;
+	}
+	.agent-content {
+	    margin-left: 0;
+	}
+	.services-2-section {
+		padding: 50px 0;
+	}
+	.single-service-2 {
+		margin: 50px 0;
+	}
+	.single-testimonial-2 {
+		margin: 50px 0;
+	}
+
+
+	/*quote page*/
+	.quote-form-image-wrap {
+    	margin-right: 0;
+    	margin-bottom: 60px;
+    	text-align: center;
+	}
+	.quote-form-content {
+    	margin-left: 0;
+	}
+	.insurance-doc-section {
+		padding: 90px 0;
+	}
+	.single-insurance-doc {
+		margin: 30px 0;
+	}
+
+
+	/*claims page*/
+	.claim-image-wrap {
+	    position: relative;
+	    left: auto;
+	    top: auto;
+	    transform: none;
+	    margin-top: 60px;
+	}
+
+	/*blog-details*/
+	.comments {
+		margin-bottom: 120px;
+	}
+}
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+	.header-area {
+		padding: 10px 0;
+		transition: 0s;
+	}
+	.header-sticky {
+		transition: 0s;
+	}
+	.main-menu {
+		display: none;
+	}
+	.slide-content h2 {
+		font-size: 45px;
+	}
+	.slide-content h2 i.fa {
+		display: none;
+	}
+	.slide-content p {
+		padding: 0;
+	}
+	.all-insurance-type {
+		display: none;
+	}
+	section.pd-l-50 {
+		padding-left: 0;
+	}
+	section.pd-r-50 {
+		padding-right: 0;
+	}
+	.contact-us-section .site-content {
+		margin-bottom: 60px;
+	}
+	.phone-no-area {
+		position: relative;
+	}
+	.service-img {
+		display: none;
+	}
+	.tab-content {
+		height: auto;
+	}
+	.tab-content .site-content {
+		margin-left: 0;
+	}
+	.site-tab .nav-tabs {
+		left: 0;
+		display: block;
+		position: relative;
+		top: 0;
+		transform: translateY(0);
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.nav-tabs .nav-item {
+		display: inline-block;
+	}
+	.nav-tabs .nav-link {
+		width: 143px;
+		float: left;
+		height: 100px;
+		padding-top: 20px;
+		font-weight: 400;
+		text-transform: none;
+		font-size: 15px;
+	}
+	.nav-link i.fa {
+		margin-bottom: 5px;
+		font-size: 30px;
+	}
+	.faq-accordion .card-header button {
+   		padding: 15px 0 15px 25px;
+    	text-align: left;
+	}
+	.faq-accordion .card-body {
+	    width: 100%;
+	    margin-left: 0;
+	    padding: 25px;
+	}
+	.faq-accordion .card-body p {
+	    padding: 10px 10px 10px 10px;
+	}
+	.faq-img {
+		display: none;
+	}
+	.single-testimonial {
+		margin: 0 auto 60px;
+		padding: 30px;
+	}
+	.testimonials-carousel .owl-dots {
+	    left: 30px;
+	    bottom: 93px;
+	}
+	.single-vision {
+	    width: 50%;
+	}
+	.articles-carousel {
+		margin: 0 0;
+	}
+	.articles-carousel .owl-stage-outer {
+		padding: 10px;
+		
+	}
+	.cta-content h2 {
+		font-size: 27px;
+	}
+	.footer-widget.about-company,
+	.footer-widget.quick-links {
+		margin-bottom: 80px;
+	}
+	.go-top-btn {
+		width: 50px;
+		height: 50px;		
+		line-height: 50px;
+		font-size: 20px;
+	}
+
+	/*about page*/
+	.agent-image-wrap {
+		margin-right: 0;
+		margin-bottom: 120px;
+		text-align: center;
+	}
+	.agent-content {
+	    margin-left: 0;
+	}
+	.services-2-section {
+		padding: 50px 0;
+	}
+	.single-service-2 {
+		margin: 30px 0;
+	}
+	.single-team-member {
+		margin: 30px 0;
+	}
+	.single-testimonial-2 {
+		margin: 30px 0;
+	}
+
+	/*quote page*/
+	.breadcumb-content h2 {
+		font-size: 35px;
+	}
+	.quote-form-image-wrap {
+    	margin-right: 0;
+    	margin-bottom: 60px;
+    	text-align: center;
+	}
+	.quote-form-content {
+    	margin-left: 0;
+	}
+	.insurance-doc-section {
+		padding: 90px 0;
+	}
+	.single-insurance-doc {
+		margin: 30px 0;
+	}
+	.contact-detail-for-quote div[class^="col-"]:nth-child(3) input {
+    	margin-bottom: 30px;
+	}
+
+
+
+	/*claims page*/
+	.claim-image-wrap {
+	    position: relative;
+	    left: auto;
+	    top: auto;
+	    transform: none;
+	    margin-top: 60px;
+	}
+
+
+	/*blog-details*/
+	.comments {
+		margin-bottom: 120px;
+	}
+	.article-widget {
+		padding: 25px;
+	}
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width:450px;
+	} 
+}

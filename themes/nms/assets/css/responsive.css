@@ -1,0 +1,64 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    .single-why-item {
+		height: auto;
+	}
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    
+	.slide-content h1 {
+		font-size: 30px;
+	}
+    .contact-area {
+		text-align: center;
+	}
+    .home-address {
+	    margin-top: 65px;
+	    text-align: center;
+	}
+	.copyright-area {
+		line-height: 1.65;
+	}
+	.breadcumb-area h2 {
+		font-size: 22px;
+	}
+	.page-content-wrapper {
+		border: none;
+	}
+	.page-content {
+		padding: 0;
+		padding-top: 30px;
+	}
+	h3.title {
+		font-size: 18px;
+	}
+	.single-why-item {
+		height: auto;
+	}
+	.single-why-item h4 {
+		text-align: left;
+		font-size: 16px;
+		line-height: 1.25;
+	}
+
+	.service-panel .panel-default > .panel-heading h4 a {
+		line-height: 1.5;
+	}
+	.partner-wrapper {
+		padding: 0 10px;
+	}
+	.single-partner {
+	    min-height: 120px;
+	    line-height: 120px;
+	}
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+}

@@ -1,0 +1,97 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+	.about-us-content {
+		margin-bottom: 100px;
+	}
+	.video-section:after {
+		display: none;
+	}
+	.about-us-content.video-text {
+		margin-bottom: 0;
+	}
+	.service-datails {
+		margin-bottom: 50px;
+	}
+	.faq-style.contact-faq {
+		margin-top: 50px;
+	}
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+	.header-top {
+		display: none;
+	}
+	.slide-content h2 {
+		font-size: 35px;
+	}
+	.slide-content p {
+		font-size: 20px;
+	}
+	.homepage-slides-carousel .owl-dots div {
+		display: none;
+	}
+	.about-us-content {
+		margin-bottom: 100px;
+	}
+	.video-section:after {
+		display: none;
+	}
+	.about-us-content.video-text {
+		margin-bottom: 0;
+	}
+	.single-testimonial {
+		padding-left: 0;
+		padding-top: 150px;
+	}
+	.testimonial-img {
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+	}
+	.projects-title li {
+		margin: 5px;
+	}
+	.responsive-menu-trigger {
+		width: 55px;
+	}
+	.footer-widge {
+		margin-bottom: 100px;
+	}
+	.service-short-info {
+		margin-bottom: 30px;
+	}
+	.service-details-info {
+		margin-bottom: 30px;
+	}
+	.coment-meta-data,
+	.coment-content {
+		margin-left: -15px;
+	}
+	.coment-meta-data h4 {
+		margin-bottom: 5px;
+	}
+	.coment-meta-data p {
+		float: none;
+		margin-bottom: 10px;
+	}
+	.comment-item.replay {
+		margin-left: 30px;
+	}
+	.comment-form-wrap {
+		margin-bottom: 100px;
+	}
+	.contact-team {
+		margin-bottom: 100px;
+	}
+	.contact-info-area {
+		margin-bottom: 100px;
+	}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}
