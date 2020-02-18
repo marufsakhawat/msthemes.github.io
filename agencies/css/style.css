@@ -436,12 +436,15 @@ img {
     font-weight: 700;
     margin-left: 7.5px;
     position: relative;
-    position: relative;
+    display: inline-block;
+    min-width: 150px;
+    text-align: left;
 }
 .play-btn i {
     width: 55px;
     height: 55px;
     line-height: 55px;
+    text-align: center;
     background-color: #eb2658;
     color: #fff;
     font-size: 18px;
