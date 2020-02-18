@@ -25,6 +25,36 @@
 		focusOnSelect: true
 	});
 
+	$('.wwd-services-carousel').slick({
+	dots: false,
+	infinite: true,
+	arrows:false,
+	slidesToShow: 3,	
+	slidesToScroll: 1,
+	variableWidth:false,
+	accessibility:true,
+	responsive: [
+		{
+		  breakpoint:1300,
+		  settings: {
+		    slidesToShow: 2,
+		    slidesToScroll: 1,
+		    infinite: true,
+		    dots:true
+		  }
+		},
+		{
+		  breakpoint:568,
+		  settings: {
+		    slidesToShow: 1,
+		    slidesToScroll: 1,
+		    infinite: true,
+		    dots:true
+		  }
+		}
+	]	
+	});
+
 	// $('.hero-section').owlCarousel({
 	//     loop:true,
 	//     margin:0,
