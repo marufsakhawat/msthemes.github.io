@@ -191,6 +191,9 @@ img {
 .gray-bg {
 	background-color: #f2f2f2;
 }
+.owl-carousel .owl-item img {
+    width: auto !important;
+}
 /*for selection start*/
 *::-moz-selection {
 	background: #000;
@@ -781,13 +784,14 @@ div[class^=col-]:nth-child(3) .single-wwaa-box {
 .single-partner img {
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 .partner-logo-carousel .owl-nav div {
     position: absolute;
     left: -40px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 15px;
+    font-size: 25px;
     color: #a0a0a0;
 }
 .partner-logo-carousel .owl-nav div.owl-next {
@@ -796,4 +800,118 @@ div[class^=col-]:nth-child(3) .single-wwaa-box {
 }
 .partner-logo-carousel .owl-nav div:hover {
     color: #08b76c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.single-testimonial {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 90px 85px;
+    margin: 20px;
+}
+
+.testimonial-author-image {
+    float: left;
+    width: 100px;
+    margin-right: 40px;
+}
+
+.testimonial-content {
+    float: left;
+    width: calc(100% - 140px);
+}
+
+
+
+.author-rating {
+    margin-bottom: 15px;
+}
+
+
+.author-rating li {
+    display: inline-block;
+    margin-right: 7px;
+    font-size: 22px;
+    color: #febd2f;
+}
+
+
+.testimonial-content h4 {
+    font-weight: 600;
+    text-transform: inherit;
+    margin-bottom: 32px;
+    color: #221c3e;
+    font-size: 18px;
+}
+
+.testimonial-content p {
+    text-align: justify;
+    line-height: 2.25;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.testimonial-content .author-name {
+    color: #3c3f48;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.testimonial-carousel .owl-nav div {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 25px;
+    color: #221b3d;
+    text-align: center;
+    background-color: #e7e8ec;
+    transition: 0.4s;
+}
+.testimonial-carousel .owl-nav div.owl-next {
+    left: auto;
+    right: -20px;
+}
+.testimonial-carousel .owl-nav div:hover {
+    color: #fff;
+    background-color: #03c06e;
+}
+.testimonial-area {
+    overflow-x: hidden;
+}
+.testimonial-carousel.owl-carousel .owl-stage-outer {
+    overflow: inherit;
 }

@@ -18,12 +18,25 @@
 
 	$('.partner-logo-carousel').owlCarousel({
 		loop: true,
-		autoplay: false,
+		autoplay: true,
 		margin: 30,
-		items: 5,
+		items: 4,
 		dots: false,
 		nav: true,
 		navText: ['<i class="zmdi zmdi-long-arrow-left"></i>', '<i class="zmdi zmdi-long-arrow-right"></i>']
+	});
+
+	$('.testimonial-carousel').owlCarousel({
+		loop: true,
+		autoplay: true,
+		margin: 60,
+		items: 1,
+		dots: false,
+		nav: true,
+		navText: ['<i class="zmdi zmdi-long-arrow-left"></i>', '<i class="zmdi zmdi-long-arrow-right"></i>'],
+		autoplayTimeout: 9000,
+		animateOut: 'slideOutLeft',
+		animateIn: 'slideInRight',
 	});
 
 
