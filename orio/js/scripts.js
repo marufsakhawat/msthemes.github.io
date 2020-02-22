@@ -16,6 +16,22 @@
     	time: 300,
 	});
 
+	$('.partner-logo-carousel').owlCarousel({
+		loop: true,
+		autoplay: false,
+		margin: 30,
+		items: 5,
+		dots: false,
+		nav: true,
+		navText: ['<i class="zmdi zmdi-long-arrow-left"></i>', '<i class="zmdi zmdi-long-arrow-right"></i>']
+	});
+
+
+
+
+
+
+
 	$('.hero-carousel-active').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,

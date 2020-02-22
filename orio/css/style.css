@@ -683,3 +683,117 @@ div[class^=col-]:nth-child(3) .single-wwaa-box {
     font-size: 60px;
     line-height: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.single-pricing-table {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 35px;
+    text-align: center;
+}
+.pricing-plan-category {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #3c3f48;
+    margin-bottom: 20px;
+}
+.pricing-plan-category span {
+    display: block;
+    margin-bottom: 10px;
+    color: #221c40;
+    font-size: 28px;
+    font-weight: 700;
+}
+.Pricing-cost {
+    font-weight: 400;
+    color: #231d41;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.Pricing-cost span {
+    font-weight: 800;
+    font-size: 40px;
+}
+.pricing-bottom ul {
+    margin-bottom: 25px;
+}
+.pricing-bottom li {
+    line-height: 2.5;
+}
+.pricing-btn {
+    background-color: #e7e8ec;
+    padding: 9px 32px;
+    border-radius: 50px;
+    color: #3b3e45;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.pricing-btn:hover {
+    color: #fff;
+    background-color: #03b569;
+}
+
+
+
+
+
+
+
+
+
+.single-partner {
+    width: 100%;
+    height: 35px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.single-partner img {
+    max-width: 100%;
+    height: auto;
+}
+.partner-logo-carousel .owl-nav div {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #a0a0a0;
+}
+.partner-logo-carousel .owl-nav div.owl-next {
+    left: auto;
+    right: -40px;
+}
+.partner-logo-carousel .owl-nav div:hover {
+    color: #08b76c;
+}
