@@ -10,6 +10,12 @@
 		type: 'iframe'
 	});
 
+	// counter
+	$('.counter').counterUp({
+    	delay: .5,
+    	time: 300,
+	});
+
 	$('.hero-carousel-active').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,

@@ -634,3 +634,52 @@ div[class^=col-]:nth-child(3) .single-wwaa-box {
     opacity: 0;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.counter-area {
+    height: 400px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+.counter-area .area-title-big {
+    margin-bottom: 0;
+}
+.counter-area .area-title-big h6 {
+    color: #fff;
+}
+.counter-area .area-title-big h3 {
+    color: #fff;
+    margin-bottom: 0;
+}
+.counter-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    font-size: 70px;
+    color: #04c16f;
+    line-height: 70px;
+}
+.counter {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 60px;
+    line-height: 1;
+}
