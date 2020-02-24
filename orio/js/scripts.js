@@ -35,10 +35,22 @@
 		nav: true,
 		navText: ['<i class="zmdi zmdi-long-arrow-left"></i>', '<i class="zmdi zmdi-long-arrow-right"></i>'],
 		autoplayTimeout: 9000,
-		animateOut: 'slideOutLeft',
-		animateIn: 'slideInRight',
+		animateOut: 'fadeOutLeft',
+		animateIn: 'fadeInRight',
 	});
 
+	$('.blog-carousel').owlCarousel({
+		loop: true,
+		autoplay: false,
+		margin: 30,
+		items: 3,
+		dots: false,
+		nav: true,
+		navText: ['<i class="zmdi zmdi-long-arrow-left"></i>', '<i class="zmdi zmdi-long-arrow-right"></i>'],
+		autoplayTimeout: 9000,
+		animateOut: 'fadeOutLeft',
+		animateIn: 'fadeInRight',
+	});
 
 
 
