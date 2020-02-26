@@ -10,7 +10,25 @@
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-	
+	.counter-area {
+		height: 480px;
+	}
+	.counter-area .area-title-big {
+    	margin-bottom: 50px;
+    	text-align: center;
+	}
+	.cta-area {
+		text-align: center;
+	}
+	.cta-area .text-right {
+		text-align: center !important;
+	}
+	.cta-area .row {
+		height: 350px;
+	}
+	.footer-widget {
+		margin: 50px 0;
+	}
 }
  
 /* small mobile :320px. */

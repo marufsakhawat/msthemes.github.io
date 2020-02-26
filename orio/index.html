@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Orio | HTML</title>
+    <title>Orio | HTML5 Agency Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/meanmenu.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -28,7 +29,18 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
     
-    <header>
+    <!-- body-preloader start -->
+    <div class="body-preloader">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- body-preloader end -->
+    
+    
+    <header data-scroll-index="1">
         <div class="header-area">
             <div class="container">
                 <div class="row d-flex align-items-center">
@@ -39,17 +51,23 @@
                     </div>
                     <div class="col-lg-9 text-right">
                         <div class="main-menu-wrap">
-                            <nav class="main-menu">
+                            <nav id="responsive-menu" class="main-menu">
                                 <ul>
-                                    <li><a href="">Home</a></li>
-                                    <li><a href="" class="active">Who we are</a></li>
-                                    <li><a href="">Our work</a></li>
-                                    <li><a href="">Pricing</a></li>
-                                    <li><a href="">Blog</a></li>
-                                    <li><a href="">Contact</a></li>
+                                    <li><a href="#home" data-scroll-nav="1">Home</a></li>
+                                    <li><a href="#whoWeAre" data-scroll-nav="2">Who we are</a></li>
+                                    <li><a href="#ourWork" data-scroll-nav="3">Our work</a></li>
+                                    <li><a href="#pricing" data-scroll-nav="4">Pricing</a></li>
+                                    <li><a href="#blog" data-scroll-nav="5">Blog</a>
+                                        <ul class="submenu">
+                                            <li><a href="#blog" data-scroll-nav="5">Blog</a>
+                                            <li><a href="blog-details.html">Blog details</a>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#contact" data-scroll-nav="6">Contact</a></li>
                                     <li><a href="" class="boxed-btn">Get started</a></li>
                                 </ul>
                             </nav>
+                            <div class="mean-menu"></div>
                         </div>
                     </div>
                 </div>
@@ -59,29 +77,29 @@
     </header>
 
     <main>
-        <section>
+        <section data-scroll-index="1">
             <div class="hero-area">
-                <div class="single-hero d-flex align-items-center">
+                <div class="single-hero bg-img d-flex align-items-center" data-background="img/hero/hero-bg-1.jpg">
                     <div class="container">
                         <div class="row d-flex align-items-center">
-                            <div class="col-lg-8">
+                            <div class="col-lg-7">
                                 <div class="hero-text">
                                     <h2>The best agency for your business</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet doloribus expedita, ea nulla repellat sint debitis non itaque. Culpa, iure!</p>
-                                    <a href="" class="hero-btn">Start tour</a>
+                                    <a href="#whoWeAre" data-scroll-nav="2" class="hero-btn">Start tour</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="hero-image-wrap">
+                    <!-- <div class="hero-image-wrap">
                         <img src="img/hero/hero-image.png" alt="">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="who-we-area-area pd-t-120">
+        <section data-scroll-index="2">
+            <div class="who-we-are-area pd-t-120">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-10 offset-lg-1 text-center">
@@ -89,45 +107,39 @@
                                 <h6>About Our History</h6>
                                 <h3>We are startuply and we create efficient web design and branding.</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor incidunt non pariatur accusantium, reiciendis dolorum nisi. Deleniti ea, dolore culpa, vero perspiciatis quasi id voluptate harum iste magni perferendis obcaecati eos distinctio illum at laboriosam! Lorem ipsum dolor sit amet.</p>
-                                <a href="" class="boxed-btn">Read more</a>
+                                <a href="#" class="boxed-btn">Read more</a>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4">
-                            <div class="single-wwaa-box">
-                                <div class="single-wwaa-content">
-                                    <div class="wwaa-icon">
-                                        <img src="img/wwa/icon-1.png" alt="">
-                                    </div>
-                                    <h5>Our mission, vission</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet porro dolor ad veniam velit. Fuga, impedit dolorum dicta rerum enim eius minus magnam.</p>
-                                    <a href=""><i class="zmdi zmdi-chevron-right"></i></a>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-wwa-box">
+                                <div class="wwa-icon">
+                                    <i class="pe pe-7s-diamond"></i>
                                 </div>
+                                <h5>Our mission, vission</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet porro dolor ad veniam velit. Fuga, impedit dolorum dicta rerum enim eius minus magnam.</p>
+                                <a href=""><i class="zmdi zmdi-chevron-right"></i></a>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="single-wwaa-box">
-                                <div class="single-wwaa-content">
-                                    <div class="wwaa-icon">
-                                        <img src="img/wwa/icon-1.png" alt="">
-                                    </div>
-                                    <h5>Our mission, vission</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet porro dolor ad veniam velit. Fuga, impedit dolorum dicta rerum enim eius minus magnam.</p>
-                                    <a href=""><i class="zmdi zmdi-chevron-right"></i></a>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-wwa-box">
+                                <div class="wwa-icon">
+                                    <img src="img/wwa/icon-1.png" alt="">
                                 </div>
+                                <h5>Our mission, vission</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet porro dolor ad veniam velit. Fuga, impedit dolorum dicta rerum enim eius minus magnam.</p>
+                                <a href=""><i class="zmdi zmdi-chevron-right"></i></a>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="single-wwaa-box">
-                                <div class="single-wwaa-content">
-                                    <div class="wwaa-icon">
-                                        <img src="img/wwa/icon-1.png" alt="">
-                                    </div>
-                                    <h5>Our mission, vission</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet porro dolor ad veniam velit. Fuga, impedit dolorum dicta rerum enim eius minus magnam.</p>
-                                    <a href=""><i class="zmdi zmdi-chevron-right"></i></a>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-wwa-box">
+                                <div class="wwa-icon">
+                                    <img src="img/wwa/icon-1.png" alt="">
                                 </div>
+                                <h5>Our mission, vission</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet porro dolor ad veniam velit. Fuga, impedit dolorum dicta rerum enim eius minus magnam.</p>
+                                <a href=""><i class="zmdi zmdi-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -135,7 +147,7 @@
             </div>
         </section>
         
-        <section>
+        <section data-scroll-index="3">
             <div class="our-work-area pd-tb-120">
                 <div class="container">
                     <div class="row">
@@ -147,32 +159,32 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-5">
-                            <div class="single-project-box med bg-img" data-background="img/owa/our-work-1.jpg">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="single-project-box med bg-img" data-background="img/ow/our-work-1.jpg">
                                 <div class="single-project-content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio, rem soluta illo nam, earum.</p>
                                     <h5><a href="">Expert SEO Service</a></h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-7">
-                            <div class="single-project-box big bg-img" data-background="img/owa/our-work-2.jpg">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="single-project-box big bg-img" data-background="img/ow/our-work-2.jpg">
                                 <div class="single-project-content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio, rem soluta illo nam, earum.</p>
                                     <h5><a href="">Expert SEO Service</a></h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-7">
-                            <div class="single-project-box med bg-img" data-background="img/owa/our-work-3.jpg">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="single-project-box med bg-img" data-background="img/ow/our-work-3.jpg">
                                 <div class="single-project-content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio, rem soluta illo nam, earum.</p>
                                     <h5><a href="https://www.youtube.com/watch?v=-_7EWI0Yk7U" class="play-btn"><span class="video-icon"><i class="zmdi zmdi-play"></i></span> Expert SEO Service</a></h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5">
-                            <div class="single-project-box big bg-img" data-background="img/owa/our-work-4.jpg">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="single-project-box big bg-img" data-background="img/ow/our-work-4.jpg">
                                 <div class="single-project-content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda distinctio, rem soluta illo nam, earum.</p>
                                     <h5><a href="">Expert SEO Service</a></h5>
@@ -194,28 +206,28 @@
                         </div>
                         <div class="col-lg-7">
                             <div class="row text-center">
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-4">
                                     <div class="single-counter">
                                         <div class="counter-icon">
-                                            <i class="zmdi zmdi-account-o"></i>
+                                            <i class="pe pe-7s-users"></i>
                                         </div>
                                         <p><span class="counter">3305</span> Clients</p>
                                     </div>  
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-4">
                                     <div class="single-counter">
                                         <div class="counter-icon">
-                                            <i class="zmdi zmdi-account-o"></i>
+                                            <i class="pe pe-7s-timer"></i>
                                         </div>
-                                        <p><span class="counter">3305</span> Clients</p>
+                                        <p><span class="counter">3500</span> Shipment</p>
                                     </div>  
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-4">
                                     <div class="single-counter">
                                         <div class="counter-icon">
-                                            <i class="zmdi zmdi-account-o"></i>
+                                            <i class="pe pe-7s-study"></i>
                                         </div>
-                                        <p><span class="counter">3305</span> Clients</p>
+                                        <p><span class="counter">355</span> Supporter</p>
                                     </div>  
                                 </div>
                             </div>
@@ -225,7 +237,7 @@
             </div>    
         </section>
         
-        <section>
+        <section data-scroll-index="4">
             <div class="pricing-area pd-t-120">
                 <div class="container">
                     <div class="row">
@@ -237,7 +249,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-md-6">
                             <div class="single-pricing-table">
                                 <div class="pricing-heading">
                                     <h6 class="pricing-plan-category"><span>Basic</span> Individual</h6>
@@ -254,7 +266,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-md-6">
                             <div class="single-pricing-table">
                                 <div class="pricing-heading">
                                     <h6 class="pricing-plan-category"><span>Basic</span> Individual</h6>
@@ -271,7 +283,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-md-6">
                             <div class="single-pricing-table">
                                 <div class="pricing-heading">
                                     <h6 class="pricing-plan-category"><span>Basic</span> Individual</h6>
@@ -386,7 +398,7 @@
             </div>
         </section>
             
-        <section>
+        <section data-scroll-index="5">
             <div class="blog-area pd-t-120">
                 <div class="container">
                     <div class="row">
@@ -398,7 +410,7 @@
                                     </div>
                                     <div class="post-title-meta-wrap post-title-meta-wrap-sm">
                                         <div class="post-title-wrap post-title-wrap-sm">
-                                            <h4 class="post-title post-title-sm"><a href="">Career tips for best photographer</a></h4>    
+                                            <h5 class="post-title post-title-sm"><a href="">Career tips for best photographer</a></h5>    
                                         </div>
                                         <div class="post-meta-wrap post-meta-wrap-sm">
                                             <span class="post-date">20 Feb 2020</span>
@@ -413,7 +425,7 @@
                                     </div>
                                     <div class="post-title-meta-wrap post-title-meta-wrap-sm">
                                         <div class="post-title-wrap post-title-wrap-sm">
-                                            <h4 class="post-title post-title-sm"><a href="">Career tips for best photographer</a></h4>    
+                                            <h5 class="post-title post-title-sm"><a href="">Career tips for best photographer</a></h5>    
                                         </div>
                                         <div class="post-meta-wrap post-meta-wrap-sm">
                                             <span class="post-date">20 Feb 2020</span>
@@ -428,7 +440,7 @@
                                     </div>
                                     <div class="post-title-meta-wrap post-title-meta-wrap-sm">
                                         <div class="post-title-wrap post-title-wrap-sm">
-                                            <h4 class="post-title post-title-sm"><a href="">Career tips for best photographer</a></h4>    
+                                            <h5 class="post-title post-title-sm"><a href="">Career tips for best photographer</a></h5>    
                                         </div>
                                         <div class="post-meta-wrap post-meta-wrap-sm">
                                             <span class="post-date">20 Feb 2020</span>
@@ -443,7 +455,7 @@
                                     </div>
                                     <div class="post-title-meta-wrap post-title-meta-wrap-sm">
                                         <div class="post-title-wrap post-title-wrap-sm">
-                                            <h4 class="post-title post-title-sm"><a href="">Career tips for best photographer</a></h4>    
+                                            <h5 class="post-title post-title-sm"><a href="">Career tips for best photographer</a></h5>    
                                         </div>
                                         <div class="post-meta-wrap post-meta-wrap-sm">
                                             <span class="post-date">20 Feb 2020</span>
@@ -458,7 +470,7 @@
                                     </div>
                                     <div class="post-title-meta-wrap post-title-meta-wrap-sm">
                                         <div class="post-title-wrap post-title-wrap-sm">
-                                            <h4 class="post-title post-title-sm"><a href="">Career tips for best photographer</a></h4>    
+                                            <h5 class="post-title post-title-sm"><a href="">Career tips for best photographer</a></h5>    
                                         </div>
                                         <div class="post-meta-wrap post-meta-wrap-sm">
                                             <span class="post-date">20 Feb 2020</span>
@@ -474,7 +486,7 @@
             </div>
         </section>
 
-        <section>
+        <section data-scroll-index="6">
             <div class="contact-area pd-tb-120">
                 <div class="container">
                     <div class="row">
@@ -549,7 +561,7 @@
         <div class="footer-area pd-tb-120 gray-bg">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-8">
                         <div class="footer-widget">
                             <img src="img/logo/logo.png" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque inventore rem maiores hic nostrum voluptas</p>
@@ -561,7 +573,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col-lg-2 offset-lg-1">
+                    <div class="col-lg-2 offset-lg-1 col-md-4">
                         <div class="footer-widget">
                             <h3>Who can help</h3>
                             <ul class="useful-links">
@@ -573,10 +585,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 offset-lg-1">
+                    <div class="col-lg-4 offset-lg-1 col-md-12 text-md-center">
                         <div class="footer-widget">
                             <h3>Subscribe for newsleeter</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima reiciendis temporibus asperiores vero impedit cupiditate.</p>
                             <div class="subscription-form-wrap">
                                 <form action="subscribe.php" class="subscription-form">
                                     <input type="text" placeholder="Your email">
@@ -608,6 +620,7 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
     <script src="js/ajax-form.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>

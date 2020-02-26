@@ -1,5 +1,27 @@
 (function ($) {
 "use strict";
+
+	// header-sticky
+	$(window).on('scroll', function () {
+		var scroll = $(window).scrollTop();
+		if (scroll < 1) {
+			$(".header-area").removeClass("header-sticky");
+		} else {
+			$(".header-area").addClass("header-sticky");
+		}
+	});
+
+	// scrollIt (for header)
+    $.scrollIt({
+        upKey: 0, // key code to navigate to the next section
+        downKey: 0, // key code to navigate to the previous section
+        easing: 'linear', // the easing function for animation
+        scrollTime: 900, // how long (in ms) the animation takes
+        activeClass: 'active', // class given to the active nav element
+        onPageChange: null, // function(pageIndex) that is called when page is changed
+        topOffset: -82 // offste (in px) for fixed top navigation
+    });
+
 	// data-background (for background image)
 	$("[data-background]").each(function() {
 	    $(this).css("background-image", "url(" + $(this).attr("data-background") + ")")
@@ -22,7 +44,7 @@
 		margin: 30,
 		items: 4,
 		dots: false,
-		nav: true,
+		nav: false,
 		navText: ['<i class="zmdi zmdi-long-arrow-left"></i>', '<i class="zmdi zmdi-long-arrow-right"></i>']
 	});
 
@@ -51,6 +73,27 @@
 		animateOut: 'fadeOutLeft',
 		animateIn: 'fadeInRight',
 	});
+
+	// meanmenu
+	$('#responsive-menu').meanmenu({
+		meanMenuContainer: '.mean-menu',
+		meanScreenWidth: "992",
+		onePage: true,
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -129,4 +172,6 @@
 		dots:true,
 	});
 
+	// body-pre-loader
+	$(".body-preloader").fadeOut();
 })(jQuery);
