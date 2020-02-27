@@ -38,41 +38,75 @@
     	time: 300,
 	});
 
+	
+
 	$('.partner-logo-carousel').owlCarousel({
-		loop: true,
-		autoplay: true,
-		margin: 30,
-		items: 4,
-		dots: false,
+	    loop:true,
+	    autoplay: true,
+	    margin:30,
+	    dots: false,
 		nav: false,
-		navText: ['<i class="zmdi zmdi-long-arrow-left"></i>', '<i class="zmdi zmdi-long-arrow-right"></i>']
+		navText: ['<i class="zmdi zmdi-long-arrow-left"></i>', '<i class="zmdi zmdi-long-arrow-right"></i>'],
+	    responsiveClass:true,
+	    responsive:{
+	        0:{
+	            items:1,
+	            nav:true
+	        },
+	        600:{
+	            items:3,
+	            nav:false
+	        },
+	        1000:{
+	            items:5,
+	            nav:true,
+	            loop:false
+	        }
+	    }
 	});
+
 
 	$('.testimonial-carousel').owlCarousel({
 		loop: true,
-		autoplay: true,
+		autoplay: false,
 		margin: 60,
 		items: 1,
 		dots: false,
 		nav: true,
 		navText: ['<i class="zmdi zmdi-long-arrow-left"></i>', '<i class="zmdi zmdi-long-arrow-right"></i>'],
 		autoplayTimeout: 9000,
-		animateOut: 'fadeOutLeft',
-		animateIn: 'fadeInRight',
+		animateOut: 'fadeOut',
+		animateIn: 'fadeIn',
 	});
 
 	$('.blog-carousel').owlCarousel({
-		loop: true,
-		autoplay: false,
-		margin: 30,
-		items: 3,
-		dots: false,
+	    loop:true,
+	    autoplay: true,
+	    margin:30,
+	    dots: false,
 		nav: true,
 		navText: ['<i class="zmdi zmdi-long-arrow-left"></i>', '<i class="zmdi zmdi-long-arrow-right"></i>'],
-		autoplayTimeout: 9000,
-		animateOut: 'fadeOutLeft',
-		animateIn: 'fadeInRight',
+	    responsiveClass:true,
+	    responsive:{
+	        0:{
+	            items:1,
+	            nav:true
+	        },
+	        600:{
+	            items:3,
+	            nav:false
+	        },
+	        1000:{
+	            items:5,
+	            nav:true,
+	            loop:false
+	        }
+	    }
 	});
+
+
+
+
 
 	// meanmenu
 	$('#responsive-menu').meanmenu({

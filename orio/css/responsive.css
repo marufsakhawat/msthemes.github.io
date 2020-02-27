@@ -33,7 +33,71 @@
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
-	
+	.hero-area h2 {
+		font-size: 35px;
+	}
+	.hero-text p {
+		font-size: 15px;
+	}
+	.area-title-big h3 {
+		font-size: 32px;
+	}
+	.counter-area {
+		height: auto;
+		text-align: center !important;
+		padding: 100px 0;
+	}
+	.counter-area .area-title-big {
+		margin-bottom: 70px;
+	}
+	.counter {
+		font-size: 35px;
+		margin: 35px 0;	
+	}
+	.partner-logo-carousel .owl-nav div {
+		display: none;
+	}
+	.single-testimonial {
+		padding: 30px;
+		margin: 10px 0;
+	}
+	.testimonial-author-image {
+		float: none;
+		width: auto;
+		margin-right: 0;
+		display: block;
+		margin-bottom: 35px;
+	}
+	.testimonial-content {
+		float: none;
+		width: auto;
+	}
+	.testimonial-carousel .owl-nav div {
+		display: none;
+	}
+	.cta-area .row {
+		height: auto;
+		padding: 35px 15px;
+		text-align: center !important;
+	}
+	.cta-area .row .text-right {
+		text-align: center !important;
+	}
+	.cta-area h2 {
+		margin-bottom: 35px;
+	}
+	.cta-area h4 {
+		font-size: 30px;
+	}
+	.cta-area .cta-btn {
+		margin-top: 35px;
+	}
+	.footer-widget {
+		margin-bottom: 80px;
+	}
+	div[class^=col-]:last-child .footer-widget {
+		margin-bottom: 0;
+	}
 }
  
 /* Large Mobile :480px. */
