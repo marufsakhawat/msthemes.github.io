@@ -11,6 +11,10 @@
 		}
 	});
 
+	
+
+
+
 	// scrollIt (for header)
     $.scrollIt({
         upKey: 0, // key code to navigate to the next section
@@ -21,6 +25,31 @@
         onPageChange: null, // function(pageIndex) that is called when page is changed
         topOffset: -82 // offste (in px) for fixed top navigation
     });
+
+    $('.js-target-scroll').on('click', function() {
+        var target = $(this.hash);
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: (target.offset().top - navbar.outerHeight())
+            }, 1000);
+            return false;
+        }
+    });
+
+
+    // preloader js
+	$(window).on('load', function () {
+		$('#ctn-preloader').addClass('loaded');
+		$("#loading").fadeOut(500);
+		// Una vez haya terminado el preloader aparezca el scroll
+
+		if ($('#ctn-preloader').hasClass('loaded')) {
+			// Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
+			$('#preloader').delay(900).queue(function () {
+				$(this).remove();
+			});
+		}
+	});
 
 	// data-background (for background image)
 	$("[data-background]").each(function() {
@@ -75,8 +104,8 @@
 		nav: true,
 		navText: ['<i class="zmdi zmdi-long-arrow-left"></i>', '<i class="zmdi zmdi-long-arrow-right"></i>'],
 		autoplayTimeout: 9000,
-		animateOut: 'fadeOut',
-		animateIn: 'fadeIn',
+		animateOut: 'slideOutLeft',
+		animateIn: 'slideInRight',
 	});
 
 	$('.blog-carousel').owlCarousel({
@@ -93,11 +122,11 @@
 	            nav:true
 	        },
 	        600:{
-	            items:3,
+	            items:2,
 	            nav:false
 	        },
 	        1000:{
-	            items:5,
+	            items:3,
 	            nav:true,
 	            loop:false
 	        }
@@ -110,8 +139,8 @@
 
 	// meanmenu
 	$('#responsive-menu').meanmenu({
-		meanMenuContainer: '.mean-menu',
-		meanScreenWidth: "992",
+		meanMenuContainer: '.mean-menu-wrap',
+		meanScreenWidth: "991",
 		onePage: true,
 	});
 
@@ -206,6 +235,23 @@
 		dots:true,
 	});
 
+	/*-------------------------------------------------------------------------------
+	  Smooth scroll to anchor
+	-------------------------------------------------------------------------------*/
+
+
+
+    $('.js-target-scroll').on('click', function() {
+        var target = $(this.hash);
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: (target.offset().top - navbar.outerHeight())
+            }, 1000);
+            return false;
+        }
+    });
+
+
 	// body-pre-loader
-	$(".body-preloader").fadeOut();
+	// $(".body-preloader").fadeOut();
 })(jQuery);
