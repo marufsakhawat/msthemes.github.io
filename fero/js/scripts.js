@@ -4,7 +4,7 @@
 	// header-sticky
 	$(window).on('scroll', function () {
 		var scroll = $(window).scrollTop();
-		if (scroll < 168) {
+		if (scroll < 60) {
 			$(".header-main").removeClass("header-sticky");
 		} else {
 			$(".header-main").addClass("header-sticky");
