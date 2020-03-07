@@ -909,3 +909,166 @@ div[class^=col-]:nth-child(3) .single-video-description-box.bg-overlay:after {
 .service-area-content {
   height: 900px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-top {
+  background-color: #13c4a1;
+  color: #fff;
+}
+
+.footer-info img {
+  margin-bottom: 50px;
+}
+.footer-top .ht-social a {
+  margin-left: 0;
+  margin-right: 7px;
+}
+.footer-top h3 {
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+.footer-widget p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+
+
+
+
+
+.subscription-form {
+    position: relative;
+    overflow: hidden;
+}
+
+.subscription-form input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 3px;
+    border: 0;
+}
+
+.subscription-form button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    padding: 15px;
+    color: #ff612f;
+    font-size: 22px;
+    border-left: 1px solid #ddd;
+}
+
+.subscription-form button i.zmdi {
+
+}
+
+
+
+
+
+.line-separator {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  opacity: .5;
+}
+.footer-bottom {
+  background-color: #13c4a1;
+  color: #fff
+}
+.footer-bottom .row {
+  padding: 20px 0;
+}
+
+
+
+
+
+/*
+ash color: #4a6f8a;
+green color: #13c4a1;
+blue color: #080a3c;
+orange color #ff612f;
+heading color blue: ##080a3c;
+
+
+
+
+icon color green #13C4A1;
+icon color blue #6610F2;
+icon color yellow #FFB700;
+icon color red #FC3549;
+icon color green bright #00D280;
+icon color orange #FF612F;
+
+*/
