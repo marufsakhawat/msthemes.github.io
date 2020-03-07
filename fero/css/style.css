@@ -987,13 +987,16 @@ div[class^=col-]:nth-child(3) .single-video-description-box.bg-overlay:after {
 .footer-top .ht-social a {
   margin-left: 0;
   margin-right: 7px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
 }
 .footer-top h3 {
     color: #fff;
     font-weight: 600;
     text-transform: capitalize;
     letter-spacing: 2px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 .footer-widget p {
   margin-bottom: 20px;
