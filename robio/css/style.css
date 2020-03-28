@@ -514,6 +514,10 @@ img {
     padding-left: 45px;
 }
 
+.content-title {
+    margin-bottom: 75px;
+}
+
 .content-title h5 {
     text-transform: uppercase;
     font-size: 14px;
@@ -983,38 +987,83 @@ img {
 
 
 
+.experience-year {
+    background-color: #FC4B5B;
+    padding: 75px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.experience-year p span {
+    display: block;
+    position: relative;
+    padding-bottom: 65px;
+    margin-bottom: 5px;
+    font-size: 70px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1;
+}
+
+.experience-year p span:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 2px;
+    height: 45px;
+    background-color: #fff;
+    margin-left: -1px;
+}
+
+
+
+
+
 
 
 .experience-progresss-heading {
-    margin-bottom: 35px;
-    color: #777;
+    margin-bottom: 30px;
 }
 
-
-
+.experience-progresss-heading h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
 
 .single-skill {
-    padding-bottom: 30px;
+    padding-bottom: 27px;
     overflow: hidden;
 }
+
+.single-skill:last-child {
+    padding-bottom: 22px;
+}
+
 .progress-bar-label {
-    /*font-family: 'Rubik', sans-serif;*/
-    /*font-weight: 500;*/
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
     /*font-weight: 300;*/
     display: block;
     margin-bottom: 10px;
 }
+
 .progress {
     background-color: #ddd;
     border-radius: 3px;
     height: 8px;
     overflow: visible;
 }
+
 .progress-bar {
     background-image: linear-gradient(to right, #2E2D76 , #F04D5C);
     position: relative;
     border-radius: 3px;
 }
+
 .progress-bar span {
     position: absolute;
     right: -20px;
