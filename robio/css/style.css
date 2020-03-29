@@ -197,6 +197,22 @@ img {
 
 
 
+.overlay-black {
+    position: relative;
+    z-index: 1;
+}
+
+.overlay-black:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .8;
+    z-index: -1;
+}
 
 .overlay-gradient {
   position: relative;
@@ -1092,3 +1108,82 @@ img {
    color: #F04D5C;
    font-size: 18px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.counter-area {
+    height: 380px;
+    color: #fff;
+}
+
+.counter-area.overlay-black:after {
+    background-color: #FC4B5B;
+    opacity: .7;
+}
+
+.single-counter {
+    position: relative;
+}
+
+.single-counter:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1px;
+    height: 100px;
+    margin-top: -50px;
+    border-right: 1px solid #fff;
+    opacity: .5;
+}
+
+div[class^=col-]:last-child .single-counter:after {
+    display: none;
+}
+
+.counter-icon {
+    font-size: 75px;
+    height: 85px;
+    line-height: 85px;
+    margin-bottom: 10px;
+}
+
+.single-counter p {
+    font-size: 20px;
+}
+
+.single-counter p span {
+    position: relative;
+    display: block;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.single-counter p span:after {content: "+";margin-left: 7px;}
+
+
+
+
+
