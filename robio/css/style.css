@@ -1138,8 +1138,8 @@ img {
 }
 
 .counter-area.overlay-black:after {
-    background-color: #FC4B5B;
-    opacity: .7;
+    background-color: #000;
+    opacity: .5;
 }
 
 .single-counter {
