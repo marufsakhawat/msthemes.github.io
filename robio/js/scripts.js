@@ -34,6 +34,28 @@
 
         new WOW().init();
 
+        // testimonial-carousel
+	    $('.testimonial-carousel').owlCarousel({
+		    loop:true,
+		    autoplay:false,
+		    margin:10,
+		    dots:false,
+			nav:true,
+			navText:['<i class="zmdi zmdi-caret-left"></i>', '<i class="zmdi zmdi-caret-right"></i>'],
+		    responsiveClass:true,
+		    responsive:{
+		        0:{
+		            items:1,
+		        },
+		        600:{
+		            items:2,
+		        },
+		        1000:{
+		            items:2,
+		        }
+		    }
+		});
+
 		
 })(jQuery);
 
