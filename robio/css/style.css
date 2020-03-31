@@ -1412,7 +1412,7 @@ div[class^=col-]:last-child .single-counter:after {
     background-color: #fff;
     color: #777;
     border-radius: 3px;
-    border-bottom: 10px solid #2E2D76;
+    border-bottom: 3px solid #FC4B5B;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     margin: 10px;
 }
@@ -1440,9 +1440,8 @@ div[class^=col-]:last-child .single-counter:after {
 }
 
 .testimonial-heading p {
-    color: #FC4B5B;
+    color: #666;
     font-size: 15px;
-    font-weight: 600;
 }
 
 .testimonial-carousel .owl-nav {
