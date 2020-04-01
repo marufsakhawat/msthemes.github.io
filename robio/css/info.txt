@@ -1,0 +1,29 @@
+/*
+FINAL COLORS:
+BLUE: #2c235b;
+RED: #fc4c60;
+TEXT: #666;
+HEADING: 222;
+
+
+gradient:;
+background: #9357C9;
+background: -webkit-linear-gradient(left, #9347cc 0%,#2969d8 50%,#2cc69d 100%);
+background: -moz-linear-gradient(left, #9347cc 0%,#2969d8 50%,#2cc69d 100%);
+background: -o-linear-gradient(left, #9347cc 0%,#2969d8 50%,#2cc69d 100%);
+background: -ms-linear-gradient(left, #9347cc 0%,#2969d8 50%,#2cc69d 100%);
+background: linear-gradient(left, #9347cc 0%,#2969d8 50%,#2cc69d 100%);
+
+
+
+
+text gradient
+background: -webkit-linear-gradient(left, #9347cc 0%,#2969d8 50%,#2cc69d 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+
+background-color: #03e5b7;
+background-image: linear-gradient(315deg, #03e5b7 0%, #037ade 74%);
+*/
