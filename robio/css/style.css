@@ -7,10 +7,10 @@ Version: 1.0.0
 Website:
 */
 /*base css start*/
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&family=Ubuntu:wght@400;500;700&display=swap');
 /*
-https://fonts.google.com/specimen/Rubik?query=rubi&selection.family=Rubik:wght@500;700;900|Work+Sans:wght@300;400;500&sidebar.open
-font-family: 'Rubik', sans-serif;
+https://fonts.google.com/specimen/Source+Sans+Pro?query=sans+pro&selection.family=Source+Sans+Pro:wght@300;400;600|Ubuntu:wght@500;700&sidebar.open
+font-family: 'Ubuntu', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
 */
 body {
@@ -18,7 +18,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   background-color: #fff;
-  color: #232323;
+  color: #676767;
 }
 a {
   display: inline-block;
@@ -60,9 +60,9 @@ input:focus, textarea, textarea:focus{
   box-shadow: 0 0 0;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
-  color: #222;
+  color: #282828;
   text-transform: capitalize;
   margin: 0 0 15px;
   line-height: 1.35;
@@ -176,8 +176,10 @@ img {
   background-size: cover;
 }
 .gray-bg {
-  background-color: #f8f5fc;
+  background-color: #f8f8f8;
 }
+
+
 
 /*bg-overlay start*/
 .bg-overlay {
@@ -229,16 +231,41 @@ img {
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: .5;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000066+0,000066+36,9999ff+100 */
-  background: #000066; /* Old browsers */
-  background: -moz-linear-gradient(left,  #000066 0%, #000066 36%, #9999ff 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left,  #000066 0%,#000066 36%,#9999ff 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right,  #000066 0%,#000066 36%,#9999ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000066', endColorstr='#9999ff',GradientType=1 ); /* IE6-9 */
+  opacity: .8;
+  
 
-
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8d55fd+0,8d55fd+55,999999+100 */
+  background: #0F2952; /* Old browsers */
+  background: -moz-linear-gradient(left,  #0F2952 0%, #0F2952 55%, #ddd 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #0F2952 0%,#0F2952 55%,#ddd 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #0F2952 0%,#0F2952 55%,#ddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0F2952', endColorstr='#ddd',GradientType=1 ); /* IE6-9 */
 }
+
+.overlay-gradient-2 {
+  position: relative;
+  z-index: 1;
+}
+.overlay-gradient-2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .8;
+  
+
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c235b+0,fc4c60+50,2c235b+100 */
+background: #0F2952; /* Old browsers */
+background: -moz-linear-gradient(left,  #0F2952 0%, #fc4c60 50%, #2c235b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #0F2952 0%,#fc4c60 50%,#2c235b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #0F2952 0%,#fc4c60 50%,#2c235b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0F2952', endColorstr='#2c235b',GradientType=1 ); /* IE6-9 */
+}
+
+
 /*bg-overlay end*/
 .owl-carousel .owl-item img {
   width: auto !important;
@@ -333,7 +360,7 @@ img {
 }
 .ht-contact a i.zmdi {
     margin-right: 10px;
-    color: #ff5353;
+    color: #ff3d3e;
 }
 
 
@@ -394,7 +421,7 @@ img {
     height: 8px;
     margin-top: -3px;
     border-radius: 50%;
-    background-color: #ff5353;
+    background-color: #ff3d3e;
     opacity: 0;
     transition: 0.6s;
 }
@@ -434,26 +461,30 @@ img {
 
 .hero-text h2 {
     color: #fff;
-    font-weight: 700;
+    /*font-weight: 400;*/
     font-size: 60px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    letter-spacing: .75px;
 }
 
 .hero-text p {
     /*padding: 0 80px;*/
     padding-right: 175px;
-    color: #ccc;
     margin-bottom: 25px;
+    letter-spacing: .75px;
+    font-size: 18px;
 }
 
 .boxed-btn {
     color: #fff;
     text-transform: uppercase;
-    padding: 16px 38px;
-    background-color: #ff5353;
+    padding: 15px 35px;
+    background-color: #ff3d3e;
     border-radius: 65px;
     letter-spacing: 1px;
     font-weight: 600;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-size: 16px;
 }
 
 .boxed-btn.bordered-btn {
@@ -464,8 +495,101 @@ img {
 .hero-btns-wrap .boxed-btn {
     /*margin: 0 10px;*/
     margin-right: 15px;
-    min-width: 210px;
+    /*min-width: 221px;*/
+    text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*focus-area start*/
+.single-focus {
+    height: 420px;
+    text-align: center;
+    padding: 30px;
+}
+
+.focus-icon {
+    position: relative;
+    font-size: 55px;
+    color: #f39f70;
+    line-height: 1;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.focus-icon:before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: 5px;
+    z-index: -1;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f2c371;
+    opacity: .25;
+}
+
+
+div[class^=col-]:nth-child(2) .focus-icon {
+    color: #ee6060;
+}
+
+div[class^=col-]:nth-child(2) .focus-icon:before {
+    background-color: #ee8989;
+}
+
+div[class^=col-]:nth-child(3) .focus-icon {
+    color: #925afb;
+}
+
+div[class^=col-]:nth-child(3) .focus-icon:before {
+    background-color: #f4b9d9;
+}
+
+.single-focus h5{
+    margin-bottom: 10px;
+}
+
+
+/*focus-area end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -490,20 +614,22 @@ img {
 .content-title h5 {
     text-transform: uppercase;
     font-size: 14px;
-    color: #FC4B5B;
+    color: #ff3d3e;
     position: relative;
     display: inline-block;
-    padding-right: 85px;
+    padding-right: 60px;
+    letter-spacing: 2px;
 }
 
 .content-title h5:after {
     content: "";
     position: absolute;
-    right: 0;top: 50%;
-    margin-top: -1px;
-    width: 75px;
-    height: 2px;
-    background-color: #FC4B5B;
+    right: 0;
+    top: 50%;
+    margin-top: -.5px;
+    width: 50px;
+    height: 1px;
+    background-color: #ff3d3e;
     border-radius: 50px;
     opacity: .7;
 }
@@ -527,13 +653,13 @@ img {
 }
 
 .our-speciality li:before {
-    content: "\eed8";
-    font-family: "IcoFont";
+    content: "\f267";
+    font-family:Material-Design-Iconic-Font;
     font-size: 18px;
     position: absolute;
     left: 0;
     line-height: 2;
-    color: #2c235b;
+    color: #ff3d3e;
 }
 
 
@@ -561,8 +687,13 @@ img {
     width: calc(100% + 40px);*/
     border-radius: 5px;
     z-index: -1;
-    background-image: linear-gradient(to right, #2E2D76 , #F04D5C);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8d55fd+0,8d55fd+55,999999+100 */
+    background: #0F2952; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #0F2952 0%, #8d55fd 55%, #999999 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #0F2952 0%,#8d55fd 55%,#999999 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #8d55fd 0%,#0F2952 55%,#999999 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0F2952', endColorstr='#999999',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .about-area-image img {
     border-radius: 5px;
@@ -636,16 +767,14 @@ img {
 
 .single-service {
     border: 1px solid #e6e6e6;
-    padding: 35px 35px;
-    border-radius: 5px;
+    padding: 40px 25px;
     font-size: 15px;
     color: #777;
     margin: 15px 0;
-    transition: 0.4s;
+    transition: 0.6s;
 }
 
 .single-service:hover {
-    background-color: #fff;
     border-color: transparent;
     -webkit-box-shadow: 0px 20px 40px rgba(35, 38, 125, 0.1);
     box-shadow: 0px 20px 40px rgba(35, 38, 125, 0.1);
@@ -658,69 +787,105 @@ img {
     border-radius: 50%;
     line-height: 1;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     transition: 0.4s;
+}
+
+
+
+.service-icon i {
+    background-image: linear-gradient(90deg, #0F2952, #ff3d3e);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0F2952', endColorstr='#ff3d3e',GradientType=0 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .service-icon:after {
     content: '';
     width: 120px;
     height: 1px;
-    background: #F04D5C;
-    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#F04D5C), to(transparent));
-    background: linear-gradient(to right, transparent, #F04D5C, transparent);
+    background: #8d55fd;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#8d55fd), to(transparent));
+    background: linear-gradient(to right, transparent, #ff3d3e, transparent);
     position: absolute;
     bottom: 0;
     left: calc(50% - 60px);
 }
 
-.service-icon i {
-    background-image: linear-gradient(90deg, #2E2D76, #F04D5C);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2E2D76', endColorstr='#F04D5C',GradientType=0 );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project-area .container-fluid {
+    margin: 0;
+    padding: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.project-area .content-title {
+    margin-bottom: 65px;
+}
 
 .button-group {
-    margin-bottom: 80px;
+    margin-bottom: 55px;
+    text-align: center;
 }
 
 .button-group button {
     background-color: transparent;
     position: relative;
     padding: 0 25px;
+    font-weight: 600;
+    color: #999;
 }
 
 .button-group button.active {
@@ -733,28 +898,23 @@ img {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    color: #2E2D76;
+    color: #999;
     margin: 0 -2px;
-}
-
-.button-group button:first-child {
-    padding-left: 0;
-}
-
-.button-group button:last-child {
-    padding-right: 0;
+    font-weight: 300;
 }
 
 .button-group button:last-child:after {
-  display: none;
+    display: none;
 }
 
 .single-project {
-    margin-bottom: 30px;
+    margin: 15px 0;
+    border-radius: 3px;
+    overflow: hidden;
 }
+
 .single-project:after {
-    background: #F04D5C;
-    
+    background: #0F2952;
     z-index: 1;
     transition: 0.6s;
     opacity: 0;
@@ -764,9 +924,12 @@ img {
     opacity: 1;
 }
 
-.single-project img {
+.single-project .project-image {
+    min-height: 300px;
     width: 100%;
 }
+
+
 
 .project-text {
     position: absolute;
@@ -774,12 +937,14 @@ img {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    padding-top: 30px;
+    padding-top: 120px;
     transition: 1s;
     opacity: 0;
 
     text-align: center;
     color: #fff;
+    width: 100%;
+    height: 100%;
 }
 
 .single-project:hover .project-text {
@@ -787,41 +952,42 @@ img {
 }
 
 .project-text a {
-    position: relative;
-    width: 70px;
-    height: 35px;
-    line-height: 70px;
-    text-align: center;
-    margin: 0 auto 0;
-    display: inline-block;
-}
-
-.project-text a:before,
-.project-text a:after {
-    content: "";
     position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 70px;
-    margin-left: -35px;
-    margin-top: -35px;
-    height: 3px;
-    background-color: #fff;
-}
-
-.project-text a:after {
-    transform: rotate(90deg);
-    background-color: #ccc;
-}
-
-.project-text h5 {
+    right: 40px;
+    bottom: 30px;
     color: #fff;
-    margin-bottom: 0;
+    font-size: 25px;
 }
 
 .project-text p {
-    color: #ccc;
+    color: #f1f1f1;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+    font-size: 15px;
+    position: relative;
 }
+
+.project-text p:after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #fff;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#fff), to(transparent));
+    background: linear-gradient(to right, transparent, #fff, transparent);
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+    
+
+.project-text h5 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+
 
 
 
@@ -876,7 +1042,7 @@ img {
 }
 
 .boxed-btn.cta-btn {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
 
 }
@@ -1029,7 +1195,7 @@ img {
     margin-bottom: 5px;
     font-size: 70px;
     font-weight: 500;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     line-height: 1;
 }
 
@@ -1069,7 +1235,7 @@ img {
 }
 
 .progress-bar-label {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     /*font-weight: 300;*/
     display: block;
@@ -1108,7 +1274,7 @@ img {
 .single-experience-list {
     padding: 50px 30px 55px;
     border-radius: 5px;
-    color: #666;
+    color: #676767;
     -webkit-box-shadow: 0px 20px 40px rgba(35, 38, 125, 0.1);
     box-shadow: 0px 20px 40px rgba(35, 38, 125, 0.1);
 }
@@ -1260,7 +1426,7 @@ div[class^=col-]:last-child .single-counter:after {
 .member-info {
     background-color: #fff;
     padding: 25px 20px;
-    color: #666;
+    color: #676767;
     text-align: center;
     position: relative;
     transition: 0.6s;
@@ -1451,7 +1617,7 @@ div[class^=col-]:last-child .single-counter:after {
 }
 
 .testimonial-heading p {
-    color: #666;
+    color: #676767;
     font-size: 15px;
 }
 
@@ -1743,7 +1909,7 @@ div[class^=col-]:last-child .single-counter:after {
 
 .blog-content {
     padding: 40px 30px;
-    color: #666;
+    color: #676767;
     position: relative;
 }
 
@@ -1861,7 +2027,7 @@ div[class^=col-]:last-child .single-counter:after {
 
 
 .copyright p {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     color: #fff;
     font-weight: 500;
     font-size: 16px;
