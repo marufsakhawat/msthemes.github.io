@@ -56,6 +56,30 @@
 		    }
 		});
 
+		// testimonial-carousel
+	    $('.partner-logo-carousel').owlCarousel({
+		    loop:true,
+		    autoplay:false,
+		    margin:30,
+		    dots:false,
+			nav:false,
+			navText:['<i class="zmdi zmdi-caret-left"></i>', '<i class="zmdi zmdi-caret-right"></i>'],
+		    responsiveClass:true,
+		    responsive:{
+		        0:{
+		            items:2,
+		        },
+		        600:{
+		            items:3,
+		        },
+		        1000:{
+		            items:4,
+		        }
+		    }
+		});
+
+		
+
 		
 })(jQuery);
 
