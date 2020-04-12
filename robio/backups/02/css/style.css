@@ -1053,6 +1053,11 @@ div[class^=col-]:nth-child(6) .single-service:after {
     opacity: 1;
 }
 
+/*temporary*/
+.single-project.tmp:after {
+    opacity: 1;
+}
+
 .single-project .project-image {
     min-height: 300px;
     width: 100%;
@@ -1075,6 +1080,10 @@ div[class^=col-]:nth-child(6) .single-service:after {
     color: #fff;
     width: 100%;
     height: 100%;
+}
+/*temporary*/
+.single-project.tmp .project-text {
+    opacity: 1;
 }
 
 
@@ -1459,7 +1468,14 @@ div[class^=col-]:nth-child(6) .single-service:after {
 }
 
 
+/*temporary*/
+.single-experience-list.tmp {
+    box-shadow: 0px 30px 50px rgba(35, 38, 125, 0.2);
+}
 
+.single-experience-list.tmp .experience-icon:after {
+    background-image: linear-gradient(to right, #ff5353 , #ff5353);
+}
 
 
 
@@ -1705,7 +1721,24 @@ div[class^=col-]:nth-child(6) .single-service:after {
 }
 
 
+/*temporary*/
+.single-team-member.tmp {
+    box-shadow: 0px 30px 60px rgba(35, 38, 125, 0.2);
+}
 
+.single-team-member.tmp .member-image-wrap img {
+    transform: scale(1.15);
+}
+
+.single-team-member.tmp .member-info {
+    margin-top: -30px;
+    padding-bottom: 50px;
+}
+
+.single-team-member.tmp .member-social {
+    opacity: 1;
+    bottom: 15px;
+}
 
 
 
