@@ -177,7 +177,7 @@ img {
   background-size: cover;
 }
 .gray-bg {
-  background-color: #f8f8f8;
+  background-color: #f2f2f2;
 }
 
 
@@ -295,6 +295,43 @@ img {
 *::placeholder {
   color: #666;
   opacity: 1;
+}
+
+
+
+
+.content-title {
+    margin-bottom: 75px;
+}
+
+.content-title h5 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ff3d3e;
+    position: relative;
+    display: inline-block;
+    padding-right: 60px;
+    letter-spacing: 2px;
+}
+
+.content-title h5:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -.5px;
+    width: 50px;
+    height: 1px;
+    background-color: #ff3d3e;
+    border-radius: 50px;
+    opacity: .7;
+}
+
+.content-title h2 {
+    color: #222;
+    font-size: 50px;
+    margin-bottom: 30px;
+    line-height: 1.3;
 }
 /*for selection end*/
 /*base css end*/
@@ -564,15 +601,15 @@ img {
 
 
 /*focus-area start*/
+
 .single-focus {
     text-align: center;
     padding: 50px 30px;
-    border: 1px solid #f1f1f1;
     border-right: 0;
 }
 
 div[class^=col-]:last-child .single-focus {
-    border-right: 1px solid #e6e6e6;
+    /*border-right: 1px solid #e6e6e6;*/
 }
 
 .focus-icon {
@@ -645,49 +682,15 @@ div[class^=col-]:nth-child(3) .focus-icon:before {
 
 
 
-
+.about-area {
+    padding-top: 120px;
+}
 
 .about-area-text {
     padding-right: 45px;
 }
 
-.content-title {
-    margin-bottom: 75px;
-}
 
-.about-area-text .content-title {
-    margin-bottom: 35px;
-}
-
-.content-title h5 {
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #ff3d3e;
-    position: relative;
-    display: inline-block;
-    padding-right: 60px;
-    letter-spacing: 2px;
-}
-
-.content-title h5:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -.5px;
-    width: 50px;
-    height: 1px;
-    background-color: #ff3d3e;
-    border-radius: 50px;
-    opacity: .7;
-}
-
-.content-title h2 {
-    color: #222;
-    font-size: 50px;
-    margin-bottom: 30px;
-    line-height: 1.3;
-}
 
 .our-speciality {
     margin-bottom: 15px;
@@ -711,7 +714,7 @@ div[class^=col-]:nth-child(3) .focus-icon:before {
 }
 
 .about-area-text .boxed-btn {
-    margin-top: 10px;
+    margin-top: 18px;
 }
 
 
@@ -825,8 +828,9 @@ div[class^=col-]:nth-child(3) .focus-icon:before {
 .single-service {
     padding: 40px 30px 30px;
     font-size: 15px;
-    /*border-radius: 3px;*/
-    /*margin: 5px;*/
+/*    border-radius: 3px;
+    overflow: hidden;
+    margin: 5px;*/
 
     color: #fff;
     position: relative;
@@ -840,7 +844,7 @@ div[class^=col-]:nth-child(3) .focus-icon:before {
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: .85;
+    opacity: 1;
     z-index: -1;
     transition: 0.6s;
 }
@@ -870,13 +874,9 @@ div[class^=col-]:nth-child(6) .single-service:after {
 }
 
 .single-service:hover:after {
-    opacity: 1;
+    opacity: .75;
 }
 
-/*temporary*/
-div[class^=col-]:nth-child(1) .single-service:after {
-    opacity: 1;
-}
 
 .service-icon {
     font-size: 55px;
@@ -926,6 +926,25 @@ div[class^=col-]:nth-child(1) .single-service:after {
 
 
 
+
+
+/*partner-area start*/
+/*.partner-area {
+    margin-bottom: 150px;
+}*/
+.single-partner-logo {
+    width: 100%;
+    height: 120px;
+    display: table;
+}
+
+.single-partner-logo img {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+/*partner-area end*/
 
 
 
@@ -1034,11 +1053,6 @@ div[class^=col-]:nth-child(1) .single-service:after {
     opacity: 1;
 }
 
-/*temporary*/
-.single-project.tmp:after {
-    opacity: 1;
-}
-
 .single-project .project-image {
     min-height: 300px;
     width: 100%;
@@ -1061,10 +1075,6 @@ div[class^=col-]:nth-child(1) .single-service:after {
     color: #fff;
     width: 100%;
     height: 100%;
-}
-/*temporary*/
-.single-project.tmp .project-text {
-    opacity: 1;
 }
 
 
@@ -1299,7 +1309,7 @@ div[class^=col-]:nth-child(1) .single-service:after {
 
 
 .experience-year {
-    width: 100%;
+    width: calc(100% - 15px);
     height: 500px;
     text-align: center;
     color: #fff;
@@ -1449,14 +1459,7 @@ div[class^=col-]:nth-child(1) .single-service:after {
 }
 
 
-/*temporary*/
-.single-experience-list.tmp {
-    box-shadow: 0px 30px 50px rgba(35, 38, 125, 0.2);
-}
 
-.single-experience-list.tmp .experience-icon:after {
-    background-image: linear-gradient(to right, #ff5353 , #ff5353);
-}
 
 
 
@@ -1508,7 +1511,7 @@ div[class^=col-]:nth-child(1) .single-service:after {
 
 
 .counter-area {
-    height: 420px;
+    height: 480px;
     color: #fff;
 }
 
@@ -1518,45 +1521,49 @@ div[class^=col-]:nth-child(1) .single-service:after {
 
 .counter-area .content-title h2 {
     color: #fff;
-    margin-bottom: 0;
+    margin-bottom: 15px;
 } 
 
 .single-counter {
     position: relative;
-    padding-left: 71px;
-    margin: 15px;
+    padding: 15px;
+    /*padding-left: 71px;
+    margin: 15px;*/
 }
 
 .single-counter:after {
     content: "";
     position: absolute;
-    right: 0;
+    left: 0;
     top: 50%;
-    width: 1px;
-    height: 100px;
-    margin-top: -50px;
-    border-right: 1px dotted #fff;
+    width: 100%;
+    height: 150px;
+    margin-top: -75px;
+    border-left: 1px dotted #fff;
     opacity: .5;
 }
 
-div[class^=col-]:last-child .single-counter:after {
-    display: none;
+.counter-area div[class^=col-lg-4]:last-child .single-counter:after {
+   border-right: 1px dotted #fff;
 }
 
 .counter-icon {
-    position: absolute;
+    /*position: absolute;
     left: 0;
-    top: 0;
+    top: 0;*/
     
 
-    width: 55px;
-    height: 100px;
-    font-size: 50px;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    margin: 0 auto 15px;
+    font-size: 70px;
+    color: #adadad;
 }
 
 .single-counter p {
     font-size: 20px;
-    text-align: left;
 }
 
 .single-counter p span {
@@ -1565,6 +1572,7 @@ div[class^=col-]:last-child .single-counter:after {
     font-size: 60px;
     line-height: 1;
     margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 .single-counter p span:after {
@@ -1697,24 +1705,7 @@ div[class^=col-]:last-child .single-counter:after {
 }
 
 
-/*temporary*/
-.single-team-member.tmp {
-    box-shadow: 0px 30px 60px rgba(35, 38, 125, 0.2);
-}
 
-.single-team-member.tmp .member-image-wrap img {
-    transform: scale(1.15);
-}
-
-.single-team-member.tmp .member-info {
-    margin-top: -30px;
-    padding-bottom: 50px;
-}
-
-.single-team-member.tmp .member-social {
-    opacity: 1;
-    bottom: 15px;
-}
 
 
 
@@ -1786,6 +1777,11 @@ div[class^=col-]:last-child .single-counter:after {
     z-index: -1;
 }
 
+.testimonial-area .content-title {
+    margin-bottom: 60px;
+    margin-left: 10px;
+}
+
 .testimonial-area .content-title h2 {
     color: #fff;
 }
@@ -1830,7 +1826,7 @@ div[class^=col-]:last-child .single-counter:after {
 
 .testimonial-carousel .owl-nav {
     position: absolute;
-    top: -130px;
+    top: -110px;
     right: 10px;
     color: #fff;
 }
@@ -1887,18 +1883,7 @@ div[class^=col-]:last-child .single-counter:after {
 
 
 
-.single-parnter-logo {
-    width: 100%;
-    height: 120px;
-    display: table;
-}
 
-.single-parnter-logo img {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-}
 
 
 
@@ -1947,9 +1932,7 @@ div[class^=col-]:last-child .single-counter:after {
 }
 
 
-.contact-area .content-title {
-    margin-bottom: 100px;
-}
+
 
 
 .contact-area h3,
@@ -1962,7 +1945,7 @@ div[class^=col-]:last-child .single-counter:after {
     display: block;
     width: 100%;
     padding: 15px 35px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background-color: transparent;
     border: 1px solid #eee;
     border-radius: 100px;
@@ -1972,7 +1955,7 @@ div[class^=col-]:last-child .single-counter:after {
 .contact-form span.checkbox {
   position: relative;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .contact-form input[type=checkbox] {
     box-shadow: none;
@@ -2084,7 +2067,7 @@ div[class^=col-]:last-child .single-counter:after {
 
 
 .single-contact-address {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     color: #ccc;
 }
 
@@ -2094,6 +2077,7 @@ div[class^=col-]:last-child .single-counter:after {
 
 .single-contact-address h5 {
     font-size: 22px;
+    margin-bottom: 12px;
 }
 
 
@@ -2268,7 +2252,7 @@ div[class^=col-]:last-child .single-counter:after {
 }
 
 .footer-addresses a.mail {
-    color: #0F2952;
+    color: #333;
     font-size: 17px;
 }
 
@@ -2355,9 +2339,7 @@ div[class^=col-]:last-child .single-counter:after {
     border-left: 1px solid #ddd;
 }
 /*footer-bootom border-top*/
-.footer-bottom p a {
-    color: #FC4B5B;
-}
+
 
 
 
@@ -2370,6 +2352,11 @@ div[class^=col-]:last-child .single-counter:after {
 .footer-bottom.overlay-gradient:after {
     background: #0F2952;
     opacity: 1;
+}
+
+.footer-bottom p a {
+    color: #ff3d3e;
+    font-weight: 600;
 }
 /*footer-area end*/
 

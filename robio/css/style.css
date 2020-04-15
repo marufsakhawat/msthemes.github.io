@@ -19,7 +19,7 @@ body {
   font-size: 16px;
   background-color: #fff;
   color: #676767;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.75px;
 }
 a {
   display: inline-block;
@@ -472,7 +472,7 @@ img {
 
 
 .header-main {
-    padding: 25px 0;
+    padding: 15px 0;
     background-color: #fff;
 }
 
@@ -686,14 +686,25 @@ div[class^=col-]:nth-child(3) .focus-icon:before {
     padding-top: 120px;
 }
 
+.about-area .content-title {
+    margin-bottom: 35px;
+    margin-right: 20px;
+}
+
+.about-area .content-title h2 {
+    margin-bottom: 0;
+}
+
 .about-area-text {
-    padding-right: 45px;
+    text-align: justify;
+    margin-right: 20px;
 }
 
 
 
 .our-speciality {
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 .our-speciality li {
@@ -714,7 +725,7 @@ div[class^=col-]:nth-child(3) .focus-icon:before {
 }
 
 .about-area-text .boxed-btn {
-    margin-top: 18px;
+    margin-top: 15px;
 }
 
 
@@ -729,27 +740,31 @@ div[class^=col-]:nth-child(3) .focus-icon:before {
 .about-area-image {
     position: relative;
     z-index: 1;
-    margin: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: right;
+    display: inline-block;
+    float: right;
 }
 
 .about-area-image:after {
     content: "";
     position: absolute;
-    left: -20px;
-    top: -20px;
-    right: -20px;
-    bottom: -20px;
-    /*height: 100%;
-    width: 100%;*/
+    left: -10px;
+    top: -10px;
+    /*right: -3px;
+    bottom: -3px;*/
+    height: 100%;
+    width: 100%;
     /*width: calc(100% + 40px);*/
     z-index: -1;
     
     
-    /*background: #0F2952;
-    background: linear-gradient(45deg,  #0F2952 0%, #0F2952 55%, #222 100%);*/
-    border: 1px solid #e6e6e6;
+    background: #0F2952;
+    background: linear-gradient(45deg,  #0F2952 0%, #0F2952 55%, #ff3d3e 100%);
+    /*border: 1px solid #e6e6e6;*/
 
-    border-bottom-right-radius: 30px;
+    border-radius: 3px;
     
 }
 
@@ -757,8 +772,8 @@ div[class^=col-]:nth-child(3) .focus-icon:before {
 
 .about-area-image img {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    width: 100%;
-    border-bottom-right-radius: 30px;
+    max-width: 100%;
+    border-radius: 3px;
 }
 
 
@@ -826,11 +841,11 @@ div[class^=col-]:nth-child(3) .focus-icon:before {
 }
 
 .single-service {
-    padding: 40px 30px 30px;
+    padding: 40px 30px 35px;
     font-size: 15px;
-/*    border-radius: 3px;
+    border-radius: 3px;
     overflow: hidden;
-    margin: 5px;*/
+    margin: 5px;
 
     color: #fff;
     position: relative;
@@ -909,11 +924,11 @@ div[class^=col-]:nth-child(6) .single-service:after {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
 .single-service:hover .service-icon:after {
-    width: 220px;
+    width: 250px;
 }
 
 .single-service h5 {
@@ -1310,7 +1325,7 @@ div[class^=col-]:nth-child(6) .single-service:after {
 
 .experience-year {
     width: calc(100% - 15px);
-    height: 500px;
+    height: 420px;
     text-align: center;
     color: #fff;
     border-radius: 3px;
@@ -1559,7 +1574,6 @@ div[class^=col-]:nth-child(6) .single-service:after {
     text-align: center;
     margin: 0 auto 15px;
     font-size: 70px;
-    color: #adadad;
 }
 
 .single-counter p {
@@ -1578,6 +1592,7 @@ div[class^=col-]:nth-child(6) .single-service:after {
 .single-counter p span:after {
     content: "+";
     margin-left: 7px;
+    color: #ff3d3e;
 }
 
 
@@ -1808,6 +1823,12 @@ div[class^=col-]:nth-child(6) .single-service:after {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
 }
 
 .testimonial-author-image-wrap img {
@@ -2109,7 +2130,7 @@ div[class^=col-]:nth-child(6) .single-service:after {
 
 
 .single-blog {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .single-blog:hover {
@@ -2140,7 +2161,7 @@ div[class^=col-]:nth-child(6) .single-service:after {
 .blog-tag {
     display: inline-block;
     position: absolute;
-    left: -15px;
+    left: -10px;
     bottom: calc(100% + 15px);
     color: #fff;
     background-color: #ff3d3e;
@@ -2158,7 +2179,7 @@ div[class^=col-]:nth-child(6) .single-service:after {
 }
 
 .blog-title {
-    font-size: 23px;
+    font-size: 21px;
     line-height: 1.7;
     margin-bottom: 10px;
     color: #0F2952;
@@ -2228,7 +2249,7 @@ div[class^=col-]:nth-child(6) .single-service:after {
 }
 
 .footer-widget img {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 .footer-widget h3 {
