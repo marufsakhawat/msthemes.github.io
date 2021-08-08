@@ -1,7 +1,7 @@
 /*
-  Theme Name: MsDevs
+  Theme Name: MsThemes
   Author: Maruf Sakhawat
-  Author URI: https://msdevs.co
+  Author URI: https://msthemes.tk
   Support:
   Description: 
   Version: 1.0.0
@@ -69,7 +69,6 @@ body {
     }
 }
 /*body-preloader end*/
-
 
 h1, h2, h3, h4, h5, h6 { color: #000; margin: 0 0 10px;	font-weight: 700; }
 
@@ -382,7 +381,6 @@ img { max-width: 100%; height: auto; transition: 0.3s; }
 	color: #ddd;
 }
 .hero-content p {
-	margin-bottom: 18px;
 	font-size: 18px;
 }
 .hero-content .mspf-btn {
@@ -446,92 +444,6 @@ div[class^=col-]:last-child .single-speciality:after {
 /*speciality-area end*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*about-us-area start*/
 .about-us-text {
 	padding-right: 20px;
@@ -539,44 +451,6 @@ div[class^=col-]:last-child .single-speciality:after {
 .about-us-text .read-more-btn {
 	margin-top: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .about-us-video {
     position: relative;
