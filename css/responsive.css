@@ -1,8 +1,5 @@
 /* Normal desktop :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
-	.container {
-		max-width: 1170px;
-	}	
 }
 
 /* Normal desktop :992px. */
@@ -17,7 +14,52 @@
 
 /* small mobile :320px. */
 @media (max-width: 767px) {
-	
+	p {
+		line-height: 1.7;
+	}
+	.pd-tb-100 {
+		padding: 60px 0;
+	}
+	.header-top {
+		display: none
+	}
+	/*.header-contact {
+	  text-align: center;
+	}
+	.header-contact .separator {
+	  display: none;
+	}
+	.header-contact a {
+	  margin: 0 10px 10px 10px;
+	}*/
+	.menu > ul > li > a {
+		padding: 12px 10px;
+	}
+	.menu > ul > li:first-child > a {
+		padding-left: 0;
+	}
+
+	.hero-content h2 {
+		font-size: 35px;
+		text-transform: none;
+	}
+
+	.section-title h3 {
+		font-size: 24px
+	}
+	.footer-content .social-links {
+		margin: 13px 0;
+	}
+	.footer-content .header-contact a {
+		display: block;
+		margin-top: 10px;
+	}
+	.footer-content .header-contact a:last-child {
+		margin-bottom: 0;
+	}
+	.footer-content .header-contact .separator {
+		display: none;
+	}
 }
 
 /* Large Mobile :480px. */

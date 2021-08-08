@@ -1,6 +1,7 @@
 /*
-  Theme Name: 
-  Author: 
+  Theme Name: MsDevs
+  Author: Maruf Sakhawat
+  Author URI: https://msdevs.co
   Support:
   Description: 
   Version: 1.0.0
@@ -316,6 +317,9 @@ img { max-width: 100%; height: auto; transition: 0.3s; }
     padding: 12px 18px;
     font-weight: 700;
     font-size: 15px;
+}
+.menu > ul > li:last-child > a {
+    padding-right: 0;
 }
 .menu > ul > li > a:hover,
 .menu > ul > li > a.active {
@@ -1037,7 +1041,6 @@ div[class^=col-]:last-child .single-speciality:after {
 .portfolio-screenshot-wrap {
     overflow: hidden;
     border-bottom: 1px solid #e5e5e5;
-    max-height: 184px;
 }
 .portfolio-preview-download-wrap {
     padding: 15px 20px;
